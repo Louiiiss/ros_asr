@@ -1,0 +1,17 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = HELLO MIRO
+| HI MIRO
+| HEY MIRO
+| COME HERE
+| STAY THERE
+| WAG YOUR TAIL
+| NOD YOUR HEAD
+| GO TO SLEEP
+| ARE YOU HAPPY
+| ARE YOU SAD
+| HOW ARE YOU FEELING
+| WAKE UP 
+| !SIL;
+
+

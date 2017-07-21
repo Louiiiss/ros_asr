@@ -1,0 +1,98 @@
+# online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.4 "ark,s,cs:extract-segments scp,p:data/dt/split10utt/4/wav.scp data/dt/split10utt/4/segments ark:- |" "ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.4.gz" 
+# Started at Fri Jun  2 18:06:59 BST 2017
+#
+online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.4 'ark,s,cs:extract-segments scp,p:data/dt/split10utt/4/wav.scp data/dt/split10utt/4/segments ark:- |' 'ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.4.gz' 
+extract-segments scp,p:data/dt/split10utt/4/wav.scp data/dt/split10utt/4/segments ark:- 
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 9116180 bytes in RIFF chunk, but after first data block there will be 36 + 9116062 bytes (we do not support reading multiple data chunks).
+052c0115 THERE WERE THIRTEEN POINT NINE MILLION CRIMES REPORTED IN NINETEEN EIGHTY EIGHT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 052c0115
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 9671882 bytes in RIFF chunk, but after first data block there will be 36 + 9671764 bytes (we do not support reading multiple data chunks).
+052c0116 MURDERS ROSE TWO POINT NINE PERCENT TO TWENTY THOUSAND SIX HUNDRED SEVENTY FIVE IN THE PERIOD 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 052c0116
+053c0101 THE SUIT WAS FILED UNDER THE FALSE CLAIMS ACT WHICH ALLOWS PRIVATE CITIZENS TO SUE ON BEHALF OF THE GOVERNMENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0101
+053c0102 UNDER THE LAW THE JUSTICE DEPARTMENT CAN ELECT TO TAKE OVER AS A PLAINTIFF 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0102
+053c0103 A SPOKESWOMAN FOR THE DEPARTMENT SAID NO SUCH DECISION HAD BEEN MADE YET 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0103
+053c0104 IN ADDITION I. B. M.'S PRICING STRATEGY COULD HURT COMPETITORS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0104
+053c0105 FOR EXAMPLE THE COMPANY PLANS BIG DISCOUNTS ON THE NEW ONE THOUSAND SIX HUNDRED NINETY FIVE DOLLAR MACHINE FOR SCHOOLS A MAIN APPLE MARKET 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0105
+053c0106 ONE OF THE NEW P. C. THE OFFERS ALMOST DOUBLE THE MEMORY OF SLIGHTLY MORE STORES FOR ELEVEN PERCENT LAST THAT THE COMPETING COMPAQ MACHINE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0106
+053c0107 I. B. M. P. C.S TRADITIONALLY ARE PRICED HIGHER THAN RIVAL BRANDS WHICH TYPICALLY MUST UNDERCUT I CAN PRICES BY FIFTEEN PERCENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0107
+053c0108 THE TASK FORCE REPORT ISN'T ALL BAD 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0108
+053c0109 IT DOES CALL FOR ELIMINATING SOME GOVERNMENT OBSTACLES TO THE DEVELOPMENT OF A HEALTHY LONG TERM CARE INSURANCE MARKET 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0109
+053c010a AND THE IDEA OF LETTING EMPLOYERS PRE FUND POST RETIREMENT MEDICAL EXPENSES THAT SURELY BETTER THAN HAVING GOVERNMENT DO IT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010a
+053c010b ACTIVELY TRADED THIRTY YEAR TREASURY ISSUES LAST WEEK PLUNGED ABOUT THREE POINTS OR ABOUT THIRTY DOLLARS FOR EACH ONE THOUSAND DOLLAR FACE AMOUNT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010b
+053c010c PRICES WERE DOWN EVERY DAY THAT THURSDAY WHEN THEY ROSE ONLY SLIGHTLY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010c
+053c010d THE YIELD ON THE LATEST THIRTY YEAR TREASURY BONDS SURGED TO EIGHT POINT EIGHT THREE PERCENT FROM EIGHT POINT FIVE SIX PERCENT A WEEK EARLIER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010d
+053c010e SINCE THE EARLY NINETEEN EIGHTIES DATA GENERAL HAS TRIED TO COMPETE HEAD ON WITH INTERNATIONAL BUSINESS MACHINES CORPORATION AND DIGITAL EQUIPMENT CORPORATION FOR LARGE CUSTOMERS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010e
+053c010f IN NINETEEN EIGHTY FOUR THE COMPANY WON SEVERAL MULTIMILLION DOLLAR ACCOUNTS AND SALES AND EARNINGS SOARED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010f
+053c010g SINCE THEN HOWEVER RESULTS HAVE BEEN BEFORE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010g
+053c010h PER SHARE EARNINGS FOR THE FISCAL YEAR FELL ABOUT TWENTY ONE PERCENT THE COMPANY ESTIMATED REFLECTING AN EIGHTEEN PERCENT INCREASE IN AVERAGE SHARES OUTSTANDING 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010h
+053c010i THE BRANFORD CONNECTICUT BASED COMPANY HAD STOCK OFFERINGS IN NINETEEN EIGHTY SIX AND NINETEEN EIGHTY SEVEN TO REDUCE DEBT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010i
+053c010j THE COMPANY WHICH MAKES MOTOR VEHICLE REPLACEMENT PARTS SAID SALES EXCEEDED ONE BILLION DOLLARS FOR THE FISCAL YEAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010j
+053c010k IN A STATEMENT ARE ALAN <UNK> R. SAID THE BROKERAGE UNIT GENERATED SUBSTANTIALLY ALL OF ITS REVENUE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010k
+053c010l IT SAID IT IS NEGOTIATING THE SALE OF CERTAIN ASSETS OF THE BROKERAGE UNIT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010l
+053c010m THE PARENT COMPANY ADDED THAT IT MAY SEEK OTHER BUSINESS OPPORTUNITIES SUBJECT TO THE AVAILABILITY OF FINANCING WHICH MAY NOT BE AVAILABLE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010m
+053c010n THE DOW JONES INDUSTRIALS DROPPED TWENTY FIVE POINT TWO OH TO ONE THOUSAND NINE HUNDRED THIRTY FIVE POINT OH ONE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010n
+053c010o THE DOW JONES INDUSTRIALS DROPPED TWENTY FIVE POINT TWO OH TO ONE THOUSAND NINE HUNDRED THIRTY FIVE POINT OH ONE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010o
+053c010p THE DOLLAR WAS LITTLE CHANGED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010p
+053c010q THE ASSESSMENT IS PROBABLY EVEN MORE APPROPRIATE NOW MARKET ANALYSTS SAY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010q
+053c010r ONE OF THE FEW AREAS OF STRONG GROWTH EARLIER IN NINETEEN EIGHTY SEVEN WITH THE NEW ISSUE MARKET FOR INTERNATIONAL EQUITIES AND EQUITY RELATED BONDS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010r
+053c010s SUCH ACTIVITY HAS ALL THE END IT SENT STOCK PRICES PLUNGED THE ANALYSTS SAY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010s
+053c010t INSTITUTIONAL INVESTORS FEEL THE RISE BY SHIFTING ASSETS TO THE FUNDS IN RESPONSE TO DECLINING RATES AVAILABLE ON SHORT TERM SECURITIES THE MARKET 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010t
+053c010u ALSO INDIVIDUAL INVESTORS CONCERN OF THE VOLATILITY IN FINANCIAL MARKETS MAY HAVE CONTRIBUTED TO THE INCREASE SHE SAID 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010u
+053c010v LAST FRIDAY THE DOW JONES INDUSTRIAL AVERAGE POSTED ITS THIRD BIGGEST POINT DECLINE EVER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010v
+053c010w THE FINANCIAL TIMES THIRTY SHARE INDEX CLOSED OFF SEVEN POINT FOUR POINTS AT ONE THOUSAND FOUR HUNDRED THIRTY POINT SEVEN 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010w
+053c010x VOLUME WAS A MODERATE FOUR HUNDRED FIFTY FOUR POINT SEVEN MILLION SHARES PICKING UP SLIGHTLY FROM WEDNESDAY'S FOUR HUNDRED TWENTY SEVEN POINT FOUR MILLION SHARES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010x
+053c010y THE ONE HUNDRED SHARE INDEX WAS OFF FIVE POINT TWO POINTS AT ONE THOUSAND SEVEN HUNDRED EIGHTY NINE POINT FIVE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010y
+053c010z JOB SECURITY CLAUSES GIVE UNION SOMETHING POSITIVE TO TAKE BACK TO THEIR MEMBERS AND MODEST COST OF THE PLAYERS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c010z
+053c0110 BUT THEY CAN LOOK MORE GENEROUS THAN THEY ARE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0110
+053c0111 I'LL CONTRACTS PROVIDE FOR JOB SECURITY BUT BECAUSE THEY LIMIT THE FUNDS AVAILABLE FOR IT THEY HAVEN'T PREVENTED SIZABLE LAYOFFS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0111
+053c0112 WE COULD DISTRIBUTE THE BONDS IN JAPAN IN EUROPE IN THE U. K. BUT NOT IN THE U. S. MR. LABRECQUE HE SAID 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0112
+LOG (extract-segments:main():extract-segments.cc:194) Successfully processed 41 lines out of 41 in the segments file. 
+053c0113 THESE POWERS ARE IMPORTANT TO US 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0113
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.49439 (note: this cannot be less than one.)
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 3.61302 seconds.
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 5.60857
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 10.1767 seconds for utterance '053c0109'
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:279) Decoded 41 utterances, 0 with errors.
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:281) Overall likelihood per frame was 0.347934 per frame over 29880 frames.
+# Accounting: time=442 threads=1
+# Ended (code 0) at Fri Jun  2 18:14:21 BST 2017, elapsed time 442 seconds

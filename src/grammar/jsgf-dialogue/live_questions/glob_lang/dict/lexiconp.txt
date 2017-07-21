@@ -1,0 +1,16 @@
+FOR	1.0	f ao
+FOR	1.0	f ao r
+FOR	1.0	f ax
+FOR	1.0	f ax r
+FOR	1.0	f er
+MOVED	1.0	m uw v d
+QUICKLY	1.0	k w ih k l iy
+SECONDS	1.0	s eh k ax n d z
+SECONDS	1.0	s ih k oh n d z
+SLOWLY	1.0	s l ow l iy
+STILL	1.0	s t ih l
+STOOD	1.0	s t uh d
+TEN	1.0	t eh n
+TWENTY	1.0	t w eh n t iy
+!SIL	1.0	SIL
+!NOISE	1.0	NOISE

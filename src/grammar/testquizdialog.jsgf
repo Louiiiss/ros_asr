@@ -1,0 +1,18 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <hello> 
+| <testing_abc>
+| <testing_123>
+| <portions>
+| <low>
+| <dairy>;
+
+<hello> = HELLO ZENO ARE YOU READY TO START;
+<testing_abc> = TESTING A B C;
+<testing_123> = TESTING ONE TWO THREE;
+<portions> = (FIVE | FIFTY | FIVE HUNDRED | FIVE THOUSAND) PORTIONS;
+<low> = STEAMED BROCCOLI | CHOCOLATE CAKE | ICE CREAM SUNDAE | PIZZA;
+<dairy> = MILK CHEESE AND BUTTER | CHICKEN AND PORK | FISH AND CHIPS | CARROTS AND CUCUMBER;
+
+

@@ -1,0 +1,17 @@
+FOR f_B ao_E
+FOR f_B ao_I r_E
+FOR f_B ax_E
+FOR f_B ax_I r_E
+FOR f_B er_E
+MOVED m_B uw_I v_I d_E
+QUICKLY k_B w_I ih_I k_I l_I iy_E
+SECONDS s_B eh_I k_I ax_I n_I d_I z_E
+SECONDS s_B ih_I k_I oh_I n_I d_I z_E
+SLOWLY s_B l_I ow_I l_I iy_E
+STILL s_B t_I ih_I l_E
+STOOD s_B t_I uh_I d_E
+TEN t_B eh_I n_E
+TWENTY t_B w_I eh_I n_I t_I iy_E
+!SIL SIL_S
+!NOISE NOISE_S
+<eps> SIL

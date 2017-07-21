@@ -1,0 +1,22 @@
+A 1.0 ah_S
+A 1.0 ax_S
+A 1.0 ey_S
+AM 1.0 ae_B m_E
+B 1.0 B_B IY_E
+C 1.0 S_B IY_E
+HELLO 1.0 hh_B ax_I l_I ow_E
+I 1.0 ay_S
+ONE 1.0 w_B ah_I n_E
+QUIZ 1.0 k_B w_I ih_I z_E
+READY 1.0 r_B eh_I d_I iy_E
+START 1.0 s_B t_I aa_I t_E
+TESTING 1.0 t_B eh_I s_I t_I ih_I ng_E
+THE 1.0 dh_B ax_E
+THE 1.0 dh_B iy_E
+THREE 1.0 th_B r_I iy_E
+TO 1.0 t_B ax_E
+TO 1.0 t_B uw_E
+TWO 1.0 t_B uw_E
+ZEENO 1.0 Z_B IY_I N_I OW_E
+!SIL 1.0 SIL_S
+!NOISE 1.0 NOISE_S

@@ -1,0 +1,29 @@
+A	1.0	ah
+A	1.0	ax
+A	1.0	ey
+AN	1.0	ae n
+AN	1.0	ax n
+ANGRY	1.0	ae ng g r iy
+ARM	1.0	aa m
+BOTH	1.0	b ow th
+DANCE	1.0	d aa n s
+DO	1.0	d uw
+FACE	1.0	f ey s
+HANDS	1.0	hh ae n d z
+HAPPY	1.0	hh ae p iy
+LEFT	1.0	l eh f t
+MAKE	1.0	m ey k
+MONKEY	1.0	m ah ng k iy
+OUT	1.0	aw t
+PUT	1.0	p ah t
+PUT	1.0	p uh t
+RIGHT	1.0	r ay t
+SAD	1.0	s ae d
+SURPRISED	1.0	s ax p r ay z d
+THE	1.0	dh ax
+THE	1.0	dh iy
+UP	1.0	ah p
+YOUR	1.0	y ao
+YOUR	1.0	y ao r
+!SIL	1.0	SIL
+!NOISE	1.0	NOISE

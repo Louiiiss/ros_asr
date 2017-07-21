@@ -1,0 +1,27 @@
+A	ah
+A	ax
+A	ey
+AN	ae n
+AN	ax n
+ANGRY	ae ng g r iy
+ARM	aa m
+BOTH	b ow th
+DANCE	d aa n s
+DO	d uw
+FACE	f ey s
+HANDS	hh ae n d z
+HAPPY	hh ae p iy
+LEFT	l eh f t
+MAKE	m ey k
+MONKEY	m ah ng k iy
+OUT	aw t
+PUT	p ah t
+PUT	p uh t
+RIGHT	r ay t
+SAD	s ae d
+SURPRISED	s ax p r ay z d
+THE	dh ax
+THE	dh iy
+UP	ah p
+YOUR	y ao
+YOUR	y ao r

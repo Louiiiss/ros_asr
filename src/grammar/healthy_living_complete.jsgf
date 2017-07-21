@@ -1,0 +1,28 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <arm> 
+| <face>
+| <both> 
+| <monkey>
+| <twenty_mins>
+| <ten_mins> 
+| <ten_seconds> 
+| <moved> 
+| <hello> 
+| <testing_abc> 
+| <testing_123> 
+| <start_quiz>;
+
+<arm> = PUT YOUR (LEFT | RIGHT) ARM UP
+<face> = MAKE (A HAPPY|A SAD|AN ANGRY|A SURPRISED) FACE
+<both> = PUT BOTH HANDS OUT
+<monkey> = DO THE MONKEY DANCE
+<twenty_mins> = (WATCHING TELEVISION | READING A BOOK | PLAYING FOOTBALL | WALKING) FOR TWENTY MInutes
+<ten_mins> = (SKIPPING | JOGGING | SITTING STILL | SWIMMING FAST) FOR TEN MINUTES
+<ten_seconds> = (STOOD STILL | MOVED SLOWLY) FOR TEN SECONDS
+<moved> = MOVED QUICKLY FOR (TEN|TWENTY) SECONDS
+<hello> = HELLO ZEENO I AM READY TO START
+<testing_abc> = TESTING A B C
+<testing_123> = TESTING ONE TWO THREE
+<start_quiz> = ZEENO START THE QUIZ 

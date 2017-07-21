@@ -1,0 +1,22 @@
+A	1.0	ah
+A	1.0	ax
+A	1.0	ey
+AM	1.0	ae m
+B	1.0	B IY
+C	1.0	S IY
+HELLO	1.0	hh ax l ow
+I	1.0	ay
+ONE	1.0	w ah n
+QUIZ	1.0	k w ih z
+READY	1.0	r eh d iy
+START	1.0	s t aa t
+TESTING	1.0	t eh s t ih ng
+THE	1.0	dh ax
+THE	1.0	dh iy
+THREE	1.0	th r iy
+TO	1.0	t ax
+TO	1.0	t uw
+TWO	1.0	t uw
+ZEENO	1.0	Z IY N OW
+!SIL	1.0	SIL
+!NOISE	1.0	NOISE

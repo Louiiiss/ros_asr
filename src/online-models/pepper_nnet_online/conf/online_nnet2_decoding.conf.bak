@@ -1,0 +1,3 @@
+--feature-type=mfcc
+--mfcc-config=/home/samf/export_pepper_kaldi/exp/nnet2_online/nnet_a_gpu_online/conf/mfcc.conf
+--endpoint.silence-phones=1:2:3:4:5:6:7:8:9:10:11:12:13:14:15

@@ -1,0 +1,98 @@
+# online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.2 "ark,s,cs:extract-segments scp,p:data/dt/split10utt/2/wav.scp data/dt/split10utt/2/segments ark:- |" "ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.2.gz" 
+# Started at Fri Jun  2 18:06:59 BST 2017
+#
+online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.2 'ark,s,cs:extract-segments scp,p:data/dt/split10utt/2/wav.scp data/dt/split10utt/2/segments ark:- |' 'ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.2.gz' 
+extract-segments scp,p:data/dt/split10utt/2/wav.scp data/dt/split10utt/2/segments ark:- 
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 9334020 bytes in RIFF chunk, but after first data block there will be 36 + 9333902 bytes (we do not support reading multiple data chunks).
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 10325530 bytes in RIFF chunk, but after first data block there will be 36 + 10325412 bytes (we do not support reading multiple data chunks).
+050c0116 I PREFER NOT TO SAY ANYTHING MORE THAN MATCHED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 050c0116
+051c0101 SO CLEARLY THE ADVOCATES OF SANCTIONS WERE IN THE FOREIGN POLICY VICTORS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0101
+051c0102 AT LEAST IN THE U. S. THEY WERE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0102
+051c0103 WHAT ABOUT IN SOUTH AFRICA ITSELF 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0103
+051c0104 THAT'S ANOTHER STORY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0104
+051c0105 IN THE BOND MARKET PRICES OF SOME LONG TERM TREASURY ISSUES FELL TO THEIR LOWEST LEVELS IN ABOUT THREE MONTHS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0105
+051c0106 ACTIVELY TRADED THIRTY YEAR BONDS DROPPED ABOUT A POINT OR AROUND TEN DOLLARS FOR EACH ONE THOUSAND DOLLAR FACE AMOUNT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0106
+051c0107 CORPORATE AND MUNICIPAL BOND PRICES ALSO SLUMPED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0107
+051c0108 THIS IS THE SECOND CONSECUTIVE QUARTER IN WHICH THE DIVIDEND WAS REDUCED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0108
+051c0109 IN NOVEMBER IT WAS CUT TO SEVENTEEN POINT FIVE CENTS FROM TWENTY TWO POINT FIVE CENTS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0109
+051c010a THE NEW DIVIDEND IS PAYABLE MARCH SIXTH TO STOCK OF RECORD FEBRUARY NINETEENTH 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010a
+051c010b THE NOVEMBER DROP BROUGHT THE INDEX TO ONE HUNDRED NINETY POINT TWO PERCENT OF ITS NINETEEN SIXTY SEVEN AVERAGE FROM ONE HUNDRED NINETY THREE POINT FIVE PERCENT IN OCTOBER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010b
+051c010c THE OCTOBER RISE WAS INITIALLY REPORTED AS A ZERO POINT TWO PERCENT DROP 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010c
+051c010d IN YESTERDAY'S RELEASE THE DEPARTMENT ALSO REVISED SEPTEMBER PERFORMANCE TO A ZERO POINT TWO PERCENT RISE AFTER PREVIOUSLY REPORTING AN UNCHANGED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010d
+051c010e FOR THE KOREAN ECONOMY HE FAVORS FREE TRADE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010e
+051c010f I THINK WE HAVE TO OPEN OUR MARKETS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010f
+051c010g HE ADDS THAT MORE EFFORT SHOULD BE MADE TO REALIZE A FAIR DISTRIBUTION OF INCOME BUT FEW SHORT ON SPECIFICS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010g
+051c010h THE POLICY NEW FOR THIS WILL BE FURTHER DEVELOPED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010h
+051c010i YESTERDAY'S ACTION DIDN'T AFFECT THE FOURTH L. T. V. PLAN THE PENSION AGENCY TOOK OVER IN SEPTEMBER NINETEEN EIGHTY SIX 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010i
+051c010j WHEN THE FEDERAL PENSION INSURERS THAT DID THIS FUND HAD JUST SEVEN THOUSAND SEVEN HUNDRED DOLLARS AND IT TO MEET TWO HUNDRED THIRTY MILLION DOLLARS IN OBLIGATIONS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010j
+051c010k THE THREE OTHER PENSION PLANS HAD MORE THAN ONE BILLION DOLLARS OF ASSETS WILL EVEN LARGER LIABILITIES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010k
+051c010l THE AGREEMENT CALLS FOR A FEE A CLOSELY HELD INVESTMENT GROUP TO OFFER REMAINING HOLDERS TWELVE DOLLARS A SHARE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010l
+051c010m THE PROPOSED PER SHARE PRICE INCLUDES TEN DOLLARS CASH AND TWO DOLLARS AND UNSPECIFIED SECURITIES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010m
+051c010n IN AMERICAN STOCK EXCHANGE COMPOSITE TRADING YESTERDAY SUN CITY CLOSED AT TEN DOLLARS AND FIFTY CENTS A SHARE UP ONE POINT EIGHT SEVEN FIVE DOLLARS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010n
+051c010o MR. FICKLING STARTED THE COMPANY IN NINETEEN SIXTY NINE WITH EIGHTY GENERAL HOSPITALS AND NURSING HOMES ALONG WITH A SMALL CONSTRUCTION OPERATIONS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010o
+051c010p HE AND HIS FAMILY OWN ABOUT TWENTY NINE PERCENT OF THE COMPANY'S CLASS A COMMON SHARES AT ABOUT NINETY ONE POINT FIVE PERCENT OF THE CLASS B. COMMON 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010p
+051c010q THAT GIVES HIM VOTING CONTROL OVER SEVENTY FIVE PERCENT OF THE COMPANY'S COMMON 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010q
+051c010r THE ECONOMIC PLANNING BOARD WHICH ANNOUNCED THE MEASURES SAID THE GOVERNMENT'S GOAL IS TO HOLD INFLATION BELOW FIVE PERCENT THIS YEAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010r
+051c010s CONSUMER PRICES ROSE ONE POINT SIX PERCENT IN FEBRUARY THE HIGHEST MONTHLY INCREASE SINCE MID NINETEEN EIGHTY ONE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010s
+051c010t IN THE PREVIOUS FOUR YEARS ANNUAL INCREASES WERE WELL BELOW THREE PERCENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010t
+051c010u PRICES OF MUNICIPAL BONDS GAINED AS MUCH AS THREE EIGHTHS POINT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010u
+051c010v ALTHOUGH THE FOREIGN EXCHANGE MARKET RARELY AS MUCH IMPACT ON TAX EXEMPT SECURITIES TRADERS SAID THE DOLLAR'S LATE RALLY YESTERDAY HELPED BUOY MUNICIPAL PRICES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010v
+051c010w IN FUTURES TRADING MUNICIPAL BONDS FOR JUNE DELIVERY ROSE SIX THIRTY SECONDS TO EIGHT THOUSAND FIVE HUNDRED TWENTY SEVEN 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010w
+051c010x THE ALL ORDINARIES INDEX WHICH FELL ELEVEN POINT THREE TUESDAY SLIPPED ONE POINT FIVE TO ONE THOUSAND FOUR HUNDRED FORTY THREE POINT TWO 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010x
+051c010y THE BROKER SAID SOME FOREIGN INVESTORS SOLD STOCKS TO REALIZE CURRENCY GAINS ON THE RECENT RISE OF THE AUSTRALIAN DOLLAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010y
+051c010z THE CURRENCY WAS QUOTED LATE IN THE DAY IN SYDNEY AT SEVENTY SEVEN POINT FOUR NINE U. S. CENTS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c010z
+051c0110 WE LOOK FOR A HIGHER THAN STANDARD RETURNS MR. SPERLING SAYS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0110
+051c0111 IN TODAY'S MARKET THERE ALMOST NEVER AVAILABLE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0111
+051c0112 THERE ARE TOO MANY FOREIGN MINISTER ADDITIONAL PLAYERS WILLING TO PAY HIGHER PRICES THAN WE ARE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0112
+051c0113 MANY INSTITUTIONAL PLAYERS CONFESS TO HOLDING MORE CASH THAN USUAL 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0113
+LOG (extract-segments:main():extract-segments.cc:194) Successfully processed 41 lines out of 41 in the segments file. 
+051c0114 IN THE BULL MARKET OF NINETEEN EIGHTY SIX TO EIGHTY SEVEN CASH POSITIONS EXCEEDING FIVE PERCENT OF ASSETS WITH HELD DOWN OVERALL RETURNS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 051c0114
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.50283 (note: this cannot be less than one.)
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 3.82892 seconds.
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 8.31001
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 15.2338 seconds for utterance '051c010j'
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:279) Decoded 41 utterances, 0 with errors.
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:281) Overall likelihood per frame was 0.354224 per frame over 31139 frames.
+# Accounting: time=455 threads=1
+# Ended (code 0) at Fri Jun  2 18:14:34 BST 2017, elapsed time 455 seconds

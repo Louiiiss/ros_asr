@@ -1,0 +1,23 @@
+A A ah_S
+A A ax_S
+A A ey_S
+AM AM ae_B m_E
+B B B_B IY_E
+C C S_B IY_E
+<eps> <eps> SIL
+HELLO HELLO hh_B ax_I l_I ow_E
+I I ay_S
+!NOISE !NOISE NOISE_S
+ONE ONE w_B ah_I n_E
+QUIZ QUIZ k_B w_I ih_I z_E
+READY READY r_B eh_I d_I iy_E
+!SIL !SIL SIL_S
+START START s_B t_I aa_I t_E
+TESTING TESTING t_B eh_I s_I t_I ih_I ng_E
+THE THE dh_B ax_E
+THE THE dh_B iy_E
+THREE THREE th_B r_I iy_E
+TO TO t_B ax_E
+TO TO t_B uw_E
+TWO TWO t_B uw_E
+ZEENO ZEENO Z_B IY_I N_I OW_E

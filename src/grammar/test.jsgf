@@ -1,0 +1,20 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <intro_1>
+| <intro_2>
+| <intro_3>
+| <vision_intro_1> 
+| <vision_intro_2> 
+| <vision_intro_3>
+| <hello>; 
+
+<intro_1> = I'D LIKE TO PRESENT TO YOU ZENO; 
+<intro_2> = WE ARE WORKING WITH ZENO ON THE EASEL PROJECT; 
+<intro_3> = ZENO CAN YOU TELL US ABOUT THE EASEL PROJECT;
+<vision_intro_1> = O.K. GREAT;
+<vision_intro_2> = NOW MAYBE YOU CAN TALK ABOUT YOUR TECHNICAL CAPABILITIES;
+<vision_intro_3> = SHALL WE START WITH VISION;
+<hello> = HELLO ZENO ARE YOU READY TO START;
+
+

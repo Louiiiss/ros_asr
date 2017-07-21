@@ -1,0 +1,37 @@
+ARM 1.0 aa_B m_E
+ARMS 1.0 aa_B m_I z_E
+BOTH 1.0 b_B ow_I th_E
+CAN 1.0 k_B ae_I n_E
+CHECK 1.0 ch_B eh_I k_E
+CHECKING 1.0 ch_B eh_I k_I ih_I ng_E
+COMMANDS 1.0 k_B ax_I m_I aa_I n_I d_I z_E
+DOUBLE 1.0 d_B ah_I b_I l_E
+DOWN 1.0 d_B aw_I n_E
+FAREWELL 1.0 f_B ea_I w_I eh_I l_E
+GO 1.0 g_B ow_E
+HEAR 1.0 hh_B ia_E
+HEAR 1.0 hh_B ia_I r_E
+HELLO 1.0 hh_B ax_I l_I ow_E
+IN 1.0 ih_B n_E
+LATER 1.0 l_B ey_I t_I ax_E
+LATER 1.0 l_B ey_I t_I ax_I r_E
+LEFT 1.0 l_B eh_I f_I t_E
+LISTENING 1.0 l_B ih_I s_I n_I ih_I ng_E
+ME 1.0 m_B iy_E
+MOVE 1.0 m_B uw_I v_E
+MOVING 1.0 m_B uw_I v_I ih_I ng_E
+MY 1.0 m_B ay_E
+NO 1.0 n_B ow_E
+OUT 1.0 aw_B t_E
+RIGHT 1.0 r_B ay_I t_E
+SEE 1.0 s_B iy_E
+START 1.0 s_B t_I aa_I t_E
+STOP 1.0 s_B t_I oh_I p_E
+TOGETHER 1.0 t_B ax_I g_I eh_I dh_I ax_E
+TOGETHER 1.0 t_B ax_I g_I eh_I dh_I ax_I r_E
+UP 1.0 ah_B p_E
+YES 1.0 y_B eh_I s_E
+YOU 1.0 y_B ax_E
+YOU 1.0 y_B uw_E
+!SIL 1.0 SIL_S
+!NOISE 1.0 NOISE_S

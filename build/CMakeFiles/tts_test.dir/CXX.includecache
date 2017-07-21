@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/louis/catkin_ws/src/ros_asr/src/speak_lib.h
+stdio.h
+-
+stddef.h
+-
+
+/home/louis/catkin_ws/src/ros_asr/src/tts_test.cpp
+string.h
+-
+vector
+-
+speak_lib.h
+/home/louis/catkin_ws/src/ros_asr/src/speak_lib.h
+malloc.h
+-
+

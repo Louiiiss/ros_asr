@@ -1,0 +1,4 @@
+--feature-type=mfcc
+--mfcc-config=/mnt/fastdata/ac1ssf/dnn/nnet2_online/nnet_ms_a_4_4_jobs_1_epoch_online/conf/mfcc.conf
+--ivector-extraction-config=/mnt/fastdata/ac1ssf/dnn/nnet2_online/nnet_ms_a_4_4_jobs_1_epoch_online/conf/ivector_extractor.conf
+--endpoint.silence-phones=1:2:3:4:5:6:7:8:9:10

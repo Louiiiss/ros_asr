@@ -1,0 +1,37 @@
+ARM	1.0	aa m
+ARMS	1.0	aa m z
+BOTH	1.0	b ow th
+CAN	1.0	k ae n
+CHECK	1.0	ch eh k
+CHECKING	1.0	ch eh k ih ng
+COMMANDS	1.0	k ax m aa n d z
+DOUBLE	1.0	d ah b l
+DOWN	1.0	d aw n
+FAREWELL	1.0	f ea w eh l
+GO	1.0	g ow
+HEAR	1.0	hh ia
+HEAR	1.0	hh ia r
+HELLO	1.0	hh ax l ow
+IN	1.0	ih n
+LATER	1.0	l ey t ax
+LATER	1.0	l ey t ax r
+LEFT	1.0	l eh f t
+LISTENING	1.0	l ih s n ih ng
+ME	1.0	m iy
+MOVE	1.0	m uw v
+MOVING	1.0	m uw v ih ng
+MY	1.0	m ay
+NO	1.0	n ow
+OUT	1.0	aw t
+RIGHT	1.0	r ay t
+SEE	1.0	s iy
+START	1.0	s t aa t
+STOP	1.0	s t oh p
+TOGETHER	1.0	t ax g eh dh ax
+TOGETHER	1.0	t ax g eh dh ax r
+UP	1.0	ah p
+YES	1.0	y eh s
+YOU	1.0	y ax
+YOU	1.0	y uw
+!SIL	1.0	SIL
+!NOISE	1.0	NOISE

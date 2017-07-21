@@ -1,0 +1,97 @@
+# online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.10 "ark,s,cs:extract-segments scp,p:data/dt/split10utt/10/wav.scp data/dt/split10utt/10/segments ark:- |" "ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.10.gz" 
+# Started at Fri Jun  2 18:06:59 BST 2017
+#
+online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.10 'ark,s,cs:extract-segments scp,p:data/dt/split10utt/10/wav.scp data/dt/split10utt/10/segments ark:- |' 'ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.10.gz' 
+extract-segments scp,p:data/dt/split10utt/10/wav.scp data/dt/split10utt/10/segments ark:- 
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 8270038 bytes in RIFF chunk, but after first data block there will be 36 + 8269920 bytes (we do not support reading multiple data chunks).
+423c0202 PAYMENTS CHARGED AS LATE AS APRIL FIFTEENTH WOULD MEET THE I. R. S. DEADLINE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0202
+423c0203 BUT CONSUMERS GENERALLY WOULD HAVE ANOTHER MONTH UNTIL CREDIT CARD BILLS CAME DUE AND CONSIDERABLY MORE TIME IF THEY WERE WILLING TO PAY INTEREST 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0203
+423c0204 NISSAN WAS ONE OF ONLY TWO JAPANESE COMPANIES TO REPORT HIGHER SALES FOR MARCH 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0204
+423c0205 THE OTHER WAS MITSUBISHI MOTORS CORPORATION'S U. S. SALES OPERATION 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0205
+423c0206 BOTH COMPANIES OFFER DEALERS CASH INCENTIVES DURING THE MONTH NISSAN THREE OF ITS BEST SELLING CARS AND MITSUBISHI ON ALL BUT ONE OF ITS PASSENGER CARS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0206
+423c0207 REPRESENTATIVES FOR THE TWO IMPORTERS SAID THE PROGRAMS ABANDONED AND NEW INCENTIVES HAVEN'T BEEN ANNOUNCED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0207
+423c0208 PEOPLE DON'T VOTE PRIMARILY ON THE BASIS OF ISSUES HE SAYS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0208
+423c0209 THEY VOTE ON A SENSE OF LEADERSHIP 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0209
+423c020a THEY WON INDEPENDENCE SOME OF US A SENSE OF DIRECTION AND PURPOSES WHO IDENTIFIES WITH THEM 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020a
+423c020b MY POSITION ON CONTRA AID ISN'T SOMETHING THAT'S GOING TO LOSE THE ELECTION 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020b
+423c020c PRIOR TO THE FILING THE COMPANY SAID IT HAD BEEN ATTEMPTING TO SETTLE ITS DEBT WITH THE CREDITORS AND TO GAIN ADDITIONAL BANK FINANCING TO CONTINUE GROWING OPERATIONS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020c
+423c020d ALL SETTLEMENT TALKS EAST AFTER THE FILING 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020d
+423c020e THE COMPANY SAID IT HASN'T BEEN ABLE TO OBTAIN THE BANK FINANCING FOR THE CONTINUING OPERATIONS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020e
+423c020f THE COMPANY HAS THIRTY FOUR TOY STORES THROUGHOUT THE MIDWEST AND SOUTHEAST THAT ARE STILL OPEN 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020f
+423c020g THE LATEST GOVERNMENT FIGURES THOUGH SHOW THE PRODUCER PRICE INDEX FELL ZERO POINT TWO PERCENT LAST MONTH 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020g
+423c020h AFTER EXCLUDING FOOD AND ENERGY PRICES WHICH ARE VOLATILE PRICES ROSE ZERO POINT THREE PERCENT LAST MONTH 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020h
+423c020i SEPARATELY THE GOVERNMENT SAID RETAIL SALES CLIMBED ZERO POINT SIX PERCENT IN FEBRUARY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020i
+423c020j EXCLUDING AUTOS SALES INCREASED ZERO POINT THREE PERCENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020j
+423c020k L. T. V. WILL PRESENT THE PLANT ALL THE MEMBERS OF ITS BANK AND CREDITOR COMMITTEES NEXT WEEK 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020k
+423c020l BUT THE PLAN WON'T BE FILED WITH THE BANKRUPTCY COURT UNTIL THE CREDITORS AND L. T. V. AGREE ON HOW THE DEBT WILL BE PAID 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020l
+423c020m THAT COULD TAKE YEARS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020m
+423c020n THE PRICE FOR THE CITICORP UNIT WAS ABOUT ONE HUNDRED MILLION DOLLARS THE SOURCES ADDED IN LINE WITH EARLIER ESTIMATES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020n
+423c020o U. S. F. AND G. HAD NO COMMENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020o
+423c020p CITICORP SAID AN ACCORD HASN'T AT THIS MOMENT THEY SIGN 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020p
+423c020q SOURCES SAY AT LEAST TWO BIDDERS HAVE <UNK> DOUBTS ABOUT CITICORP'S PERFORMANCE NUMBERS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020q
+423c020r A CITICORP PORTFOLIO MANAGER SAYS THE UNIT'S NEW OWNER COULD LOSE QUITE A FEW CURRENT MANAGERS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020r
+423c020s THEY OFFERED THE OPINION THAT ROBERT WAY THE UNIT'S CHIEF AND HALF A DOZEN OTHER SENIOR PEOPLE WILL GO WITH U. S. F. AND G. 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020s
+423c020t NEW OWNERS SOMETIMES OFFER ATTRACTIVE LONGER TERM CONTRACTS TO SENIOR PEOPLE HE SAID 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020t
+423c020u THE MINUTES DOUBT THAT THE VALUE OF THE DOLLAR ON FOREIGN EXCHANGE MARKETS COULD AFFECT THE TIMING OF POLICY CHANGES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020u
+423c020v TIGHTER CREDIT CONDITIONS ANY HIGHER INTEREST RATES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020v
+423c020w AND HIGHER INTEREST RATES ATTRACT FOREIGN INVESTORS PUSHING UP THE DOLLAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020w
+423c020x MANUFACTURERS NATIONAL CORPORATION RAISED THE QUARTERLY DIVIDEND ON ITS COMMON STOCK TO FORTY SIX CENTS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020x
+423c020y THE NEW DIVIDEND IS A FIFTEEN PERCENT INCREASE FROM THE PREVIOUS FORTY CENT DISTRIBUTION AND IS PAYABLE SEPTEMBER THIRTIETH TO STOCK OF RECORD AUGUST THIRTY FIRST 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020y
+423c020z OUR EARNINGS ARE GOOD AND WE WON THE PAYOUT RATE TO INCREASE OVER TIME A SPOKESWOMAN FOR THE DETROIT BANK HOLDING COMPANY SAID 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c020z
+423c0210 THE DIVIDEND WAS LAST RAISED IN OCTOBER NINETEEN EIGHTY SEVEN BY FOUR CENTS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0210
+423c0211 IT'S WHAT HE DOESN'T SAY THAT HAS RILED ONE FUND INVESTOR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0211
+423c0212 THE REPORT IT SEEMS FAILS TO MENTION ANYTHING ABOUT A NEW YORK'S CREDIT CONDITIONS WERE FACTORS TIED TO THAT MARKET 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0212
+423c0213 IT DOES TALK ABOUT THE GENERAL MUNICIPAL BOND MARKET THOUGH 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0213
+423c0214 THE FINANCE MINISTRY IS CONSIDERING DOING AWAY WITH THE RULE THAT REQUIRES INVESTORS WHO INTEND TO ACQUIRE CONTROLLING STAKES IN JAPANESE COMPANIES TO REPORT DIRECTLY TO THE FINANCE MINISTRY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0214
+423c0215 INSTEAD OF SECURITIES FUNDS MAY BE REQUIRED TO MAKE FILINGS OF LARGE SHARE PURCHASES MADE ON BEHALF OF CLIENTS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0215
+LOG (extract-segments:main():extract-segments.cc:194) Successfully processed 41 lines out of 41 in the segments file. 
+423c0216 SUCH A RULE CHANGE EFFECTIVELY WOULD REMOVE ONE TECHNICALITY THEY COULD SLOW A TAKEOVER ATTEMPT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 423c0216
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.63674 (note: this cannot be less than one.)
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 3.82895 seconds.
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 3.57154
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 9.33289 seconds for utterance '423c020s'
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:279) Decoded 41 utterances, 0 with errors.
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:281) Overall likelihood per frame was 0.35627 per frame over 24572 frames.
+# Accounting: time=406 threads=1
+# Ended (code 0) at Fri Jun  2 18:13:45 BST 2017, elapsed time 406 seconds

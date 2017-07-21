@@ -1,0 +1,38 @@
+ARM aa_B m_E
+ARMS aa_B m_I z_E
+BOTH b_B ow_I th_E
+CAN k_B ae_I n_E
+CHECK ch_B eh_I k_E
+CHECKING ch_B eh_I k_I ih_I ng_E
+COMMANDS k_B ax_I m_I aa_I n_I d_I z_E
+DOUBLE d_B ah_I b_I l_E
+DOWN d_B aw_I n_E
+FAREWELL f_B ea_I w_I eh_I l_E
+GO g_B ow_E
+HEAR hh_B ia_E
+HEAR hh_B ia_I r_E
+HELLO hh_B ax_I l_I ow_E
+IN ih_B n_E
+LATER l_B ey_I t_I ax_E
+LATER l_B ey_I t_I ax_I r_E
+LEFT l_B eh_I f_I t_E
+LISTENING l_B ih_I s_I n_I ih_I ng_E
+ME m_B iy_E
+MOVE m_B uw_I v_E
+MOVING m_B uw_I v_I ih_I ng_E
+MY m_B ay_E
+NO n_B ow_E
+OUT aw_B t_E
+RIGHT r_B ay_I t_E
+SEE s_B iy_E
+START s_B t_I aa_I t_E
+STOP s_B t_I oh_I p_E
+TOGETHER t_B ax_I g_I eh_I dh_I ax_E
+TOGETHER t_B ax_I g_I eh_I dh_I ax_I r_E
+UP ah_B p_E
+YES y_B eh_I s_E
+YOU y_B ax_E
+YOU y_B uw_E
+!SIL SIL_S
+!NOISE NOISE_S
+<eps> SIL

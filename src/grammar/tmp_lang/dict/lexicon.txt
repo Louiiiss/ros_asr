@@ -1,0 +1,37 @@
+ARM	aa m
+ARMS	aa m z
+BOTH	b ow th
+CAN	k ae n
+CHECK	ch eh k
+CHECKING	ch eh k ih ng
+COMMANDS	k ax m aa n d z
+DOUBLE	d ah b l
+DOWN	d aw n
+FAREWELL	f ea w eh l
+GO	g ow
+HEAR	hh ia
+HEAR	hh ia r
+HELLO	hh ax l ow
+IN	ih n
+LATER	l ey t ax
+LATER	l ey t ax r
+LEFT	l eh f t
+LISTENING	l ih s n ih ng
+ME	m iy
+MOVE	m uw v
+MOVING	m uw v ih ng
+MY	m ay
+NO	n ow
+OUT	aw t
+RIGHT	r ay t
+SEE	s iy
+START	s t aa t
+STOP	s t oh p
+TOGETHER	t ax g eh dh ax
+TOGETHER	t ax g eh dh ax r
+UP	ah p
+YES	y eh s
+YOU	y ax
+YOU	y uw
+!SIL	SIL
+!NOISE	NOISE

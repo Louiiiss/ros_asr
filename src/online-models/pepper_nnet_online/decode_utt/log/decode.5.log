@@ -1,0 +1,98 @@
+# online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.5 "ark,s,cs:extract-segments scp,p:data/dt/split10utt/5/wav.scp data/dt/split10utt/5/segments ark:- |" "ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.5.gz" 
+# Started at Fri Jun  2 18:06:59 BST 2017
+#
+online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.5 'ark,s,cs:extract-segments scp,p:data/dt/split10utt/5/wav.scp data/dt/split10utt/5/segments ark:- |' 'ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.5.gz' 
+extract-segments scp,p:data/dt/split10utt/5/wav.scp data/dt/split10utt/5/segments ark:- 
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 9671882 bytes in RIFF chunk, but after first data block there will be 36 + 9671764 bytes (we do not support reading multiple data chunks).
+053c0114 OUR CUSTOMERS WANT THEM 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0114
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 9054258 bytes in RIFF chunk, but after first data block there will be 36 + 9054140 bytes (we do not support reading multiple data chunks).
+053c0115 THE QUESTION IS WHETHER U. S. BANKS WILL BE ALLOWED TO COMPETE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 053c0115
+22gc0101 ROBINS SAID MR. WOLF FORTY THREE YEARS OLD IS LEAVING AFTER THIRTEEN YEARS WITH THE COMPANY FOR POSITION WITH THE TEXAS HEALTH CARE CONCERN 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0101
+22gc0102 MR. WOLF SAID THE NEW JOB WILL BE PRIMARILY BUSINESS ORIENTED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0102
+22gc0103 MR. WOLF DECLINED TO NAME HIS NEW EMPLOYER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0103
+22gc0104 THE CHIEF TRADER IN NEW YORK FOR TOKYO BASED BANK AGREES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0104
+22gc0105 EVEN IF JAPANESE INVESTORS DON'T SELL DOLLARS SOMEBODY ELSE WILL HE SAYS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0105
+22gc0106 THE TREND IS INEVITABLE UNLESS THE GOVERNMENT HAS AUTHORITY OVER THE WHOLE WORLD 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0106
+22gc0107 CONGRESS AND THE ADMINISTRATION HAD BEGUN TO TAKE THE RIGHT STEPS TO IMPROVE THE CREDIT BUDGET 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0107
+22gc0108 A PILOT LOAN SALE PROGRAM APPROVED LAST YEAR WOULD PROVIDE A VIRTUALLY RISK FREE TEST OF THIS APPROACH 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0108
+22gc0109 INITIAL WALL STREET ENTHUSIASM HAS SURPRISED EVEN PRIVATIZATION ADVOCATES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0109
+22gc010a THE FIRST SALES ARE EXPECTED TO GO TO MARKET SOMETIME THIS SUMMER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010a
+22gc010b THE OFFERING WILL COMPRISE SEVEN HUNDRED SIXTY SEVEN MILLION DOLLARS OF BONDS DUE NOVEMBER SECOND AND SIX HUNDRED THIRTY EIGHT MILLION DOLLARS OF BONDS MATURING NEXT FEBRUARY FIRST 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010b
+22gc010c ALL THE BONDS WILL BE DATED NEXT MONDAY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010c
+22gc010d INTEREST RATES WILL BE ANNOUNCED WEDNESDAY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010d
+22gc010e THE CENTRAL BANKS HAVE LITTLE CHANCE TO PROTECT THEMSELVES FROM THE DOLLAR'S FALL 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010e
+22gc010f ONE POSSIBLE THAT TRIED TO REDUCE THEIR U. S. CURRENCY PORTFOLIOS BY SELLING DOLLARS BACK INTO CALMER MARKETS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010f
+22gc010g TRADERS SAY THE BUNDESBANK DID THIS ONE THE DOLLAR STRENGTHENED IN LATE JULY AND EARLY AUGUST 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010g
+22gc010h THE BOSTON PROPERTY WAS FULLY OCCUPIED A BROKER CLOSE TO THE BUILDING SAID 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010h
+22gc010i IT WAS A DONE DEAL 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010i
+22gc010j WHILE OF A SUDDEN THEY CAME BACK AND SAID WE AREN'T BUYING IT DOES SHIELD 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010j
+22gc010k I SAID TO BE A PRICE AND THEY SAID NO 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010k
+22gc010l RECOGNITION SAID IT REORGANIZED ITS U. S. BUSINESS INTO THREE UNITS SALES AND SERVICE FEDERAL GOVERNMENT SALES AND SALES DEVELOPMENT THAT SPECIAL PRODUCTS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010l
+22gc010m THE COMPANY SAID THE THREE GROUPS WILL OPERATE AS A UNIT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010m
+22gc010n IT SAID IT PUT THREE KEY EXECUTIVES IN CHARGE OF THE GROUP'S TO FOCUS EFFORTS ON INCREASING SALES PRODUCTIVITY IN THE U. S. 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010n
+22gc010o THERE ARE TWO ISSUES TO CONSIDER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010o
+22gc010p FIRST WHAT WAS ADMIRAL POINDEXTER'S BELIEF ABOUT THE PRESIDENT'S POLICY OF HELPING THE NICARAGUAN DEMOCRATIC RESISTANCE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010p
+22gc010q SECOND DUE TO ADMIRAL POINDEXTER BELIEVE WHAT HE AND COLONEL NORTH WERE DOING WAS LEGAL 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010q
+22gc010r CERTAIN PRICES HAVE RISEN AT A BRISK PACE THROUGHOUT THIS DECADE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010r
+22gc010s HEALTH CARE INFLATION FOR INSTANCE HASN'T DROPPED BELOW SIX PERCENT ANNUALLY AND THE COST OF EDUCATION HAS RISEN EVEN FASTER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010s
+22gc010t BUT UNTIL RECENTLY INFLATION AND HEALTH EDUCATION AND OTHER SERVICES WAS OFFSET BY FLAT OR FALLING PRICES FOR MANY MANUFACTURED GOODS AND FARM COMMODITIES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010t
+22gc010u THE DECLINE IN THE DOLLAR AND CONTINUED STRENGTH IN THE ECONOMY HOWEVER ARE NOW ADDING DEMANDED QUOTAS AND THOSE PRICES TO RISE TOO 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010u
+22gc010v THE LOGIC APPARENTLY IS THAT WE'LL HAVE TO RAISE THEIR RATES TO DEFEND THE DOLLAR SAID PETER CANELO A PORTFOLIO STRATEGIST AT BEAR STEARNS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010v
+22gc010w BUT HE SAID THAT WOULD NORMALLY BE TRUE IF THE DOLLAR WEAK 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010w
+22gc010x SINCE THE U. S. CURRENCY HAS STRENGTHENED SHARPLY IN RECENT WEEKS HE SEES NO NEED FOR THE FEDERAL RESERVE TO RAISE INTEREST RATES TO PROTECT THE DOLLAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010x
+22gc010y MANY INSTITUTIONAL PLAYERS CONFESS TO HOLDING MORE CASH THAN USUAL 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010y
+22gc010z IN THE BULL MARKET OF NINETEEN EIGHTY SIX TO EIGHTY SEVEN CASH POSITIONS EXCEEDED FIVE PERCENT OF ASSETS WOULD HAVE HELD DOWN OVERALL RETURNS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc010z
+22gc0110 NOW MANY INSTITUTIONS SAY THEIR CASH LEVELS OR TEN PERCENT OR MORE THAN A FEW ARE AT THIRTY PERCENT OR MORE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0110
+22gc0111 YIELDS ON LONG TERM BONDS AFTER DROPPING AS LOW AS SEVEN POINT EIGHT THREE PERCENT EARLY LAST WEEK ARE BACKED UP ABOVE EIGHT PERCENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0111
+22gc0112 THE DISCOUNT RATE OF THE THREE MONTH TREASURY BILL FELL AS LOW AS SEVEN POINT SIX FOUR PERCENT THOUGHT WAS QUOTED LATE FRIDAY AT SEVEN POINT EIGHT SIX PERCENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0112
+LOG (extract-segments:main():extract-segments.cc:194) Successfully processed 41 lines out of 41 in the segments file. 
+22gc0113 RATES ARE EXPECTED TO REMAIN AT THOSE LEVELS OR MOVE A LITTLE HIGHER THIS WEEK AT THE TREASURY DEPARTMENT'S QUARTERLY AUCTION 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 22gc0113
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.64352 (note: this cannot be less than one.)
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 4.32856 seconds.
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 6.75587
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 9.83336 seconds for utterance '22gc010q'
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:279) Decoded 41 utterances, 0 with errors.
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:281) Overall likelihood per frame was 0.348362 per frame over 27496 frames.
+# Accounting: time=446 threads=1
+# Ended (code 0) at Fri Jun  2 18:14:25 BST 2017, elapsed time 446 seconds

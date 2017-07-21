@@ -1,0 +1,98 @@
+# online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.8 "ark,s,cs:extract-segments scp,p:data/dt/split10utt/8/wav.scp data/dt/split10utt/8/segments ark:- |" "ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.8.gz" 
+# Started at Fri Jun  2 18:06:59 BST 2017
+#
+online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/nnet_a_gpu_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/tri4a/graph/words.txt exp/nnet2_online/nnet_a_gpu_online/final.mdl exp/tri4a/graph/HCLG.fst ark:exp/nnet2_online/nnet_a_gpu_online/decode_utt/per_utt/utt2spk.8 'ark,s,cs:extract-segments scp,p:data/dt/split10utt/8/wav.scp data/dt/split10utt/8/segments ark:- |' 'ark:|gzip -c > exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.8.gz' 
+extract-segments scp,p:data/dt/split10utt/8/wav.scp data/dt/split10utt/8/segments ark:- 
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 9584696 bytes in RIFF chunk, but after first data block there will be 36 + 9584578 bytes (we do not support reading multiple data chunks).
+421c0202 THE OFFERING INCLUDES ZERO COUPON BONDS CALLED CAPITAL APPRECIATION BONDS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0202
+421c0203 YIELDS RANGE FROM FOUR POINT EIGHT PERCENT IN NINETEEN NINETY TO SEVEN POINT TWO PERCENT AND ZERO COUPON BONDS DUE IN TWO THOUSAND TWO 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0203
+421c0204 SO CLEARLY THE ADVOCATES OF SANCTIONS WITH A FOREIGN POLICY VICTORS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0204
+421c0205 AT LEAST IN THE U. S. THEY WERE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0205
+421c0206 WHAT ABOUT IN SOUTH AFRICA ITSELF 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0206
+421c0207 THAT'S ANOTHER STORY 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0207
+421c0208 FEW PEOPLE PREDICTED DIVIDEND CUT IN G. M. HOWEVER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0208
+421c0209 ONE INVESTMENT OFFICERS SAYS MR. SMITH WAS AS LAST WEEK BUT IT WOULD TAKE TO CUT THE DIVIDEND 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0209
+421c020a IT WOULD TAKE A NEW CHAIRMAN THE EXECUTIVE IS SAID TO HAVE REPLIED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020a
+421c020b SEPARATELY SHELL OIL COMPANY'S NET INCOME ROSE TWENTY ONE PERCENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020b
+421c020c OCCIDENTAL PETROLEUM CORPORATION REPORTED A TWENTY THREE PERCENT PROFIT JUMP THOUGH THE COMPANY WOULD HAVE HAD A LOSS WITHOUT THE ONE TIME ITEM 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020c
+421c020d PHILLIPS PETROLEUM CORPORATION'S PROFIT MEANWHILE PLUNGED SIXTY THREE PERCENT IN MID WEEK NATURAL GAS PRICES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020d
+421c020e AND PENNZOIL COMPANY'S NET INCOME TUMBLED SEVENTY ONE PERCENT LARGELY FROM A ONE TIME CHARGE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020e
+421c020f STOCKS REBOUNDED SHARPLY PUSHING THE DOW JONES INDUSTRIALS UP A RECORD SEVENTY FIVE POINT TWO THREE POINTS TO TWO THOUSAND FIVE HUNDRED SIXTY EIGHT POINT OH FIVE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020f
+421c020g THE RALLY FUELED BY A STRONGER DOLLAR AND BOND MARKET SNAPPED A FIVE DAY DECLINE IN WHICH THE INDUSTRIALS LOST OVER ONE HUNDRED TWENTY POINTS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020g
+421c020h THE DOLLAR ROSE ZERO POINT NINE PERCENT AGAINST THE YEN WHILE SOME LONG TERM TREASURY BONDS REACHED THE HIGHEST LEVEL IN A WEEK 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020h
+421c020i SOME LOCAL MANUFACTURERS HAVE AVOIDED THE TIGHT LABOR MARKET BY CONTRACTING WORK TO FACTORIES IN CHINA 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020i
+421c020j MANUFACTURERS ALSO ARE URGING THE GOVERNMENT TO EASE IMMIGRATION RULES SO THEY CAN IMPORT WORKERS FROM NEIGHBORING COUNTRIES 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020j
+421c020k AND MANY COMPANIES ARE IMPROVING EQUIPMENT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020k
+421c020l THE GOVERNMENT PREDICTS SPENDING FOR PLANT IN MACHINERY WILL GROW TWENTY FIVE PERCENT THIS YEAR UP FROM NINE POINT EIGHT PERCENT LAST YEAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020l
+421c020m THE FINANCIAL TIMES THIRTY SHARE INDEX CLOSED UP SEVEN POINT SIX POINTS AT ONE THOUSAND THREE HUNDRED NINETY EIGHT POINT SEVEN 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020m
+421c020n VOLUME WAS A VERY MODEST THREE HUNDRED FIFTY TWO POINT TWO MILLION SHARES DOWN FROM THREE HUNDRED SIXTY SIX POINT FOUR MILLION SHARES A DAY EARLIER 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020n
+421c020o THE ONE HUNDRED SHARE INDEX WAS UP TEN POINT OH POINTS AT ONE THOUSAND SEVEN HUNDRED FORTY THREE POINT FOUR AT THE CLOSE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020o
+421c020p ALL TOLD AMOCO SAID IT REPLACED ONE HUNDRED THIRTY PERCENT OF THE RESERVES THAT IT PRODUCE LAST YEAR RECOVERING FROM A WEAK RECORD IN NINETEEN EIGHTY SIX 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020p
+421c020q EXXON CORPORATION SAID EARLIER THIS WEEK THAT IT REPLACED ONE HUNDRED FOURTEEN PERCENT OF ITS OIL AND GAS PRODUCTION IN NINETEEN EIGHTY SEVEN 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020q
+421c020r TEXACO INCORPORATED WHICH HAS HAD ONE OF THE WORST RECORDS OF THE BIG INTEGRATED OIL COMPANIES HAVE REPLACED SEVENTY PERCENT OF ITS PRODUCTION LAST YEAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020r
+421c020s ALTHOUGH THAT IS UP FROM FORTY SIX PERCENT IN NINETEEN EIGHTY SIX TEXACO'S PRODUCTION ALSO FELL LAST YEAR 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020s
+421c020t ENERGY FUTURES PRICES ROSE FOLLOWING AN EXPLOSION AT A MAJOR U. S. REFINING PLANT 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020t
+421c020u STOCKS FELL IN NERVOUS TRADING WHILE BONDS WERE NARROWLY MIXED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020u
+421c020v THE DOLLAR STRENGTHENED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020v
+421c020w AN ISSUE OF TEN MILLION COMMON SHARES OF BETHLEHEM STEEL WAS PRICED AT NINETEEN DOLLARS A SHARE THROUGH SALOMON BROTHERS INCORPORATED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020w
+421c020x THE OFFERING SIZE WAS INCREASED FROM THE EIGHT MILLION SHARES ORIGINALLY PLANNED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020x
+421c020y IN NEW YORK STOCK EXCHANGE COMPOSITE TRADING YESTERDAY THE COMPANY'S STOCK ROSE SIXTY TWO POINT FIVE CENTS TO NINETEEN POINT SIX TWO FIVE DOLLARS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020y
+421c020z A CITICORP PORTFOLIO MANAGER SAYS THE UNIT'S NEW OWNER COULD LOSE QUITE A FEW CURRENT MANAGERS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c020z
+421c0210 BUT THE OFFER THE OPINION THAT ROBERT WAY THE UNIT'S CHIEF AND HALF A DOZEN OTHER SENIOR PEOPLE WILL GO WITH U. S. F. AND G. 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0210
+421c0211 NEW OWNERS SOMETIMES OFFER ATTRACTIVE LONGER TERM CONTRACTS TO SENIOR PEOPLE HE SAID 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0211
+421c0212 CRITICS SAY THE FEDERAL APPROACH WAS WRONG FROM THE START 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0212
+421c0213 THE HOSPITAL INDUSTRY IS GOVERNMENT FUNDED 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0213
+WARNING (extract-segments:Read():wave-reader.cc:230) Expected 7797570 bytes in RIFF chunk, but after first data block there will be 36 + 7797452 bytes (we do not support reading multiple data chunks).
+421c0214 IT SHOULD BE GOVERNMENT REGULATED SAYS DOCTOR WOLFE 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 421c0214
+422c0201 THE N. A. S. D. RELEASE SHORT INTEREST FIGURES FOR THE FIRST TIME NOVEMBER TWENTY FIFTH FOR ALL STOCKS CARRIED ON ITS NASDAQ AUTOMATED QUOTATION SYSTEM 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 422c0201
+LOG (extract-segments:main():extract-segments.cc:194) Successfully processed 41 lines out of 41 in the segments file. 
+422c0202 INVESTORS USE SHORT INTEREST FIGURES TO DETERMINE HOW MUCH SHORT SELLING IS GOING ON IN INDIVIDUAL STOCKS 
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:273) Decoded utterance 422c0202
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.46031 (note: this cannot be less than one.)
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 3.32507 seconds.
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 7.05631
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 8.96312 seconds for utterance '421c020i'
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:279) Decoded 41 utterances, 0 with errors.
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:281) Overall likelihood per frame was 0.373941 per frame over 29536 frames.
+# Accounting: time=424 threads=1
+# Ended (code 0) at Fri Jun  2 18:14:03 BST 2017, elapsed time 424 seconds

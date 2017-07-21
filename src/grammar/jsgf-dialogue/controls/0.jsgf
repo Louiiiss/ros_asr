@@ -1,0 +1,29 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL
+| <hello> 
+| <query>
+| <command>
+| <default>
+| <save>
+| <play>
+| <stop>;
+
+
+<unit> = ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE; 
+<teen> = ELEVEN | TWELVE | THIRTEEN | FOURTEEN | FIFTEEN | SIXTEEN | SEVENTEEN | EIGHTEEN | NINETEEN;
+<teenty> = TWENTY | THIRTY | FORTY | FIFTY | SIXTY | SEVENTY | EIGHTY | NINETY;
+<ten> = TEN;
+<hundred> = [ONE] HUNDRED;
+<zero> = ZERO | NOUGHT;
+<num> = <zero> | <hundred> | <teen> | <ten> | [<teenty>] [<unit>];
+<joint> = ELBOW | SHOULDER ROLL | SHOULDER YAW | WRIST | GRASP;
+<hello> = HELLO ZEENO ARE YOU READY TO START;
+<command> = MOVE <joint> TO <num>;
+<query> = WHAT IS YOUR <joint> POSITION; 
+<default> = MOVE TO DEFAULT POSITION;
+<save> = SAVE CURRENT POSITION;
+<play> = PLAY BACK ANIMATION;
+<stop> = ZEENO STOP LISTENING;
+
+

@@ -1,0 +1,40 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL | <positive> | <neutral> | <negative>;
+
+<thank_you> = THANK YOU;
+<so_nice> = YOU ARE [SO] (NICE | FUNNY | CHARMING);
+<flattery> = YOU FLATTER ME | THAT IS FLATTERY | YOU [WILL | WON'T] GET FAR WITH [THAT] [FLATTERY];
+<want> = WHAT DO YOU WANT FROM ME;
+<good_looking> = YOU LOOK [PRETTY] GOOD YOURSELF;
+<yes> = YES | YEAH;
+<good> = [VERY] GOOD;
+<i_am_happy> = I AM HAPPY;
+<that_was> = THAT (WAS | IS) [SO | VERY]  ( NICE | FUNNY | CHARMING);
+
+<positive> = <yes> | <thank_you> | <so_nice> | <flattery> | <want> | <good_looking> | <good> | <i_am_happy> | <that_was>;
+
+<should_i> = SHOULD I SAY SOMETHING;
+<can_he_understand> = CAN (IT | HE) UNDERSTAND ME;
+<can_he_hear> = CAN (IT | HE) HEAR ME;
+<can_i> = CAN I SPEAK TO (IT|HIM);
+<hello> = HELLO;
+<ready> = HELLO ZENO ARE YOU READY TO START;
+
+<neutral> = <should_i> | <can_he_understand> | <can_he_hear> | <can_i> | <hello> | <ready>;
+
+<im_not> = I'M NOT A [MAN|WOMAN];
+<wrong> = YOU GOT [IT|THAT] WRONG;
+<goodbye> = GOODBYE;
+<believe> = I CAN'T BELIEVE YOU SAID THAT;
+<come_on> = [OH] COME ON;
+<oh_god> = OH [MY] GOD;
+<no> = NO | NOPE;
+<i_hate_you> = I HATE YOU;
+<digit> = ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE;
+<umpty> = TWENTY | THIRTY | FORTY | FIFTY | SIXTY | SEVENTY | EIGHTY | NINETY;
+<teens> = ELEVEN | TWELVE | THIRTEEN | FOURTEEN | FIFTEEN | SIXTEEN | SEVENTEEN | EIGHTEEN | NINETEEN;
+<number> = <digit> | <teens> | TEN | <umpty> [<digit>];
+<i_am_not_number> = (I'M | I AM) NOT <number>; 
+
+<negative> = <no> | <im_not> | <wrong> | <goodbye> | <believe> | <come_on> | <oh_god> | <i_hate_you> | <number> | <i_am_not_number>;

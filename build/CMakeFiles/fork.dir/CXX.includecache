@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/louis/catkin_ws/src/ros_asr/src/fork.cpp
+string
+-
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+

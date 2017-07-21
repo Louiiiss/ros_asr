@@ -1,0 +1,40 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <robot>
+| <move>
+| <describe>;
+
+<robot> = ZENO
+| NAO
+| SATELLITES
+| PIONEER
+| KUKA EVA [ARM]
+| KUKA YOU BOTS
+| ICUB
+| QUADCOPTERS
+| KILLERBOTS
+| AIR TABLE
+| MAIN DOOR
+| WORKSHOP;
+
+<move> = GO TO THE <robot>
+| SHOW ME THE <robot>
+| WHERE IS THE <robot>
+| CAN I (SEE | VIEW) THE <robot>
+| SHALL WE (MOVE | GO) TO THE <robot>
+| LET'S GO TO THE <robot>
+| OK HOW ABOUT THE <robot>
+| LET'S SEE THE <robot>;
+
+<describe> = WHAT ARE IT'S CAPABILITIES
+| WHAT CAN THE <robot> DO
+| TELL ME ABOUT THE <robot>
+| WHAT ARE YOU DOING WITH THE <robot>
+| WHAT RESEARCH IS GOING ON WITH THE <robot>
+| GIVE ME A DESCRIPTION OF THE <robot>
+| TELL US MORE ABOUT THE <robot>
+| TELL ME ABOUT THIS
+| GO ON
+| OK I'M READY;
+

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/louis/catkin_ws/src/ros_asr/src/master.cpp
+string
+-
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+pthread.h
+-
+unistd.h
+-
+iterator
+-
+sys/time.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+fcntl.h
+-
+termios.h
+-
+

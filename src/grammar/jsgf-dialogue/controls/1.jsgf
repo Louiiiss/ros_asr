@@ -1,0 +1,12 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL
+| <hello> 
+| <store>
+| <bad>;
+
+
+<hello> = HELLO ZEENO ARE YOU READY TO START;
+<store> = SAVE CURRENT POSITION;
+<bad> = THAT'S A BAD POSITION;
+

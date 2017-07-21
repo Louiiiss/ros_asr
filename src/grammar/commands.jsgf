@@ -1,0 +1,31 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <greeting>
+| <parting>
+| <start>
+| <stop>
+| <dc_on>
+| <dc_off>
+| <yes>
+| <no>
+| <movecmd>
+| <dual_on>
+| <dual_off>;
+
+<greeting> = HELLO CAN YOU HEAR ME;
+<parting> = FAREWELL SEE YOU LATER;
+<start> = START LISTENING;
+<stop> = STOP LISTENING;
+<dc_on> = DOUBLE CHECK MY COMMANDS;
+<dc_off> = STOP DOUBLE CHECKING COMMANDS;
+<yes> = YES;
+<no> = NO;
+<dual_on> = MOVE BOTH ARMS TOGETHER;
+<dual_off> = STOP MOVING BOTH ARMS;
+
+<movecmd> = <pre_move> <move> | <pre_move> <arm> <move> | <arm> <move> | <move> | STOP;
+<pre_move> = GO | MOVE;
+<arm> = LEFT ARM | RIGHT ARM;
+<move> = UP | DOWN | LEFT | RIGHT| IN | OUT;
+

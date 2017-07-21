@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+    <node name="ee_command_solver" pkg="ros_asr"   type="ee_command_solver.py" output="screen"/>
+    <node name="command_subscriber" pkg="ros_asr"    type="command_subscriber.py" output="screen"/>
+    <node name="kaldi_relay" pkg="ros_asr" type="kaldi_relay" output="screen" launch-prefix="gnome-terminal -e"/>
+    <node name="ee_voice_control" pkg="ros_asr" type="ee_voice_control.py" output="screen" launch-prefix="gnome-terminal -e"/>
+
+    <node name="ee_trajectory_client" pkg="ros_asr" type="ee_trajectory_client.py" output="screen"/>
+
+</launch>

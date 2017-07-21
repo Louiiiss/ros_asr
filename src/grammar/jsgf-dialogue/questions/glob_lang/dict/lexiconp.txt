@@ -1,0 +1,28 @@
+A	1.0	ah
+A	1.0	ax
+A	1.0	ey
+BOOK	1.0	b uh k
+FAST	1.0	f aa s t
+FOOTBALL	1.0	f uh t b ao l
+FOR	1.0	f ao
+FOR	1.0	f ao r
+FOR	1.0	f ax
+FOR	1.0	f ax r
+FOR	1.0	f er
+JOGGING	1.0	jh oh g ih ng
+MINUTES	1.0	m ih n ih t s
+PLAYING	1.0	p l ey ih ng
+READING	1.0	r eh d ih ng
+READING	1.0	r iy d ih ng
+SITTING	1.0	s ih t ih ng
+SKIPPING	1.0	s k ih p ih ng
+STILL	1.0	s t ih l
+SWIMMING	1.0	s w ih m ih ng
+TELEVISION	1.0	t eh l ih v ih zh ax n
+TELEVISION	1.0	t eh l ih v ih zh n
+TEN	1.0	t eh n
+TWENTY	1.0	t w eh n t iy
+WALKING	1.0	w ao k ih ng
+WATCHING	1.0	w oh ch ih ng
+!SIL	1.0	SIL
+!NOISE	1.0	NOISE

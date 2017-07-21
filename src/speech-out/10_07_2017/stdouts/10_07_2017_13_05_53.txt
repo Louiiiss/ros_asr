@@ -1,0 +1,112 @@
+10-07-2017-13:05:53:892 read pipe 0
+10-07-2017-13:05:53:892 Starting SF controller main
+config read_pipe 0
+10-07-2017-13:05:53:892 NNET config 
+Nnet feature config mfcc
+basic_src/new-sf-controller --do-endpointing=true --config=online-models/nnet_noisy_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=online-models/graph-commands-gmm/words.txt online-models/nnet_noisy_online/final.mdl online-models/graph-commands-gmm/HCLG.fst scp:wav.scp 'ark:|gzip -c > online-models/nnet_noisy_online/lat.1.gz' 
+1 online-models/nnet_noisy_online/final.mdl
+2 online-models/graph-commands-gmm/HCLG.fst
+3 scp:wav.scp
+4 ark:|gzip -c > online-models/nnet_noisy_online/lat.1.gz
+LOG (new-sf-controller:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
+LOG (new-sf-controller:ComputeDerivedVars():ivector-extractor.cc:204) Done.
+10-07-2017-13:05:54:057 Successfully opened out files in speech-out
+SFNnetThreadedDecoder constructor
+hello_i_am_ready
+About to make feature pipeline
+Made pipeline
+ALSA lib pcm_dsnoop.c:606:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1029:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2266:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2266:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2266:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_dmix.c:968:(snd_pcm_dmix_open) The dmix plugin supports only playback stream
+ALSA lib pcm_dmix.c:1029:(snd_pcm_dmix_open) unable to open slave
+Freq 16000
+10-07-2017-13:05:54:141 Making new SingleUttDecoder
+10-07-2017-13:05:54:142 SingleUtterance finished
+STOP 
+10-07-2017-13:05:57:400 STOP 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.128199 seconds.
+10-07-2017-13:05:57:400 Making new SingleUttDecoder
+10-07-2017-13:05:57:401 SingleUtterance finished
+NO 
+10-07-2017-13:06:00:755 NO 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.320277 seconds.
+10-07-2017-13:06:00:755 Making new SingleUttDecoder
+10-07-2017-13:06:00:756 SingleUtterance finished
+!SIL 
+10-07-2017-13:06:04:003 !SIL 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.399804 seconds.
+10-07-2017-13:06:04:003 Making new SingleUttDecoder
+10-07-2017-13:06:04:004 SingleUtterance finished
+MOVE !SIL 
+10-07-2017-13:06:08:869 MOVE !SIL 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.257407 seconds.
+10-07-2017-13:06:08:869 Making new SingleUttDecoder
+10-07-2017-13:06:08:870 SingleUtterance finished
+MOVE FORWARD 
+10-07-2017-13:06:11:418 MOVE FORWARD 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.0353391 seconds.
+10-07-2017-13:06:11:430 Making new SingleUttDecoder
+10-07-2017-13:06:11:432 SingleUtterance finished
+BEAR RIGHT ONE !SIL 
+10-07-2017-13:06:12:724 BEAR RIGHT ONE !SIL 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.0949981 seconds.
+10-07-2017-13:06:12:724 Making new SingleUttDecoder
+10-07-2017-13:06:12:725 SingleUtterance finished
+STOP 
+10-07-2017-13:06:14:064 STOP 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.0178771 seconds.
+10-07-2017-13:06:14:082 Making new SingleUttDecoder
+10-07-2017-13:06:14:083 SingleUtterance finished
+MOVE FORWARD 
+10-07-2017-13:06:15:563 MOVE FORWARD 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.034169 seconds.
+10-07-2017-13:06:15:563 Making new SingleUttDecoder
+10-07-2017-13:06:15:564 SingleUtterance finished
+GO STRAIGHT ON 
+10-07-2017-13:06:16:381 GO STRAIGHT ON 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.089618 seconds.
+10-07-2017-13:06:16:382 Making new SingleUttDecoder
+10-07-2017-13:06:16:382 SingleUtterance finished
+STOP 
+10-07-2017-13:06:17:861 STOP 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.030946 seconds.
+10-07-2017-13:06:17:871 Making new SingleUttDecoder
+10-07-2017-13:06:17:873 SingleUtterance finished
+MOVE FORWARD 
+10-07-2017-13:06:20:428 MOVE FORWARD 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.108922 seconds.
+10-07-2017-13:06:20:428 Making new SingleUttDecoder
+10-07-2017-13:06:20:429 SingleUtterance finished
+BEAR RIGHT ONE !SIL 
+10-07-2017-13:06:21:594 BEAR RIGHT ONE !SIL 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.270495 seconds.
+10-07-2017-13:06:21:595 Making new SingleUttDecoder
+10-07-2017-13:06:21:596 SingleUtterance finished
+STOP 
+10-07-2017-13:06:22:315 STOP 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.0278051 seconds.
+10-07-2017-13:06:22:321 Making new SingleUttDecoder
+10-07-2017-13:06:22:322 SingleUtterance finished
+MOVE FORWARD 
+10-07-2017-13:06:25:194 MOVE FORWARD 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.0740941 seconds.
+10-07-2017-13:06:25:194 Making new SingleUttDecoder
+10-07-2017-13:06:25:195 SingleUtterance finished
+!SIL 
+10-07-2017-13:06:26:470 !SIL 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.350002 seconds.
+10-07-2017-13:06:26:471 Making new SingleUttDecoder
+10-07-2017-13:06:26:472 SingleUtterance finished
+!SIL 
+10-07-2017-13:06:28:679 !SIL 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.218369 seconds.
+10-07-2017-13:06:28:680 Making new SingleUttDecoder
+10-07-2017-13:06:28:680 SingleUtterance finished
+NO 
+10-07-2017-13:06:31:983 NO 
+LOG (new-sf-controller:finishDecoding():sf-nnet-threaded-decoder.cc:102) Adding the various end-of-utterance tasks took the total latency to 0.370906 seconds.
+10-07-2017-13:06:31:984 Making new SingleUttDecoder
+10-07-2017-13:06:31:985 SingleUtterance finished

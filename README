@@ -1,0 +1,58 @@
+Install ROS (indigo or kinetic)
+Create a catkin_directory 
+catkin_make
+
+Baxter installation:	
+http://sdk.rethinkrobotics.com/wiki/Simulator_Installation
+*you may have to enable execution of baxter.sh to run simulation*
+	- run "chmod u+x baxter.sh"
+*edit ROS Distro, IP and baxter serial number in shell script in order to run physical*
+
+make sure you've sourced the workspace
+To run the base demo, run
+roscore
+roslaunch baxter_gazebo baxter_world.launch
+
+REF: https://github.com/lyh458/birl_baxter/tree/master/demos/baxter_end_effector_control
+
+download KALDI from:
+http://staffwww.dcs.shef.ac.uk/people/S.Fernando/spodiro/basic_spodiro.html
+
+Enter KALDI and run install instructions 
+
+Enter ros_asr/src:
+	Edit path.sh, so that KALDI_ROOT has the correct path to your kaldi installation
+	Run ./configure.sh
+	Run sudo ./install_packages.sh
+	Run ./install_portaudio.sh
+	cd basic_src
+	make
+
+Test with ./asr.sh 0 
+(you may have to run "chmod u+x asr.sh")
+Try saying "move up", the console should print out MOVE UP if it's working correctly
+
+
+Install these two:
+sudo apt-get install ros-kinetic-trac-ik
+
+http://sdk.rethinkrobotics.com/wiki/Baxter_PyKDL
+
+
+THEN, two kinda tricky bits:
+in asr.sh, edit the isolated line preceeded by CHANGET THIS.
+This needs to be the path to the folder that file is located in
+
+Second, in kaldi_relay.cpp, change the path on line 32, to this same folder
+
+
+FINALLY, return to the workstation root (ie, catkin_ws, or ros_ws etc.)
+Run catkin_make
+
+To run the demo, 
+SIMULATION:
+	roscore
+	roslaunch baxter_gazebo baxter_world.launch
+	roslaunch ros_asr end_effector_voice_control.launch
+
+

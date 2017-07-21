@@ -1,0 +1,30 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <energy_query> 
+| <duration_query> 
+| <average_power> 
+| <robot_power> 
+| <food_query>
+| <twenty_query> 
+| <hello> 
+| <testing> 
+| <yes> 
+| <no> 
+| <yes_no>
+| <thank_you>; 
+
+<energy_query> = HOW MUCH ENERGY DID I USE IN (TOTAL | SESSION ONE | SESSION TWO | SESSION THREE);
+<duration_query> = HOW LONG DID I EXERCISE FOR IN TOTAL;
+<average_power> = (HOW DO I FIND | WHAT WAS) MY AVERAGE POWER USAGE;
+<robot_power> = WHAT IS THE ROBOT'S AVERAGE POWER USAGE;
+<food> = AN APPLE | A BURGER FRIES AND [A] DRINK | FISH AND CHIPS | A SALAD;
+<food_query> = HOW MUCH ENERGY [IS] IN <food>;
+<twenty_query> = IF I EXERCISED AT THE SAME RATE FOR TWENTY MINUTES THEN HOW MUCH ENERGY WOULD I USE;
+<hello> = HELLO ZENO ARE YOU READY TO START;
+<testing> = TESTING A B C;
+<yes> = (YES | YEAH) [THAT'S RIGHT];
+<no> = NO [(THAT'S NOT RIGHT | THAT'S WRONG)];
+<yes_no> = <yes> | <no>;
+<thank_you> = THANK YOU ZENO GOODBYE;
+

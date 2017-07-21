@@ -1,0 +1,832 @@
+# lattice-scale --inv-acoustic-scale=7 "ark:gunzip -c exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri4a/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri4a/graph/words.txt | local/wer_hyp_filter > exp/nnet2_online/nnet_a_gpu_online/decode_utt/scoring_kaldi/penalty_0.5/7.txt 
+# Started at Fri Jun  2 18:14:37 BST 2017
+#
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=7 'ark:gunzip -c exp/nnet2_online/nnet_a_gpu_online/decode_utt/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=exp/tri4a/graph/words.txt ark:- ark,t:- 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0101, best cost 158.414 + -652.234 = -493.82 over 761 frames.
+050c0101 THE LAST MONTH OVERALL GOODS PRODUCING EMPLOYMENT FELL SIXTY EIGHT THOUSAND AFTER A THIRTY TWO THOUSAND JOB RISE IN FEBRUARY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0102, best cost 145.319 + -687.701 = -542.382 over 858 frames.
+050c0102 THE DEPARTMENT SAID THE DECLINE IN FACTORY JOBS WAS CONCENTRATED IN MOTOR VEHICLES AND ELECTRICAL AND ELECTRONIC EQUIPMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0103, best cost 142.558 + -581.086 = -438.528 over 716 frames.
+050c0103 CONSTRUCTION EMPLOYMENT FELL FORTY SEVEN THOUSAND AFTER FIFTEEN THOUSAND JOB DECLINE THE MONTH FOR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0104, best cost 165.303 + -705.008 = -539.705 over 897 frames.
+050c0104 MINING EMPLOYMENT WHICH INCLUDES THE OIL AND GAS EXTRACTION INDUSTRY ROSE THREE THOUSAND AFTER ONE THOUSAND JOB RISE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0105, best cost 142.559 + -568.038 = -425.478 over 734 frames.
+050c0105 IN A STATEMENT R. L. R. SAID THE BROKERAGE UNIT GENERATED SUBSTANTIALLY ALL OF ITS REVENUE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0106, best cost 87.9535 + -408.059 = -320.106 over 534 frames.
+050c0106 IT SAID IT IS NEGOTIATING THE SALE OF CERTAIN ASSETS OF THE BROKERAGE UNIT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0107, best cost 169.857 + -727.762 = -557.906 over 936 frames.
+050c0107 THE PARENT COMPANY ADDED THAT IT MAY SEEK OTHER BUSINESS OPPORTUNITIES SUBJECT TO THE AVAILABILITY OF FINANCING WHICH MAY NOT BE AVAILABLE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0108, best cost 101.123 + -504.372 = -403.249 over 608 frames.
+050c0108 U. S. CAR SALES FELL TEN POINT ONE PERCENT IN EARLY NOVEMBER FROM A YEAR AGO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0109, best cost 134.036 + -524.602 = -390.566 over 638 frames.
+050c0109 THOUGH THERE WAS LITTLE EVIDENCE THE STOCK MARKET PLUNGE HAD AFFECTED SALES THE OUTLOOK REMAINS UNCERTAIN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010a, best cost 70.0836 + -264.189 = -194.106 over 361 frames.
+050c010a CHRYSLER REDUCED SOME PRICES ON FRIDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010b, best cost 153.148 + -628.981 = -475.833 over 763 frames.
+050c010b L. T. V. THE NATION'S NUMBER TWO STEELMAKER SAID THE SALE IS AMONG A NUMBER OF OPTIONS UNDER STUDY FOR THE PLANT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010c, best cost 99.182 + -430.781 = -331.599 over 542 frames.
+050c010c OTHERS INCLUDE A JOINT VENTURE WITH ANOTHER COMPANY OR AN EMPLOYEE BUYOUT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010d, best cost 103.197 + -450.955 = -347.758 over 639 frames.
+050c010d L. T. V. SAID IT RETAINED SHEARSON LEHMAN BROTHERS INCORPORATED TO HELP WITH THE STEADY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010e, best cost 117.006 + -643.128 = -526.122 over 763 frames.
+050c010e AUTO SALES ROSE TWO POINT FOUR PERCENT IN DECEMBER AFTER DECLINING ZERO POINT SEVEN PERCENT IN NOVEMBER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010f, best cost 90.7679 + -517.163 = -426.395 over 613 frames.
+050c010f FURNITURE SALES FELL ZERO POINT FIVE PERCENT AFTER RISING ZERO POINT TWO PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010g, best cost 113.824 + -554.434 = -440.61 over 681 frames.
+050c010g SALES OF BUILDING MATERIALS INCREASED ONE POINT THREE PERCENT AFTER A ONE POINT ONE PERCENT DROP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010h, best cost 180.349 + -864.921 = -684.572 over 1024 frames.
+050c010h OVERALL SALES OF DURABLE GOODS INTENDED TO LAST THREE YEARS OR MORE CLIMBED ONE POINT SEVEN PERCENT AFTER A ZERO POINT TWO PERCENT RISE IN NOVEMBER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010i, best cost 72.0667 + -377.549 = -305.482 over 547 frames.
+050c010i STOCK PRICES ALSO WERE MIXED IN PARIS ZURICH AND STOCKHOLM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010j, best cost 73.0601 + -365.535 = -292.474 over 470 frames.
+050c010j STOCKS ROSE IN AMSTERDAM AND WERE LOWER IN BRUSSELS AND MILAN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010k, best cost 134.715 + -535.805 = -401.09 over 710 frames.
+050c010k MOST EUROPEAN TRADERS WERE REPORTEDLY STAYING OUT OF ACTION UNTIL THE TRADE FIGURES ARE RELEASED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010l, best cost 132.865 + -518.115 = -385.25 over 612 frames.
+050c010l THE BELL COMPANIES ARE HOPING ELECTRONIC MAIL AND VOICE MAIL WILL BECOME A MAJOR REVENUE SOURCE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010m, best cost 225.55 + -1011.99 = -786.44 over 1194 frames.
+050c010m LAKE RESOURCES CORPORATION ESTIMATES THE ELECTRONIC MAIL MARKET AT ABOUT TWO HUNDRED NINETY SIX MILLION DOLLARS A YEAR AND VOICE MAIL AT ABOUT SEVENTY SIX MILLION DOLLARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010n, best cost 125.057 + -524.741 = -399.684 over 638 frames.
+050c010n INDUSTRY ANALYSTS EXPECT THE MARKET TO DOUBLE WHEN IT BECOMES AVAILABLE TO RESIDENTIAL CUSTOMERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010o, best cost 95.8911 + -521.833 = -425.941 over 649 frames.
+050c010o SUPERIOR INDUSTRIES INTERNATIONAL FELL THREE AND ONE QUARTER TO FIFTEEN AND ONE HALF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010p, best cost 73.9874 + -373.606 = -299.618 over 460 frames.
+050c010p THE COMPANY SAID IT ENDED TALKS ON A POSSIBLE BUSINESS COMBINATION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010q, best cost 28.9056 + -145.125 = -116.219 over 233 frames.
+050c010q IT DIDN'T ELABORATE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010r, best cost 183.988 + -749.849 = -565.862 over 861 frames.
+050c010r THE MANAGEMENT COMMITTEES PLAN FOR THE NEW GOVERNING BODY CAN TAKE EFFECT IF APPROVED BY SEVENTY FIVE PERCENT OF THE EXCHANGE'S MEMBERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010s, best cost 108.37 + -377.595 = -269.225 over 494 frames.
+050c010s A MEMBERSHIP MEETING HAS BEEN CALLED FOR JULY TWENTIETH TO VOTE COMMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010t, best cost 141.392 + -556.981 = -415.588 over 687 frames.
+050c010t BECAUSE MOST MEMBERS ARE INDIVIDUAL BROKERS THE COMMITTEE COULD HAVE SOME DIFFICULTY WINNING APPROVAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010u, best cost 202.912 + -827.203 = -624.291 over 1035 frames.
+050c010u IN JANUARY THE BEAVERTON OREGON TWENTY MAKER DISCLOSED TALKS CONCERNING ITS POSSIBLE TAKEOVER BY A THIRD PARTY A PROPOSED A FRIENDLY TRANSACTION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010v, best cost 142.225 + -538.175 = -395.95 over 696 frames.
+050c010v BUT THE DISCUSSIONS SUBSEQUENTLY ENDED BECAUSE THE TWO SIDES COULDN'T AGREE ON FINANCIAL AND OTHER TERMS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010w, best cost 68.2453 + -338.366 = -270.121 over 453 frames.
+050c010w AT THE TIME THE COMPANY SAID IT WOULD EXPLORE OTHER OPTIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010x, best cost 45.7206 + -212.882 = -167.162 over 309 frames.
+050c010x A THIRD PARTY WASN'T IDENTIFIED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010y, best cost 231.893 + -958.823 = -726.93 over 1243 frames.
+050c010y MOREOVER B. C. C. I. OFFICIALS AND INDUSTRY ANALYSTS STRESSED THAT AS MUCH AS SEVENTY FIVE PERCENT OF THE BANK'S DEPOSIT BASE IS MADE UP OF RETAIL DEPOSITS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c010z, best cost 128.65 + -479.93 = -351.28 over 604 frames.
+050c010z THESE GENERALLY REACTED MUCH LESS THAN LARGE DEPOSITORS TO REPORTS OF THE SCANDAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0110, best cost 194.009 + -667.23 = -473.221 over 893 frames.
+050c0110 IN ADDITION THE BANK HAS ALWAYS PURSUED A POLICY OF KEEPING ITS BALANCE SHEET RELATIVELY THAT WOULD INSIDERS AND COMPETITORS SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0111, best cost 174.935 + -565.293 = -390.358 over 710 frames.
+050c0111 YET WHEN WE DISCUSSED SOCIAL POLICY WE TALK AS OF MONEY THE POVERTY RATE WAS ALL THAT MATTERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0112, best cost 142.497 + -419.034 = -276.538 over 501 frames.
+050c0112 IT IS THE GENERIC STAND IN FOR THE SOCIAL PROBLEMS OF OUR AGE MR. MURRAY RIGHTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0113, best cost 180.575 + -535.947 = -355.373 over 670 frames.
+050c0113 SOLVE THE RIDDLE OF POVERTY WE HAVE OFTEN SEEM TO HOPE AND THE REST OF OUR PROBLEMS WILL SOLVE THEMSELVES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0114, best cost 140.07 + -488.056 = -347.986 over 658 frames.
+050c0114 I JUST FELT IT WAS AN APPROPRIATE TIME TO PURSUE BUSINESS IDEAS AND MAIL MR. SAUNDERS SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0115, best cost 169.486 + -577.002 = -407.516 over 748 frames.
+050c0115 I'M NOT GOING TO RETIRE BUT AMONG LIKELY TO GO TO ANY LARGE INVESTMENT BANKING FIRM THE RIVALS MORGAN STANLEY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0202, best cost 143.985 + -411.659 = -267.673 over 529 frames.
+423c0202 PAYMENTS CHARGED AS LATE AS APRIL FIFTEEN TWENTY D. I. R. S. DEADLINE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0203, best cost 206.08 + -695.817 = -489.737 over 872 frames.
+423c0203 BUT CONSUMERS GENERALLY WOULD HAVE ANOTHER MONTH UNTIL CREDIT CARD BILLS CAME DUE AND CONSIDERABLY MORE TIME IF THEY WERE WILLING TO PAY INTEREST 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0204, best cost 116.937 + -449.888 = -332.952 over 534 frames.
+423c0204 NISSAN WAS ONE OF ONLY TWO JAPANESE COMPANIES TO REPORT HIGHER SALES FOR MARCH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0205, best cost 89.639 + -430.701 = -341.062 over 511 frames.
+423c0205 THE OTHER WAS MITSUBISHI MOTORS CORPORATION'S U. S. SALES OPERATION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0206, best cost 248.133 + -830.201 = -582.068 over 1034 frames.
+423c0206 BOTH COMPANIES OFFER DEALERS CASH INCENTIVES DURING THE MONTH NISSAN ON THREE OF ITS BEST SELLING CARS AND MITSUBISHI ON ALL BUT ONE OF ITS PASSENGER CARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0207, best cost 160.288 + -498.561 = -338.273 over 619 frames.
+423c0207 REPRESENTATIVES FOR THE TOOL IMPORTERS SAID THE PROGRAMS ABANDONED AND NEW INCENTIVES HAVEN'T BEEN ANNOUNCED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0208, best cost 91.3482 + -324.762 = -233.414 over 389 frames.
+423c0208 PEOPLE DON'T VOTE PRIMARILY ON THE BASIS OF ISSUES HE SAYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0209, best cost 60.9565 + -199.012 = -138.056 over 286 frames.
+423c0209 THEY VOTE ON A SENSE OF LEADERSHIP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020a, best cost 153.373 + -413.211 = -259.839 over 572 frames.
+423c020a THEY WON INDEPENDENCE SOMEONE U. S. A SENSE OF DIRECTION AND PURPOSE AND WHO IDENTIFIES WITH THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020b, best cost 106.14 + -302.274 = -196.135 over 461 frames.
+423c020b MY POSITION ON CONTRA AID ISN'T SOMETHING THAT'S GOING TO LOSE THE ELECTION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020c, best cost 205.856 + -797.072 = -591.215 over 918 frames.
+423c020c PRIOR TO THE FILING THE COMPANY SAID IT HAD BEEN ATTEMPTING TO SETTLE ITS DEBT WITH THE CREDITORS AND TO GAIN ADDITIONAL BANK FINANCING TO CONTINUE GROWING OPERATIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020d, best cost 79.4862 + -249.774 = -170.288 over 341 frames.
+423c020d ALL SETTLEMENT TALKS EAST AFTER THE FILING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020e, best cost 105.49 + -482.743 = -377.253 over 610 frames.
+423c020e THE COMPANY SAID IT HASN'T BEEN ABLE TO OBTAIN THE BANK FINANCING FOR THE CONTINUING OPERATIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020f, best cost 129.8 + -462.615 = -332.815 over 599 frames.
+423c020f THE COMPANY HAS THIRTY FOUR TOY STORES THROUGHOUT THE MIDWEST AND SOUTHEAST THAT ARE STILL OPEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020g, best cost 130.322 + -557.834 = -427.512 over 670 frames.
+423c020g THE LATEST GOVERNMENT FIGURES THOUGH SHOW THE PRODUCER PRICE INDEX FELL ZERO POINT TWO PERCENT LAST MONTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020h, best cost 127.738 + -587.136 = -459.398 over 711 frames.
+423c020h AFTER EXCLUDING FOOD AND ENERGY PRICES WHICH ARE VOLATILE PRICES ROSE ZERO POINT THREE PERCENT LAST MONTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020i, best cost 92.5832 + -447.536 = -354.953 over 525 frames.
+423c020i SEPARATELY THE GOVERNMENT SAID RETAIL SALES CLIMBED ZERO POINT SIX PERCENT IN FEBRUARY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020j, best cost 62.6954 + -350.409 = -287.714 over 458 frames.
+423c020j EXCLUDING AUTOS SALES INCREASED ZERO POINT THREE PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020k, best cost 139.847 + -471.459 = -331.612 over 548 frames.
+423c020k L. T. V. WILL PRESENT THE PLANT ALL THE MEMBERS OF ITS BANK AND CREDITOR COMMITTEES NEXT WEEK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020l, best cost 176.362 + -559.272 = -382.91 over 647 frames.
+423c020l BUT THE PLAN WON'T BE FILED WITH THE BANKRUPTCY COURT UNTIL THE CREDITORS AND L. T. V. AGREE ON HOW THE DEBT WILL BE PAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020m, best cost 34.7989 + -137.03 = -102.231 over 220 frames.
+423c020m THAT COULD TAKE YEARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020n, best cost 148.618 + -585.687 = -437.069 over 732 frames.
+423c020n THE PRICE FOR THE CITICORP UNIT WAS ABOUT ONE HUNDRED MILLION DOLLARS THE SOURCES ADDED IN LINE WITH EARLIER ESTIMATES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020o, best cost 53.3394 + -198.934 = -145.594 over 287 frames.
+423c020o U. S. F. AND G. HAD NO COMMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020p, best cost 101.868 + -333.323 = -231.456 over 477 frames.
+423c020p CITICORP SAID AN ACCORD HASN'T AT THIS MOMENT THEY SIGN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020q, best cost 127.052 + -443.72 = -316.668 over 553 frames.
+423c020q SOURCES SAY AT LEAST TWO BIDDERS HAVE <UNK> DOUBTS ABOUT CITICORP'S PERFORMANCE NUMBERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020r, best cost 155.439 + -526.625 = -371.186 over 628 frames.
+423c020r A CITICORP PORTFOLIO MANAGER SAYS THE UNIT'S NEW OWNER COULD LOSE QUITE A FEW CURRENT MANAGERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020s, best cost 215.207 + -651.471 = -436.264 over 814 frames.
+423c020s BUT HE OFFERED THE OPINION THAT ROBERT WAY THE UNIT'S CHIEF AND HALF A DOZEN OTHER SENIOR PEOPLE WILL GO WITH U. S. F. AND G. 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020t, best cost 135.275 + -437.297 = -302.023 over 566 frames.
+423c020t NEW OWNER SOMETIMES OFFER ATTRACTIVE LONGER TERM CONTRACTS TO SENIOR PEOPLE HE SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020u, best cost 152.396 + -573.249 = -420.854 over 677 frames.
+423c020u THE MINUTES DOUBT THAT THE VALUE OF THE DOLLAR ON FOREIGN EXCHANGE MARKETS COULD AFFECT THE TIMING OF POLICY CHANGES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020v, best cost 71.027 + -256.35 = -185.323 over 356 frames.
+423c020v TIGHTER CREDIT CONDITIONS WE HIGHER INTEREST RATES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020w, best cost 96.8194 + -377.995 = -281.175 over 512 frames.
+423c020w AND HIGHER INTEREST RATES ATTRACT FOREIGN INVESTORS PUSHING UP THE DOLLAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020x, best cost 109.077 + -571.822 = -462.746 over 669 frames.
+423c020x MANUFACTURERS NATIONAL CORPORATION RAISED THE QUARTERLY DIVIDEND ON ITS COMMON STOCK TO FORTY SIX CENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020y, best cost 186.014 + -837.624 = -651.609 over 975 frames.
+423c020y THE NEW DIVIDEND IS A FIFTEEN PERCENT INCREASE FROM THE PREVIOUS FORTY CENT DISTRIBUTION AND IS PAYABLE SEPTEMBER THIRTIETH TO STOCK OF RECORD AUGUST THIRTY FIRST 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c020z, best cost 184.141 + -657.67 = -473.529 over 810 frames.
+423c020z OUR EARNINGS ARE GOOD AND WE WON THE PAYOUT RATE TO INCREASE OVER TIME A SPOKESWOMAN FOR THE DETROIT BANK HOLDING COMPANY SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0210, best cost 98.464 + -393.969 = -295.505 over 512 frames.
+423c0210 THE DIVIDEND WAS LAST RAISED IN OCTOBER NINETEEN EIGHTY SEVEN BY FOUR CENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0211, best cost 102.598 + -297.351 = -194.753 over 398 frames.
+423c0211 IT'S WHAT HE DOESN'T SAY THAT HAS RILED ONE FUND INVESTOR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0212, best cost 188.498 + -595.517 = -407.019 over 712 frames.
+423c0212 THE REPORT IT SEEMS FAILS TO MENTION ANYTHING ABOUT A NEW YORK'S CREDIT CONDITIONS ARE FACTORS TIED TO THAT MARKET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0213, best cost 90.5898 + -286.025 = -195.435 over 403 frames.
+423c0213 IT DOES TALK ABOUT THE GENERAL MUNICIPAL BOND MARKET THOUGH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0214, best cost 223.455 + -993.731 = -770.276 over 1114 frames.
+423c0214 THE FINANCE MINISTRY IS CONSIDERING DOING AWAY WITH THE RULE THAT REQUIRES INVESTORS WHO INTEND TO ACQUIRE CONTROLLING STAKES IN JAPANESE COMPANIES TO REPORT DIRECTLY TO THE FINANCE MINISTRY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0215, best cost 162.998 + -584.134 = -421.136 over 712 frames.
+423c0215 INSTEAD OF SECURITIES FUNDS MAY BE REQUIRED TO MAKE FILINGS OF LARGE SHARE PURCHASES MADE ON BEHALF OF CLIENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0216, best cost 147.268 + -504.105 = -356.837 over 611 frames.
+423c0216 SUCH A RULE CHANGE EFFECTIVELY WOULD REMOVE ONE TECHNICALITY THEY COULD SLOW A TAKEOVER ATTEMPT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050c0116, best cost 70.1758 + -238.01 = -167.834 over 325 frames.
+050c0116 I PREFER NOT TO SAY ANYTHING MORE THAN ACT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0101, best cost 126.996 + -404.549 = -277.553 over 561 frames.
+051c0101 SO CLEARLY THE ADVOCATES OF SANCTIONS WHERE THE FOREIGN POLICY VICTORS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0102, best cost 58.4405 + -218.54 = -160.099 over 382 frames.
+051c0102 AT LEAST IN THE U. S. THEY WERE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0103, best cost 64.4316 + -239.787 = -175.355 over 381 frames.
+051c0103 WHAT ABOUT IN SOUTH AFRICA ITSELF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0104, best cost 29.973 + -172.363 = -142.39 over 342 frames.
+051c0104 THAT'S ANOTHER STORY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0105, best cost 125.08 + -652.958 = -527.879 over 932 frames.
+051c0105 IN THE BOND MARKET PRICES OF SOME LONG TERM TREASURY ISSUES FELL TO THEIR LOWEST LEVELS IN ABOUT THREE MONTHS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0106, best cost 129.799 + -732.878 = -603.079 over 996 frames.
+051c0106 ACTIVELY TRADED THIRTY YEAR BONDS DROPPED ABOUT A POINT OR AROUND TEN DOLLARS FOR EACH ONE THOUSAND DOLLAR FACE AMOUNT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0107, best cost 60.7217 + -344.85 = -284.129 over 545 frames.
+051c0107 CORPORATE AND MUNICIPAL BOND PRICES ALSO SLUMPED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0108, best cost 94.2512 + -438.097 = -343.846 over 550 frames.
+051c0108 THIS IS THE SECOND CONSECUTIVE QUARTER IN WHICH THE DIVIDEND WAS REDUCED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0109, best cost 116.84 + -574.878 = -458.039 over 816 frames.
+051c0109 IN NOVEMBER IT WAS CUT TO SEVENTEEN POINT FIVE CENTS FROM TWENTY TWO POINT FIVE CENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010a, best cost 88.5358 + -564.895 = -476.359 over 800 frames.
+051c010a THE NEW DIVIDEND IS PAYABLE MARCH SIXTH TO STOCK OF RECORD FEBRUARY NINETEENTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010b, best cost 205.546 + -1118.71 = -913.165 over 1571 frames.
+051c010b THE NOVEMBER DROP BROUGHT THE INDEX TO ONE HUNDRED NINETY POINT TWO PERCENT OF ITS NINETEEN SIXTY SEVEN AVERAGE FROM ONE HUNDRED NINETY THREE POINT FIVE PERCENT IN OCTOBER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010c, best cost 108.728 + -499.9 = -391.172 over 667 frames.
+051c010c THE OCTOBER RISE WAS INITIALLY REPORTED AS A ZERO POINT TWO PERCENT DROP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010d, best cost 206.993 + -889.615 = -682.623 over 1230 frames.
+051c010d IN YESTERDAY'S RELEASE THE DEPARTMENT ALSO REVISED SEPTEMBER PERFORMANCE TO A ZERO POINT TWO PERCENT RISE AFTER PREVIOUSLY REPORTING AN UNCHANGED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010e, best cost 80.3183 + -371.255 = -290.937 over 698 frames.
+051c010e FOR THE KOREAN ECONOMY HE FAVORS FREE TRADE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010f, best cost 70.9235 + -303.187 = -232.263 over 592 frames.
+051c010f I THINK WE HAVE TO OPEN OUR MARKETS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010g, best cost 177.916 + -660.336 = -482.421 over 919 frames.
+051c010g HE ADDS THAT MORE EFFORT SHOULD BE MADE TO REALIZE A FAIR DISTRIBUTION OF INCOME BUT FEW SHORT ON SPECIFICS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010h, best cost 98.5684 + -386.709 = -288.141 over 719 frames.
+051c010h THE POLICY NEW FOR THIS WILL BE FURTHER DEVELOPED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010i, best cost 170.917 + -643.718 = -472.801 over 858 frames.
+051c010i YESTERDAY'S ACTION DIDN'T AFFECT THE FOURTH L. T. V. PLAN THE PENSION AGENCY TO <UNK> OVER IN SEPTEMBER NINETEEN EIGHTY SIX 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010j, best cost 245.673 + -969.053 = -723.379 over 1305 frames.
+051c010j WHEN THE FEDERAL PENSION INSURERS THAT DID THIS FUND HEDGE OF SEVEN THOUSAND SEVEN HUNDRED DOLLARS AND IT TO MEET TWO HUNDRED THIRTY MILLION DOLLARS IN OBLIGATIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010k, best cost 146.546 + -623.939 = -477.392 over 779 frames.
+051c010k THE THREE OTHER PENSION PLANS HAD MORE THAN ONE BILLION DOLLARS OF ASSETS WILL EVEN LARGER LIABILITIES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010l, best cost 156.409 + -598.308 = -441.899 over 727 frames.
+051c010l THE AGREEMENT CALLS FOR F. E. A CLOSELY HELD INVESTMENT GROUP TO OFFER REMAINING HOLDERS TWELVE DOLLARS A SHARE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010m, best cost 132.503 + -581.048 = -448.544 over 718 frames.
+051c010m THE PROPOSED PER SHARE PRICE INCLUDES TEN DOLLARS CASH AND TWO DOLLARS AND UNSPECIFIED SECURITIES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010n, best cost 136.643 + -759.096 = -622.453 over 938 frames.
+051c010n IN AMERICAN STOCK EXCHANGE COMPOSITE TRADING YESTERDAY SUN CITY CLOSED AT TEN DOLLARS AND FIFTY CENTS A SHARE UP ONE POINT EIGHT SEVEN FIVE DOLLARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010o, best cost 192.666 + -755.556 = -562.89 over 964 frames.
+051c010o MR. FICKLING STARTED THE COMPANY IN NINETEEN SIXTY NINE WITH EIGHTY GENERAL HOSPITALS AND NURSING HOMES ALONG WITH A SMALL CONSTRUCTION OPERATIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010p, best cost 174.801 + -900.905 = -726.104 over 1132 frames.
+051c010p HE AND HIS FAMILY OWN ABOUT TWENTY NINE PERCENT OF THE COMPANY'S CLASS A COMMON SHARES AT ABOUT NINETY ONE POINT FIVE PERCENT OF THE CLASS B. COMMON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010q, best cost 106.935 + -474.789 = -367.854 over 619 frames.
+051c010q THAT GIVES HIM VOTING CONTROL OVER SEVENTY FIVE PERCENT OF THE COMPANY'S COMMON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010r, best cost 174.218 + -713.661 = -539.443 over 988 frames.
+051c010r THE ECONOMIC PLANNING BOARD WHICH ANNOUNCED THE MEASURES SAID THE GOVERNMENT'S GOAL IS TO HOLD INFLATION BELOW FIVE PERCENT THIS YEAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010s, best cost 139.218 + -619.136 = -479.918 over 808 frames.
+051c010s CONSUMER PRICES ROSE ONE POINT SIX PERCENT FEBRUARY THE HIGHEST MONTHLY INCREASE SINCE MID NINETEEN EIGHTY ONE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010t, best cost 101.756 + -400.3 = -298.544 over 516 frames.
+051c010t IN THE PREVIOUS FOUR YEARS ANNUAL INCREASES WERE WELL BELOW THREE PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010u, best cost 76.7315 + -288.025 = -211.293 over 378 frames.
+051c010u PRICES OF MUNICIPAL BONDS GAINED AS MUCH AS THREE EIGHTHS POINT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010v, best cost 237.761 + -913.049 = -675.289 over 1095 frames.
+051c010v ALTHOUGH THE FOREIGN EXCHANGE MARKET RARELY AS MUCH IMPACT ON TAX EXEMPT SECURITIES TRADERS SAID THE DOLLAR'S LATE RALLY YESTERDAY HELPED BUOY MUNICIPAL PRICES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010w, best cost 139.508 + -587.237 = -447.729 over 725 frames.
+051c010w IN FUTURES TRADING MUNICIPAL BONDS FOR JUNE DELIVERY ROSE SIX THIRTY SECONDS TO EIGHT THOUSAND FIVE HUNDRED TWENTY SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010x, best cost 176.945 + -797.243 = -620.299 over 989 frames.
+051c010x THE ALL ORDINARIES INDEX WHICH FELL ELEVEN POINT THREE TUESDAY SLIPPED ONE POINT FIVE TO ONE THOUSAND FOUR HUNDRED FORTY THREE POINT TWO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010y, best cost 173.189 + -663.491 = -490.302 over 839 frames.
+051c010y THE BROKER SAID SOME FOREIGN INVESTORS SOLD STOCKS TO REALIZE CURRENCY GAINS ON THE RECENT RISE OF THE AUSTRALIAN DOLLAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c010z, best cost 132.687 + -454.354 = -321.667 over 557 frames.
+051c010z THE CURRENCY WAS QUOTED LATE IN THE DAY IN SYDNEY AT SEVENTY SEVEN POINT FOUR NINE U. S. CENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0110, best cost 111.779 + -414.373 = -302.594 over 547 frames.
+051c0110 WE LOOK FOR A HIGHER THAN STANDARD RETURNS MR. SPERLING SAYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0111, best cost 81.3451 + -305.095 = -223.75 over 454 frames.
+051c0111 IN TODAY'S MARKET THERE ALMOST NEVER AVAILABLE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0112, best cost 139.896 + -514.85 = -374.955 over 641 frames.
+051c0112 THEY'RE TOO MANY FOREIGN MINISTER ADDITIONAL PLAYERS WILLING TO PAY HIGHER PRICES THAN WE ARE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0113, best cost 112.514 + -390.93 = -278.416 over 514 frames.
+051c0113 MANY INSTITUTIONAL PLAYERS CONFESS TO HOLDING MORE CASH THAN USUAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0114, best cost 203.069 + -786.444 = -583.376 over 1022 frames.
+051c0114 IN THE BULL MARKET OF NINETEEN EIGHTY SIX TO EIGHTY SEVEN CASH POSITIONS EXCEEDING FIVE PERCENT OF ASSETS WITH HELD DOWN OVERALL RETURNS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 051c0115, best cost 151.444 + -505.205 = -353.761 over 753 frames.
+051c0115 NOW MANY INSTITUTIONS SAY THEIR CASH LEVELS OR TEN PERCENT OR MORE THAN A FEW ARE THIRTY PERCENT OR MORE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0101, best cost 240.671 + -688.725 = -448.054 over 905 frames.
+052c0101 THOUGH THE NEED FOR ECONOMY HAS ALSO HELD THAT A HANDFUL EXPENSIVE BUT ALL IMPORTANT MARKETED WILL SERVE AS THE FALL A GROUP OF PEOPLE OVER MANY YEARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0102, best cost 245.126 + -789.198 = -544.071 over 1113 frames.
+052c0102 FOR EXAMPLE THE GOVERNMENT LIKE TO KNOW MORE ABOUT THE WAY ELDERLY PEOPLE MOVE FROM INDEPENDENT LIVING IN COMMUNITY CARE TO PERHAPS A NURSING HOME OR HOSPITAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0103, best cost 209.208 + -626.651 = -417.443 over 837 frames.
+052c0103 WITH SUCH KNOWLEDGE PLANNERS COULD BETTER DETERMINE WHETHER MORE COMMITTEE CARE FACILITIES COULD REDUCE THE NEED FOR NURSING HOMES OR HOSPITALS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0104, best cost 122.47 + -604.85 = -482.38 over 731 frames.
+052c0104 STERLING DRUG INCORPORATED INCREASED THE QUARTERLY DIVIDEND FIFTY PERCENT TO THIRTY EIGHT CENTS A SHARE FROM THIRTY THREE CENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0105, best cost 173.175 + -688.628 = -515.453 over 854 frames.
+052c0105 THE NEW YORK PHARMACEUTICAL AND CONSUMER PRODUCTS CONCERN SAID THE RATE REFLECTS THE BOARD'S CONFIDENCE IN THE CONTINUING STRENGTH IN GROWTH OF THE BUSINESS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0106, best cost 69.9829 + -341.179 = -271.196 over 454 frames.
+052c0106 THE DIVIDEND IS PAYABLE JUNE FIRST TO STOCK OF RECORD MAY SEVENTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0107, best cost 162.329 + -530.48 = -368.151 over 660 frames.
+052c0107 REGIONAL BANKS APPEAR WILLING TO ACCEPT BIG LOSSES UNDER THE MEXICAN DEBT PLAN PUTTING PRESSURE ON BIG BANKS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0108, best cost 80.3694 + -341.61 = -261.241 over 445 frames.
+052c0108 ALSO TWO BANKS BOOSTED FOREIGN LOAN LOSS RESERVES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0109, best cost 112.486 + -417.007 = -304.521 over 508 frames.
+052c0109 MEANWHILE MEXICO HAS DONE BETTER THAN OTHER BIG DEBTORS AND WINNING CONCESSIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010a, best cost 147.154 + -457.62 = -310.466 over 635 frames.
+052c010a DAYTON HUDSON SAID MR. SELLS WOULD HAVE BEEN IMPORTANT EQUITY POSITION IN THE COMPANY HE IS JOINING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010b, best cost 157.352 + -504.367 = -347.016 over 734 frames.
+052c010b MR. SELLS WHO WASN'T AVAILABLE FOR COMMENT SAID IN THEIR STATEMENT OF ALL OF WATER RUN MY OWN COMPANY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010c, best cost 82.2458 + -219.009 = -136.763 over 303 frames.
+052c010c NOW I GET TO DO IT AND I'M VERY EXCITED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010d, best cost 176.362 + -649.014 = -472.652 over 792 frames.
+052c010d OF THE TOTAL FACE AMOUNT OUTSTANDING OF TWELVE WESTERN UNION DEBT SERIES EIGHTEEN POINT SIX PERCENT HAD BEEN TENDERED AS OF THURSDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010e, best cost 99.493 + -366.435 = -266.942 over 468 frames.
+052c010e THE SWAP OFFER REQUIRES AT LEAST EIGHTY PERCENT OF THE TOTAL TO BE TENDERED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010f, best cost 69.5967 + -257.37 = -187.774 over 388 frames.
+052c010f WESTERN UNION SAID MAY AGAIN EXTENDED THE DEADLINE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010g, best cost 168.028 + -862.722 = -694.694 over 1046 frames.
+052c010g THE NIKKEI INDEX OF TWO HUNDRED TWENTY FIVE SELECTED ISSUES EDGED UP TWELVE POINT FOUR THREE POINTS TO CLOSE AT TWENTY FIVE THOUSAND SIX HUNDRED SEVENTEEN POINT EIGHT TWO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010h, best cost 130.126 + -744.914 = -614.788 over 878 frames.
+052c010h THE TOKYO STOCK EXCHANGE'S FIRST SECTION INDEX FELL ONE POINT SEVEN EIGHT POINTS TO CLOSE AT TWO THOUSAND ONE HUNDRED TWO POINT FIVE FIVE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010i, best cost 127.069 + -671.383 = -544.313 over 822 frames.
+052c010i FIRST SECTION VOLUME WAS ESTIMATED AT A HEAVY ONE POINT SIX BILLION SHARES UP FROM ONE POINT THREE BILLION SHARES WEDNESDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010j, best cost 210.194 + -773.057 = -562.863 over 1046 frames.
+052c010j RECOGNITION SAID IT REORGANIZED ITS U. S. BUSINESS THE THREE UNITS SALES SERVICE FEDERAL GOVERNMENT SALES AND SALES FELL FOR THE SPECIAL PRODUCTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010k, best cost 82.6896 + -299.371 = -216.681 over 402 frames.
+052c010k THE COMPANIES SAID THE THREE GROUPS WILL OPERATE AS A UNIT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010l, best cost 189.058 + -629.536 = -440.478 over 766 frames.
+052c010l IT SAID IT PUT THREE KEY EXECUTIVES IN CHARGE OF THE GROUP'S TO FOCUS EFFORTS ON INCREASING SALES PRODUCTIVITY IN THE U. S. 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010m, best cost 186.087 + -688.825 = -502.738 over 931 frames.
+052c010m IN THE ELECTRICAL SECTOR SIEMENS RECOVERED SOME OF THE LOSS IT HAD TUESDAY WHEN REPORTED A NINE PERCENT DECLINE IN FIRST HALF GROUP PROFIT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010n, best cost 102.822 + -482.333 = -379.511 over 609 frames.
+052c010n THE STOCK FIRM FOUR POINT SEVEN OH TO THREE HUNDRED THIRTY SEVEN POINT FIVE OH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010o, best cost 100.903 + -410.115 = -309.212 over 587 frames.
+052c010o A. E. G. CLIMBED TWO POINT FOUR OH TO TWO HUNDRED TEN POINT FOUR OH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010p, best cost 164.887 + -566.093 = -401.206 over 787 frames.
+052c010p LAST NOVEMBER OFFERED A. KNOPF INCORPORATED THE BOOK PUBLISHER MAIN MS. AMSTERDAM A SENIOR EDITOR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010q, best cost 145.376 + -437.86 = -292.484 over 620 frames.
+052c010q SHE ALSO HAS WORKED AT NEW YORK MAGAZINE ANOTHER WEEK THE SEA PUBLICATION OF THE WASHINGTON POST 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010r, best cost 46.002 + -181.515 = -135.513 over 318 frames.
+052c010r MS. AMSTERDAM DECLINED TO COMMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010s, best cost 61.3114 + -210.835 = -149.524 over 339 frames.
+052c010s IN A MINUTE THE DEAL IS CLOSED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010t, best cost 129.975 + -496.873 = -366.899 over 607 frames.
+052c010t MR. BARRETT SAYS HE PAID ONE HUNDRED SEVENTY FIVE THOUSAND DOLLARS FOR THE ROLLS ONLY SIX MONTHS AGO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010u, best cost 109.946 + -447.318 = -337.372 over 581 frames.
+052c010u HE EXPECTS THE JAPANESE AGENT TO SELL IT FOR TWO HUNDRED SEVENTY FIVE THOUSAND DOLLARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010v, best cost 162.309 + -562.143 = -399.834 over 730 frames.
+052c010v THE FOREST PRODUCTS CONCERN SAID THE WORKERS OF THE AFFECTED PLANTS A RETURN TO WORK YESTERDAY ENDING A TWO MONTH STRIKE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010w, best cost 167.633 + -615.269 = -447.636 over 758 frames.
+052c010w THE COMPANY SAID THE WESTERN COUNCIL OF INDUSTRIAL WORKERS RATIFIED ECONOMIC TERMS OF THE NEW THREE YEAR AGREEMENT ON FRIDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010x, best cost 143.066 + -450.834 = -307.768 over 574 frames.
+052c010x IT SAID VARIOUS LOCAL PLANT ISSUES WAS STILL BE RESOLVED BEFORE THE CONTRACT IS CONCLUDED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010y, best cost 43.0455 + -162.434 = -119.389 over 280 frames.
+052c010y WHAT IS WRONG WITH THIS PICTURE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c010z, best cost 141.566 + -429.328 = -287.762 over 549 frames.
+052c010z WELL TO BEGIN WITH MR. MILKEN IS RUNNING FOR OFFICE OR FOR MR. CONGENIALITY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0110, best cost 101.745 + -449.305 = -347.56 over 569 frames.
+052c0110 HE IS THE HEAD OF THE HUGE JUNK BOND OPERATION OF DREXEL BURNHAM LAMBERT INCORPORATED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0111, best cost 112.686 + -416.185 = -303.499 over 598 frames.
+052c0111 AND MORE THAN THAT HE IS A CENTRAL FIGURE IN THE SECURITIES INDUSTRY'S INSIDER TRADING SCANDAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0112, best cost 218.946 + -839.07 = -620.124 over 1054 frames.
+052c0112 IN A ONE HUNDRED EIGHTY FOUR PAGE CIVIL COMPLAINT THE SECURITIES AND EXCHANGE COMMISSION LAST MONTH ACCUSED THE POWERFUL FINANCE FEAR OF A CATALOG OF SECURITIES LAW VIOLATIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0113, best cost 124.432 + -452.414 = -327.982 over 583 frames.
+052c0113 HE HAS BEEN TOLD BY THE JUSTICE DEPARTMENT THAT BEFORE LONG HE MAY BE INDICTED ON CRIMINAL CHARGES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0114, best cost 180.829 + -699.238 = -518.409 over 837 frames.
+052c0114 AN F. B. I. REPORT CONCLUDED THAT THE NUMBER OF VIOLENT CRIMES REPORTED IN THE U. S. LAST YEAR INCREASED FIVE POINT FIVE PERCENT FROM NINETEEN EIGHTY SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0115, best cost 95.9384 + -373.541 = -277.603 over 467 frames.
+052c0115 THERE WERE THIRTEEN POINT NINE MILLION CRIMES REPORTED IN NINETEEN EIGHTY EIGHT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 052c0116, best cost 115.052 + -479.169 = -364.117 over 620 frames.
+052c0116 MURDERS ROSE TWO POINT NINE PERCENT TO TWENTY THOUSAND SIX HUNDRED SEVENTY FIVE IN THE PERIOD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0101, best cost 127.247 + -511.602 = -384.354 over 691 frames.
+053c0101 THE SUIT WAS FILED UNDER THE FALSE CLAIMS ACT WHICH ALLOWS PRIVATE CITIZENS TO SUE ON BEHALF OF THE GOVERNMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0102, best cost 113.392 + -361.252 = -247.86 over 487 frames.
+053c0102 UNDER THE LAW THE JUSTICE DEPARTMENT CAN ELECT TO TAKE OVER AS PLAINTIFF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0103, best cost 95.67 + -371.842 = -276.172 over 523 frames.
+053c0103 A SPOKESWOMAN FOR THE DEPARTMENT SAID NO SUCH DECISION HAD BEEN MADE YET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0104, best cost 94.1081 + -352.017 = -257.908 over 492 frames.
+053c0104 IN ADDITION I. B. M.'S PRICING STRATEGY COULD HURT COMPETITORS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0105, best cost 210.009 + -664.982 = -454.973 over 877 frames.
+053c0105 FOR EXAMPLE THE COMPANY PLANS BIG DISCOUNTS ON THE NEW ONE THOUSAND SIX HUNDRED NINETY FIVE DOLLAR MACHINE FOR SCHOOLS A MAIN APPLE MARKET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0106, best cost 232.517 + -648.321 = -415.805 over 881 frames.
+053c0106 ONE OF THE NEW P. C. THE OFFERS ALMOST DOUBLE THE MEMORY OF SLIGHTLY MORE STORES FOR ELEVEN PERCENT LAST THAT THE COMPETING COMPAQ MACHINE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0107, best cost 222.956 + -675.875 = -452.918 over 860 frames.
+053c0107 I. B. M. P. C.S TRADITIONALLY ARE PRICED HIGHER THAN RIVAL BRANDS WHICH TYPICALLY MUST UNDERCUT I CAN PRICES BY FIFTEEN PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0108, best cost 60.4189 + -234.593 = -174.175 over 403 frames.
+053c0108 THE TASK FORCE REPORT ISN'T ALL BAD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0109, best cost 174.084 + -523.367 = -349.283 over 753 frames.
+053c0109 IT DOES CALL FOR ELIMINATING SOME GOVERNMENT OBSTACLES TO THE DEVELOPMENT OF A HEALTHY LOT TERM CARE INSURANCE MARKET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010a, best cost 200.087 + -615.943 = -415.855 over 776 frames.
+053c010a AND THE IDEA OF LETTING EMPLOYERS PRE FUND POST RETIREMENT MEDICAL EXPENSES THAT SURELY BETTER THAN HAVING GOVERNMENT DO IT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010b, best cost 167.309 + -795.099 = -627.79 over 948 frames.
+053c010b ACTIVELY TRADED THIRTY YEAR TREASURY ISSUES LAST WEEK PLUNGED ABOUT THREE POINTS OR ABOUT THIRTY DOLLARS FOR EACH ONE THOUSAND DOLLAR FACE AMOUNT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010c, best cost 104.128 + -382.003 = -277.875 over 519 frames.
+053c010c PRICES WERE DOWN EVERY DAY THAT THURSDAY WHEN THEY ROSE ONLY SLIGHTLY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010d, best cost 144.294 + -728.142 = -583.848 over 842 frames.
+053c010d THE YIELD ON THE LATEST THIRTY YEAR TREASURY BONDS SURGED TO EIGHT POINT EIGHT THREE PERCENT FROM EIGHT POINT FIVE SIX PERCENT A WEEK EARLIER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010e, best cost 189.916 + -887.534 = -697.619 over 1110 frames.
+053c010e SINCE THE EARLY NINETEEN EIGHTIES DATA GENERAL HAS TRIED TO COMPETE HEAD ON WITH INTERNATIONAL BUSINESS MACHINES CORPORATION AND DIGITAL EQUIPMENT CORPORATION FOR LARGE CUSTOMERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010f, best cost 144.083 + -580.425 = -436.342 over 748 frames.
+053c010f IN NINETEEN EIGHTY FOUR THE COMPANY WON SEVERAL MULTIMILLION DOLLAR ACCOUNTS AND SALES AND EARNINGS SOARED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010g, best cost 65.1087 + -234.591 = -169.483 over 360 frames.
+053c010g SINCE THEN HOWEVER RESULTS HAVE BEEN BEFORE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010h, best cost 185.617 + -829.598 = -643.981 over 996 frames.
+053c010h PER SHARE EARNINGS FOR THE FISCAL YEAR FELL ABOUT TWENTY ONE PERCENT THE COMPANY ESTIMATED REFLECTING AN EIGHTEEN PERCENT INCREASE IN AVERAGE SHARES OUTSTANDING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010i, best cost 150.091 + -644.146 = -494.054 over 830 frames.
+053c010i THE BRANFORD CONNECTICUT BASED COMPANY HAD STOCK OFFERINGS IN NINETEEN EIGHTY SIX AND NINETEEN EIGHTY SEVEN TO REDUCE DEBT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010j, best cost 139.059 + -588.536 = -449.476 over 802 frames.
+053c010j THE COMPANY WHICH MAKES MOTOR VEHICLE REPLACEMENT PARTS SAID SALES EXCEEDED ONE BILLION DOLLARS FOR THE FISCAL YEAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010k, best cost 145.019 + -515.119 = -370.1 over 734 frames.
+053c010k IN A STATEMENT ARE ALAN <UNK> R. SAID THE BROKERAGE UNIT GENERATED SUBSTANTIALLY ALL OF ITS REVENUE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010l, best cost 88.4139 + -401.171 = -312.758 over 564 frames.
+053c010l IT SAID IT IS NEGOTIATING THE SALE OF CERTAIN ASSETS OF THE BROKERAGE UNIT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010m, best cost 176.128 + -685.592 = -509.464 over 895 frames.
+053c010m THE PARENT COMPANY ADDED THAT IT MAY SEEK OTHER BUSINESS OPPORTUNITIES SUBJECT TO THE AVAILABILITY OF FINANCING WHICH MAY NOT BE AVAILABLE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010n, best cost 128.987 + -649.003 = -520.016 over 816 frames.
+053c010n THE DOW JONES INDUSTRIALS DROPPED TWENTY FIVE POINT TWO OH TO ONE THOUSAND NINE HUNDRED THIRTY FIVE POINT OH ONE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010o, best cost 136.845 + -617.129 = -480.284 over 782 frames.
+053c010o THE DOW JONES INDUSTRIALS DROPPED TWENTY FIVE POINT TO ALLOW TO ONE THOUSAND NINE HUNDRED THIRTY FIVE POINT OH ONE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010p, best cost 36.7436 + -198.43 = -161.686 over 281 frames.
+053c010p THE DOLLAR WAS LITTLE CHANGED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010q, best cost 108.072 + -401.359 = -293.287 over 569 frames.
+053c010q THE ASSESSMENT IS PROBABLY EVEN MORE APPROPRIATE NOW MARKET ANALYSTS SAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010r, best cost 200.497 + -797 = -596.503 over 996 frames.
+053c010r ONE OF THE FEW AREAS OF STRONG GROWTH EARLIER NINETEEN EIGHTY SEVEN WAS THE NEW ISSUE MARKET FOR INTERNATIONAL EQUITIES AND EQUITY RELATED BONDS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010s, best cost 125.498 + -422.05 = -296.552 over 628 frames.
+053c010s SUCH ACTIVITY HAS ALL THE END IT SENT STOCK PRICES PLUNGED THE ANALYSTS SAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010t, best cost 217.426 + -721.547 = -504.121 over 998 frames.
+053c010t INSTITUTIONAL INVESTORS FEEL THE RISE BY SHIFTING ASSETS TO THE FUNDS IN RESPONSE TO DECLINING RATES AVAILABLE ON SHORT TERM SECURITIES ON THE MARKET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010u, best cost 165.058 + -664.84 = -499.782 over 908 frames.
+053c010u ALSO INDIVIDUAL INVESTORS CONCERN OF THE VOLATILITY IN FINANCIAL MARKETS MAY HAVE CONTRIBUTED TO THE INCREASE SHE SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010v, best cost 97.2352 + -513.367 = -416.132 over 672 frames.
+053c010v LAST FRIDAY THE DOW JONES INDUSTRIAL AVERAGE POSTED ITS THIRD BIGGEST POINT DECLINE EVER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010w, best cost 133.892 + -695.94 = -562.049 over 855 frames.
+053c010w THE FINANCIAL TIMES THIRTY SHARE INDEX CLOSED OFF SEVEN POINT FOUR POINTS AT ONE THOUSAND FOUR HUNDRED THIRTY POINT SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010x, best cost 177.039 + -851 = -673.961 over 1032 frames.
+053c010x VOLUME WAS A MODERATE FOUR HUNDRED FIFTY FOUR POINT SEVEN MILLION SHARES PICKING UP SLIGHTLY FROM WEDNESDAY'S FOUR HUNDRED TWENTY SEVEN POINT FOUR MILLION SHARES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010y, best cost 120.144 + -621.893 = -501.748 over 777 frames.
+053c010y THE ONE HUNDRED SHARE INDEX WAS OFF FIVE POINT TWO POINTS AT ONE THOUSAND SEVEN HUNDRED EIGHTY NINE POINT FIVE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c010z, best cost 191.105 + -626.415 = -435.31 over 856 frames.
+053c010z JOB SECURITY CLAUSES GIVE UNION SOMETHING POSITIVE TO TAKE BACK TO THEIR MEMBERS AND MODEST COST TO THE PLAYERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0110, best cost 71.5269 + -259.916 = -188.389 over 408 frames.
+053c0110 BUT THEY CAN LOOK MORE GENEROUS THAN THEY ARE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0111, best cost 211.866 + -684.198 = -472.332 over 917 frames.
+053c0111 I'LL CONTACTS PROVIDE FOR JOB SECURITY BUT BECAUSE THEY LIMIT THE FUNDS AVAILABLE FOR IT THEY HAVEN'T PREVENTED SIZABLE LAYOFFS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0112, best cost 186.673 + -615.317 = -428.643 over 871 frames.
+053c0112 WE COULD DISTRIBUTE THE BONDS IN JAPAN IN EUROPE IN THE U. K. BUT NOT IN THE U. S. MR. LABRECQUE HE SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0113, best cost 53.0243 + -196.653 = -143.629 over 336 frames.
+053c0113 THESE POWERS ARE IMPORTANT TO US 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0114, best cost 45.1998 + -148.105 = -102.905 over 270 frames.
+053c0114 OUR CUSTOMERS WANT THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 053c0115, best cost 78.4144 + -329.362 = -250.948 over 460 frames.
+053c0115 THE QUESTION IS WHETHER U. S. BANKS WILL BE ALLOWED TO COMPETE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0101, best cost 205.733 + -771.314 = -565.581 over 1006 frames.
+22gc0101 ROBINS SAID MR. WOLF FORTY THREE YEARS OLD IS LEAVING AFTER THIRTEEN YEARS WITH THE COMPANY FOR POSITION WITH THE TEXAS HEALTH CARE CONCERN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0102, best cost 120.873 + -344.108 = -223.235 over 460 frames.
+22gc0102 MR. WOLF SAID THE NEW JOB WILL BE PRIME EARLY BUSINESS WORRY THAT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0103, best cost 68.593 + -229.607 = -161.014 over 308 frames.
+22gc0103 MR. WOLF DECLINED TO NAME HIS NEW EMPLOYER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0104, best cost 97.3838 + -345.34 = -247.956 over 432 frames.
+22gc0104 THE CHIEF TRADER IN NEW YORK FOR TOKYO BASED BANK AGREES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0105, best cost 125.418 + -432.949 = -307.531 over 532 frames.
+22gc0105 EVEN IF JAPANESE INVESTORS DON'T SELL DOLLARS SOME THAT YIELDS WILL <UNK> HE SAYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0106, best cost 105.793 + -392.59 = -286.797 over 498 frames.
+22gc0106 THAT TREND IS INEVITABLE UNLESS THE GOVERNMENT HAS AUTHORITY OVER THE WHOLE WORLD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0107, best cost 148.655 + -496.366 = -347.711 over 650 frames.
+22gc0107 CONGRESS AND THE ADMINISTRATION HAD BEGUN TO TAKE THE RIGHT STEPS TO APPROVE TO CREDIT BUDGET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0108, best cost 185.509 + -639.935 = -454.426 over 828 frames.
+22gc0108 A PILOT LOAN SALE PROGRAM APPROVED LAST YEAR WOULD PROVIDE OF VIRTUALLY RISK FREE TEST OF THIS APPROACH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0109, best cost 125.557 + -442.31 = -316.753 over 600 frames.
+22gc0109 INITIAL WALL STREET ENTHUSIASM HAS SURPRISED EVEN PRIVATIZATION ADVOCATES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010a, best cost 92.6425 + -332.753 = -240.111 over 394 frames.
+22gc010a THE FIRST SALES ARE EXPECTED TO GO TO MARKET SOMETIME THIS SUMMER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010b, best cost 204.893 + -1034.22 = -829.331 over 1290 frames.
+22gc010b THE OFFERING WILL COMPRISE SEVEN HUNDRED SIXTY SEVEN MILLION DOLLARS OF BONDS DUE NOVEMBER SECOND AND SIX HUNDRED THIRTY EIGHT MILLION DOLLARS OF BONDS MATURING NEXT FEBRUARY FIRST 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010c, best cost 54.7983 + -233.234 = -178.436 over 284 frames.
+22gc010c ALL THE BONDS WILL BE DATED NEXT MONDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010d, best cost 47.7319 + -200.45 = -152.718 over 258 frames.
+22gc010d INTEREST RATES WILL BE ANNOUNCED WEDNESDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010e, best cost 93.6384 + -408.953 = -315.314 over 486 frames.
+22gc010e THE CENTRAL BANKS HAVE LITTLE CHANCE TO PROTECT THEMSELVES FROM THE DOLLAR'S FALL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010f, best cost 175.784 + -682.224 = -506.44 over 818 frames.
+22gc010f ONE POSSIBLE THAT TRIED TO REDUCE THEIR U. S. CURRENCY PORTFOLIOS BY SELLING DOLLARS BACK INTO CALMER MARKETS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010g, best cost 143.61 + -489.375 = -345.766 over 638 frames.
+22gc010g TRADERS SAY THE BUNDESBANK DID THIS ONE THE DOLLAR STRENGTHENED IN LATE JULY AND EARLY AUGUST 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010h, best cost 131.693 + -414.234 = -282.541 over 526 frames.
+22gc010h THE BOSTON PROPERTY WAS FULLY OCCUPIED A BROKER CLOSE TO THE BUILDING SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010i, best cost 41.1481 + -131.814 = -90.666 over 186 frames.
+22gc010i IT WAS A DONE DEAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010j, best cost 130.737 + -353.718 = -222.981 over 454 frames.
+22gc010j WALL OF A SUDDEN THEY CAME BACK AND SAID WE AREN'T BUYING IT DOES SHIELD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010k, best cost 77.0793 + -232.043 = -154.963 over 308 frames.
+22gc010k I SAID TO BE A PRICE AND THEY SAID NO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010l, best cost 237.325 + -946.281 = -708.956 over 1252 frames.
+22gc010l RECOGNITION SAID IT REORGANIZED ITS U. S. BUSINESS HAD TO THREE UNITS SALES AND SERVICE FEDERAL GOVERNMENT SALES AND SALES DEVELOPMENT THAT SPECIAL PRODUCTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010m, best cost 90.3467 + -322.292 = -231.946 over 374 frames.
+22gc010m THE COMPANY SAID THE THREE GROUPS WILL OPERATE HAS A UNIT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010n, best cost 201.642 + -740.56 = -538.918 over 910 frames.
+22gc010n IT SAID IT PUT THREE KEY EXECUTIVES IN CHARGE OF THE GROUP'S TO FOCUS EFFORTS ON INCREASING SALES PRODUCTIVITY IN THE U. S. 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010o, best cost 54.6012 + -161.113 = -106.512 over 216 frames.
+22gc010o THERE ARE TWO ISSUES TO CONSIDER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010p, best cost 167.417 + -658.161 = -490.745 over 836 frames.
+22gc010p FIRST WHAT WAS ADMIRAL POINDEXTER'S BELIEF ABOUT THE PRESIDENT'S POLICY OF HELPING THE NICARAGUAN DEMOCRATIC RESISTANCE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010q, best cost 153.08 + -548.153 = -395.073 over 804 frames.
+22gc010q SECOND DUE TO ADMIRAL POINDEXTER BELIEVE WHAT HE AND COLONEL NORTH WERE DOING WAS LEGAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010r, best cost 103.917 + -373.29 = -269.373 over 516 frames.
+22gc010r CERTAIN PRICES HAVE RISEN AT A BRISK PACE THROUGHOUT THIS DECADE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010s, best cost 185.373 + -683.038 = -497.665 over 896 frames.
+22gc010s HEALTH CARE INFLATION FOR INSTANCE HASN'T DROPPED BELOW SIX PERCENT ANNUALLY THAN THE COST OF EDUCATION HAS RISEN EVEN FASTER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010t, best cost 231.163 + -920.065 = -688.902 over 1178 frames.
+22gc010t BUT UNTIL RECENTLY INFLATION AND HEALTH EDUCATION AND OTHER SERVICES WAS OFFSET BY FLAT OR FALLING PRICES FOR MANY MANUFACTURED GOODS AND FARM COMMODITIES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010u, best cost 204.312 + -706.249 = -501.937 over 868 frames.
+22gc010u THE DECLINE IN THE DOLLAR AND THE CONTINUED STRENGTH IN THE ECONOMY HOWEVER ARE NOW ADDING DEMANDED QUOTAS AND THOSE PRICES TO RISE TOO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010v, best cost 185.107 + -771.989 = -586.882 over 1072 frames.
+22gc010v THE LOGIC APPARENTLY IS THAT WE'LL HAVE TO RAISE THEIR RATES TO DEFEND THE DOLLAR SAID PETER CANELO A PORTFOLIO STRATEGIST AT BEAR STEARNS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010w, best cost 108.986 + -371.703 = -262.718 over 484 frames.
+22gc010w BODY SAID THAT WOULD NORMALLY BE TRUE IF THE DOLLAR WERE WEAK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010x, best cost 198.094 + -794.096 = -596.002 over 956 frames.
+22gc010x SINCE THE U. S. CURRENCY HAS SPURRED THAN SHARPLY IN RECENT WEEKS HE SEES NO NEED FOR THE FEDERAL RESERVE TO RAISE INTEREST RATES TO PROTECT THE DOLLAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010y, best cost 115.015 + -433.435 = -318.42 over 542 frames.
+22gc010y MANY INSTITUTIONAL PLAYERS CONFESS TO HOLDING MORE CASH THAN USUAL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc010z, best cost 199.373 + -814.533 = -615.16 over 1076 frames.
+22gc010z IN THE BULL MARKET OF NINETEEN EIGHTY SIX TO EIGHTY SEVEN CASH POSITIONS EXCEEDED FIVE PERCENT OF ASSETS WOULD HAVE HELD DOWN OVERALL RETURNS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0110, best cost 165.829 + -620.469 = -454.64 over 822 frames.
+22gc0110 NOW MANY INSTITUTIONS SAY THEIR CASH LEVELS OR TEN PERCENT OR MORE THAN A FEW OR AT THIRTY PERCENT OR MORE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0111, best cost 186.118 + -819.905 = -633.788 over 1090 frames.
+22gc0111 YIELDS ON LONG TERM BONDS AFTER DROPPING AS LOW AS SEVEN POINT EIGHT THREE PERCENT EARLY LAST WEEK ARE BACKED UP ABOVE EIGHT PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0112, best cost 195.543 + -885.541 = -689.997 over 1144 frames.
+22gc0112 THE DISCOUNT RATE FOR THE THREE MONTH TREASURY BILL FELL AS LOW AS SEVEN POINT SIX FOUR PERCENT THOUGHT WAS QUOTED LATE FRIDAY AT SEVEN POINT EIGHT SIX PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0113, best cost 179.843 + -628.061 = -448.218 over 774 frames.
+22gc0113 RATES ARE EXPECTED TO REMAIN AT THOSE LEVELS OR MOVE A LITTLE HIGHER AT THIS WEEK AT THE TREASURY DEPARTMENT'S QUARTERLY AUCTION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22gc0114, best cost 140.243 + -662.686 = -522.443 over 828 frames.
+22gc0114 THE GOVERNMENT IS EXPECTED TO SELL ABOUT TWENTY NINE POINT FIVE BILLION DOLLARS OF NEW NOTES AND BONDS STARTING TOMORROW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0101, best cost 163.981 + -822.252 = -658.271 over 932 frames.
+22hc0101 THE CENTERIOR ENERGY CORPORATION CLEVELAND SAID IT BEGAN A PUBLIC OFFERING OF FOUR MILLION COMMON SHARES AND TWENTY THREE POINT ONE TWO FIVE DOLLARS A SHARE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0102, best cost 46.7944 + -235.514 = -188.719 over 274 frames.
+22hc0102 MORGAN STANLEY AND COMPANY IS LEAD UNDERWRITER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0103, best cost 117.677 + -513.118 = -395.441 over 614 frames.
+22hc0103 PROCEEDS WILL BE USED TO FINANCE THE ELECTRIC UTILITY'S CONSTRUCTION PROGRAM AND FOR GENERAL PURPOSES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0104, best cost 117.444 + -702.641 = -585.197 over 796 frames.
+22hc0104 IN NEW YORK STOCK EXCHANGE COMPOSITE TRADING FRIDAY THE COMPANY'S STOCK CLOSED AT TWENTY THREE POINT ONE TWO FIVE DOLLARS UNCHANGED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0105, best cost 135.332 + -817.019 = -681.687 over 924 frames.
+22hc0105 THE FOLLOWING OFFICERS DIRECTORS AND LARGE STOCKHOLDERS OF COMPANIES REPORTED CHANGES IN HOLDINGS UNDER THE SECURITIES EXCHANGE ACT OF NINETEEN THIRTY FOUR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0106, best cost 97.4938 + -543.178 = -445.684 over 656 frames.
+22hc0106 THOSE IDENTIFIED AS BENEFICIAL OWNERS HOLD AT LEAST TEN PERCENT OF A COMPANY'S EQUITY SECURITIES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0107, best cost 122.065 + -659.44 = -537.375 over 728 frames.
+22hc0107 UNLESS OTHERWISE NOTED CHANGES INVOLVED DIRECT HOLDINGS OF COMMON STOCK INTO PLACE IN OCTOBER AND NOVEMBER OF NINETEEN EIGHTY SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0108, best cost 95.7493 + -554.787 = -459.038 over 656 frames.
+22hc0108 COMPANIES ARE LISTED WHERE TRANSACTIONS GENERALLY AGGREGATE TEN THOUSAND SHARES OR ONE HUNDRED THOUSAND DOLLARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0109, best cost 230.728 + -897.117 = -666.389 over 1004 frames.
+22hc0109 THE PANEL MADE SEVERAL OTHER RECOMMENDATIONS CONCERNING PROGRAM TRADING INCLUDING CONSOLIDATING REGULATORY AUTHORITY OVER ALL U. S. FINANCIAL MARKETS UNDER ONE GOVERNMENT AGENCY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010a, best cost 115.867 + -475.474 = -359.606 over 512 frames.
+22hc010a IT ALSO PROPOSED RAISING MARGIN IN CAPITAL REQUIREMENTS FOR TRADING ON THE FUTURES EXCHANGES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010b, best cost 256.316 + -831.063 = -574.747 over 974 frames.
+22hc010b IN ITS HEAD TRADER SHOULD BE ABLE TO DELIVER ACTUAL STOCKS TO SELL FUTURES CONTRACT OBLIGATIONS STOCK INDEX FUTURES CURRENTLY ARE SETTLED IN CASH AND ONE EXPIRATION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010c, best cost 117.985 + -349.071 = -231.086 over 390 frames.
+22hc010c TRADERS SAID THE REASON BEHIND THE FIRST OUR FOCUS IS THE ACTION IN THE DOLLAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010d, best cost 158.525 + -642.321 = -483.796 over 738 frames.
+22hc010d THE DOLLAR IS STILL THE KEY SAID JACK P. BAKER HEAD OF BLOCK TRADING AT SHEARSON LEHMAN BROTHERS INCORPORATED NEW YORK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010e, best cost 169.649 + -630.254 = -460.605 over 754 frames.
+22hc010e YESTERDAY THE DOLLAR EASED SLIGHTLY AGAINST MOST MAJOR FOREIGN CURRENCIES CHEERING SOME STOCK MARKET PLAYERS WITH ITS RELATIVE STABILITY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010f, best cost 117.356 + -477.761 = -360.405 over 552 frames.
+22hc010f CONSUMER SPENDING SURGED ZERO POINT SEVEN PERCENT IN JUNE LED BY A JUMP IN AUTO SALES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010g, best cost 214.38 + -702.569 = -488.189 over 850 frames.
+22hc010g DESPITE THE UNEXPECTED STRENGTH ECONOMISTS SAY SPENDING WILL SLOW SOON DUE TO SLUGGISH INCOME GROWTH RISING PRICES AND HIGH CONSUMER DEBT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010h, best cost 61.6239 + -282.242 = -220.618 over 332 frames.
+22hc010h INCOME ROSE ZERO POINT FOUR PERCENT LAST MONTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010i, best cost 188.547 + -883.078 = -694.531 over 974 frames.
+22hc010i AS PREVIOUSLY REPORTED THOMPSON HAS A TENDER OFFER OUTSTANDING TO BUY THIRTY ONE POINT FIVE MILLION SOUTHLAND COMMON SHARES FOR SEVENTY SEVEN DOLLARS A SHARE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010j, best cost 33.7474 + -155.291 = -121.544 over 190 frames.
+22hc010j THE OFFER EXPIRES FRIDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010k, best cost 137.467 + -558.429 = -420.962 over 662 frames.
+22hc010k COMMON SHARES THAT AREN'T PURCHASED WILL BE EXCHANGED FOR THE COMBINATION OF NEW PREFERRED AND CASH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010l, best cost 121.163 + -531.385 = -410.222 over 688 frames.
+22hc010l THE FIVE PERMANENT MEMBERS ARE THE U. S. BRITAIN FRANCE CHINA AND THE SOVIET UNION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010m, best cost 136.329 + -470.197 = -333.869 over 540 frames.
+22hc010m U. S. ANALYSTS AREN'T CERTAIN WHETHER THE SOVIETS IN CHINA WILL SUPPORT THE EMBARGO RESOLUTION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010n, best cost 86.0064 + -257.538 = -171.532 over 302 frames.
+22hc010n CHINA HAS BEEN A PRINCIPAL ARMS SUPPLIER FOR IRAN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010o, best cost 248.557 + -800.895 = -552.338 over 972 frames.
+22hc010o ROBERT FARRELL DIRECTOR OF TECHNICAL ANALYSIS AT MERRILL LYNCH TAKES DOW THEORY INTO CONSIDERATION WAS STUDYING THE MARKET BUT IT'S NOT HIS SOLE FORECASTING TOOL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010p, best cost 176.694 + -690.754 = -514.06 over 810 frames.
+22hc010p HE POINTS OUT THAT SINCE THE OCTOBER NINETEENTH PLUNGE THE DOW JONES TRANSPORTATION AVERAGE HAS DROPPED BELOW THE LOW IT POSTED DURING THE CRASH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010q, best cost 199.829 + -775.34 = -575.511 over 932 frames.
+22hc010q IT HAS SINCE REBOUNDED TO SEVEN HUNDRED FORTY FIVE POINT FIVE SEVEN WERE CLOSED FRIDAY LOSING FOUR POINT FIVE SEVEN POINTS IN THE SESSION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010r, best cost 78.9522 + -241.644 = -162.692 over 304 frames.
+22hc010r HE BEGAN FEARING A POSSIBLE DIVIDEND CUT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010s, best cost 39.6534 + -128.967 = -89.3133 over 160 frames.
+22hc010s THE STOCK PRICE SANK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010t, best cost 136.634 + -358.639 = -222.005 over 428 frames.
+22hc010t WORST OF ALL HE SAYS SOMEBODY MIND ABOUT THE COMPANY WITH THE INTENTION OF BREAKING IT UP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010u, best cost 143.766 + -613.55 = -469.784 over 720 frames.
+22hc010u THE NIKKEI INDEX ADDED EIGHTY POINT OH SIX POINTS TO FINISH AT TWENTY EIGHT THOUSAND TWO HUNDRED NINE POINT FOUR TWO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010v, best cost 122.592 + -532.799 = -410.207 over 574 frames.
+22hc010v VOLUME ROSE TO AN ESTIMATED ONE BILLION SHARES FROM AN ESTIMATED SEVEN HUNDRED FIFTY MILLION SHARES ON THURSDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010w, best cost 148.039 + -555.925 = -407.886 over 640 frames.
+22hc010w THERE WERE FOUR HUNDRED EIGHTY TWO DECLINING ISSUES THREE HUNDRED FORTY NINE ADVANCING AND ONE HUNDRED NINETY EIGHT UNCHANGED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010x, best cost 173.161 + -546.412 = -373.251 over 658 frames.
+22hc010x WE COULD DISTRIBUTE THE BONDS IN JAPAN IN EUROPE IN THE U. K. BUT NOT IN THE U. S. MR. LABRECQUE SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010y, best cost 51.811 + -163.053 = -111.242 over 222 frames.
+22hc010y THESE POWERS ARE IMPORTANT TO US 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc010z, best cost 41.7087 + -133.497 = -91.7879 over 164 frames.
+22hc010z OUR CUSTOMERS WANT THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0110, best cost 80.9528 + -319.548 = -238.595 over 378 frames.
+22hc0110 THE QUESTION IS WHETHER U. S. BANKS WILL BE ALLOWED TO COMPETE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0111, best cost 117.509 + -409.662 = -292.153 over 480 frames.
+22hc0111 THAT'S NOT TO SAY HE IS LOOKING FOR A REBOUND IN THE NEXT COUPLE OF WEEKS OR EVEN MONTHS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0112, best cost 152.13 + -466.837 = -314.707 over 554 frames.
+22hc0112 THE THING THAT MOTIVATES WALL STREET IS SHORT TERM EARNINGS RESULTS IN ARE JUST NOT THERE HE SAYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0113, best cost 74.5358 + -194.792 = -120.256 over 246 frames.
+22hc0113 AND WE CAN TELL YOU WHEN THEY'RE GOING TO BE THERE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 22hc0114, best cost 82.6094 + -233.984 = -151.375 over 292 frames.
+22hc0114 IT MIGHT BE A YEAR OR MORE BEFORE WE GET PAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0201, best cost 88.6158 + -343.411 = -254.795 over 425 frames.
+420c0201 FEW OBSERVERS ARE OPTIMISTIC ABOUT THE COURTS OTHER PROBLEMS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0202, best cost 232.617 + -898.373 = -665.756 over 1059 frames.
+420c0202 ACCORDING TO THE ADMINISTRATIVE OFFICES OF THE U. S. COURTS ONLY HALF OF THE FIFTY BANKRUPTCY JUDGES WHOSE TERMS EXPIRE BY NINETEEN EIGHTY EIGHT WILL RETURN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0203, best cost 166.501 + -743.173 = -576.672 over 881 frames.
+420c0203 THE AGENCY ALSO PREDICTS THAT THE NUMBER OF BANKRUPTCY FILINGS WILL RISE SEVENTEEN PERCENT IN THE YEAR ENDING SEPTEMBER THIRTIETH NINETEEN EIGHTY SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0204, best cost 177.85 + -711.805 = -533.955 over 864 frames.
+420c0204 EXPENSES FROM THE DELAYED NINE MILE POINT TWO NUCLEAR PLANT NOW ACCOUNT FOR TWO HUNDRED SIXTY NINE MILLION DOLLARS OF THE WRITE OFF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0205, best cost 180.207 + -562.467 = -382.26 over 770 frames.
+420c0205 REGULATORS AREN'T ALLOWING THE UTILITY AN EIGHTEEN PERCENT OWNER IN THE PROJECT TO PASS THAT ALONG TO CUSTOMERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0206, best cost 110.702 + -378.567 = -267.865 over 489 frames.
+420c0206 THE FOUR OTHER UTILITY COMPANY HOURS WILL ALSO HAVE TO TAKE WRITE OFFS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0207, best cost 176.573 + -748.798 = -572.225 over 939 frames.
+420c0207 BUT THOSE CHARGES AREN'T REQUIRED TO BE MADE UNTIL THE NINETEEN EIGHTY EIGHT FIRST QUARTER OR UNDER CERTAIN CIRCUMSTANCES EVEN LATER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0208, best cost 149.746 + -643.636 = -493.89 over 801 frames.
+420c0208 LAST MONTH OVERALL GOODS PRODUCING EMPLOYMENT FELL SIXTY EIGHT THOUSAND AFTER THIRTY TWO THOUSAND JOB RISE IN FEBRUARY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0209, best cost 143.93 + -601.315 = -457.386 over 750 frames.
+420c0209 THE DEPARTMENT SAID THE DECLINE IN FACTORY JOBS HAS CONCENTRATED IN MOTOR VEHICLES AN ELECTRICAL AND ELECTRONIC EQUIPMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020a, best cost 129.319 + -555.667 = -426.348 over 691 frames.
+420c020a CONSTRUCTION EMPLOYMENT FELL FORTY SEVEN THOUSAND AFTER A FIFTEEN THOUSAND JOB DECLINE THE MONTH BEFORE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020b, best cost 167.742 + -679.96 = -512.218 over 884 frames.
+420c020b MINING EMPLOYMENT WHICH INCLUDES THE OIL AND GAS EXTRACTION INDUSTRY ROSE THREE THOUSAND AFTER A ONE THOUSAND JOB RISE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020c, best cost 150.55 + -777.224 = -626.674 over 944 frames.
+420c020c INTERNATIONAL MOBILE MACHINES CORPORATION SOLD ONE MILLION SHARES OF TWO DOLLAR AND FIFTY CENT CUMULATIVE PREFERRED AT TWENTY FIVE DOLLARS EACH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020d, best cost 57.5596 + -350.173 = -292.614 over 481 frames.
+420c020d DREXEL BURNHAM LAMBERT INCORPORATED WAS LEAD UNDERWRITER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020e, best cost 188.176 + -795.069 = -606.893 over 981 frames.
+420c020e THE STOCK IS CONVERTIBLE AT ANY TIME INTO COMMON AT AN INITIAL PRICE OF TWELVE DOLLARS A SHARE SUBJECT TO ADJUSTMENT DECEMBER FIFTEENTH NINETEEN EIGHTY EIGHT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020f, best cost 93.8852 + -435.697 = -341.812 over 559 frames.
+420c020f PROCEEDS WILL BE USED FOR PRODUCT DEVELOPMENT WORKING CAPITAL AND GENERAL PURPOSES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020g, best cost 117.266 + -489.554 = -372.288 over 633 frames.
+420c020g THE PHILADELPHIA BASED CONCERN DEVELOPS AND DESIGNED ADVANCED TELECOMMUNICATIONS SYSTEMS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020h, best cost 126.678 + -660.129 = -533.451 over 845 frames.
+420c020h IN OVER THE COUNTER TRADING FRIDAY THE COMPANY'S COMMON CLOSED AT TEN DOLLARS AND TWENTY FIVE CENTS A SHARE DOWN FIFTY CENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020i, best cost 75.4246 + -338.486 = -263.062 over 506 frames.
+420c020i STOCK PRICES WERE ALSO MIXED IN PARIS ZURICH AND STOCKHOLM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020j, best cost 74.746 + -328.066 = -253.32 over 459 frames.
+420c020j STOCKS ROSE IN AMSTERDAM AND WERE LOWER IN BRUSSELS AND MILAN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020k, best cost 145.127 + -555.836 = -410.709 over 713 frames.
+420c020k MOST EUROPEAN TRADERS WERE REPORTEDLY STAYING OUT OF ACTION UNTIL THE TRADE FIGURES ARE RELEASED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020l, best cost 139.244 + -484.315 = -345.071 over 658 frames.
+420c020l A DROP IN OIL PRICES COULD ALSO PROVIDE SOME PRICE RALLIES AS IT DID IN NINETEEN EIGHTY SIX 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020m, best cost 179.935 + -744.467 = -564.532 over 934 frames.
+420c020m THE RECENT FAILURE OF THE ORGANIZATION OF PETROLEUM EXPORTING COUNTRIES TO REACH AN AGREEMENT LIMITING PRODUCTION SUGGEST PRICES MIGHT FALL SOME 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020n, best cost 115.466 + -433.171 = -317.706 over 574 frames.
+420c020n BUT A DIP IN INFLATION ASSOCIATED WITH OIL PRICES IS LIKELY TO BE TEMPORARY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020o, best cost 88.7743 + -317.59 = -228.816 over 421 frames.
+420c020o BUT SOME OPERATOR SAID N. B. C. MAY RUN INTO PROBLEMS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020p, best cost 136.986 + -474.17 = -337.184 over 602 frames.
+420c020p FOR ONE THING IF THERE IS CURRENTLY A SHORTAGE OF CHANNEL CAPACITY AT MANY CABLE SYSTEMS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020q, best cost 261.987 + -1002.77 = -740.785 over 1205 frames.
+420c020q ALSO A TABLE OPERATORS ALREADY ARE SIGNING UP FOR ANOTHER PROPOSE NEW CABLE NETWORK TURNER BROADCASTING SYSTEMS INCORPORATED'S T. AND T. SCHEDULED FOR OCTOBER THIRD LAUNCH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020r, best cost 149.693 + -527.904 = -378.211 over 697 frames.
+420c020r THIS TIME AROUND WALL STREET FIRMS ARGUE THAT PROGRAM TRADING HAS ITS USES AND IS MISUNDERSTOOD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020s, best cost 127.328 + -456.911 = -329.584 over 632 frames.
+420c020s WE BELIEVE PROGRAM TRADING IS IMPORTANT AS A SOURCE OF LIQUIDITY MORGAN STANLEY SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020t, best cost 187.246 + -680.564 = -493.318 over 813 frames.
+420c020t AND A MERRILL LYNCH SPOKESMAN SAID ALL OF HIS FIRM'S PROGRAM TRADING SIMPLY REFLECTS REQUESTS FROM CUSTOMERS FOR SUCH TRADING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020u, best cost 164.371 + -638.219 = -473.849 over 804 frames.
+420c020u THE MINNEAPOLIS MINNESOTA BASED COMPANY SAID THE OFFERING WILL BEGIN IN SEPTEMBER BUT IT HASN'T SET A RECORD DATE ARE PRICE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020v, best cost 196.701 + -876.477 = -679.776 over 1057 frames.
+420c020v A SPOKESMAN SAID THE COMPANY EXPECTS TO MORE THAN DOUBLE ITS SHARES OUTSTANDING TO ABOUT NINETEEN POINT TWO MILLION FROM EIGHT POINT TWO MILLION AS A RESULT OF THE OFFERING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020w, best cost 137.658 + -474.305 = -336.647 over 623 frames.
+420c020w PATTERN PROCESSING MAKES MACHINE VISION SYSTEMS FOR USE IN AUTOMATED INSPECTIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020x, best cost 97.012 + -440.626 = -343.614 over 610 frames.
+420c020x IN OVER THE COUNTER TRADING FRIDAY IT WAS QUOTED AT TWENTY FIVE CENTS A SHARE BID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020y, best cost 136.867 + -624.475 = -487.608 over 790 frames.
+420c020y THIS RETAILER SAID IT OFFERED FOR SALE TWO HUNDRED MILLION DOLLARS IN NOTES DUE AUGUST FIRST NINETEEN NINETY SIX 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c020z, best cost 120.981 + -573.754 = -452.773 over 741 frames.
+420c020z DEAN WITTER REYNOLDS INCORPORATED GOLDMAN SACHS AND COMPANY AND MORGAN STANLEY AND COMPANY ARE HANDLING THE SALE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0210, best cost 125.441 + -460.947 = -335.506 over 608 frames.
+420c0210 PROCEEDS WILL BE ADDED TO SEARS GENERAL FINANCE TO REDUCE ITS SHORT TERM BORROWINGS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0211, best cost 114.874 + -427.063 = -312.189 over 548 frames.
+420c0211 PROCEEDS ALSO MAY BE USED EVENTUALLY TO BUY BACK COMMON SHARES THE COMPANY SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0212, best cost 106.363 + -503.189 = -396.826 over 648 frames.
+420c0212 SEARS'S APPROVED THE BUYBACK OF AS MANY AS FORTY MILLION OF ITS COMMON SHARES OUTSTANDING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0213, best cost 116.445 + -528.085 = -411.64 over 689 frames.
+420c0213 AS OF JUNE THIRTIETH ITS SEARS HAVE THREE HUNDRED FORTY FIVE POINT EIGHT MILLION SHARES OUTSTANDING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 420c0214, best cost 185.324 + -801.227 = -615.904 over 1008 frames.
+420c0214 THE NOTES WILL BEAR INTEREST AT EIGHT POINT FIVE FIVE PERCENT PAYABLE FEBRUARY FIRST AND AUGUST FIRST OF EACH YEAR BEGINNING FEBRUARY FIRST NINETEEN NINETY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0201, best cost 203.285 + -1141.21 = -937.924 over 1320 frames.
+421c0201 UNDERWRITERS LED BY MERRILL LYNCH CAPITAL MARKETS TENTATIVELY PRICED A PROPOSED ONE HUNDRED NINETY SIX POINT SEVEN MILLION DOLLAR OFFERING OF MORTGAGE REVENUE BONDS BY THE CALIFORNIA HOUSING FINANCE AGENCY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0202, best cost 100.789 + -446.899 = -346.11 over 610 frames.
+421c0202 THE OFFERING INCLUDES ZERO COUPON BONDS CALLED CAPITAL APPRECIATION BONDS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0203, best cost 144.778 + -743.403 = -598.625 over 921 frames.
+421c0203 YIELDS RANGE FROM FOUR POINT EIGHT PERCENT IN NINETEEN NINETY TO SEVEN POINT TWO PERCENT AND ZERO COUPON BONDS DUE IN TWO THOUSAND TWO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0204, best cost 117.843 + -390.991 = -273.148 over 550 frames.
+421c0204 SO CLEARLY THE ADVOCATES OF SANCTIONS WITH A FOREIGN POLICY VICTORS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0205, best cost 57.9314 + -202.431 = -144.499 over 307 frames.
+421c0205 AT LEAST IN THE U. S. THEY WERE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0206, best cost 59.6966 + -234.498 = -174.801 over 329 frames.
+421c0206 WHAT ABOUT IN SOUTH AFRICA ITSELF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0207, best cost 29.2894 + -132.257 = -102.968 over 224 frames.
+421c0207 THAT'S ANOTHER STORY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0208, best cost 91.9013 + -323.462 = -231.56 over 438 frames.
+421c0208 FEW PEOPLE PREDICTED DIVIDEND CUT IN G. M. HOWEVER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0209, best cost 153.395 + -508.283 = -354.888 over 656 frames.
+421c0209 ONE INVESTMENT OFFICERS SAYS MR. SMITH WAS AS LAST WEEK WHAT IT WOULD TAKE TO CUT THE DIVIDEND 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020a, best cost 104.022 + -369.128 = -265.106 over 460 frames.
+421c020a IT WOULD TAKE A NEW CHAIRMAN THE EXECUTIVE IS SAID TO HAVE REPLIED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020b, best cost 82.0933 + -432.85 = -350.757 over 519 frames.
+421c020b SEPARATELY SHELL OIL COMPANY'S NET INCOME ROSE TWENTY ONE PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020c, best cost 191.606 + -771.99 = -580.383 over 958 frames.
+421c020c OCCIDENTAL PETROLEUM CORPORATION REPORTED A TWENTY THREE PERCENT PROFIT JUMP THOUGH THE COMPANY WOULD HAVE HAD A LOSS WITH HOW THE ONE TIME ITEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020d, best cost 153.551 + -620.401 = -466.85 over 779 frames.
+421c020d PHILLIPS PETROLEUM CORPORATION'S PROFIT MEANWHILE PLUNGED SIXTY THREE PERCENT AMID WEEK NATURAL GAS PRICES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020e, best cost 130.086 + -543.023 = -412.937 over 690 frames.
+421c020e AND PENNZOIL COMPANY'S NET INCOME TUMBLED SEVENTY ONE PERCENT LARGELY FROM A ONE TIME CHARGE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020f, best cost 189.392 + -958.855 = -769.462 over 1167 frames.
+421c020f STOCKS REBOUNDED SHARPLY PUSHING THE DOW JONES INDUSTRIALS UP A RECORD SEVENTY FIVE POINT TWO THREE POINTS TO TWO THOUSAND FIVE HUNDRED SIXTY EIGHT POINT OH FIVE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020g, best cost 200.352 + -784.903 = -584.551 over 958 frames.
+421c020g THE RALLY FUELED BY A STRONGER DOLLAR AND BOND MARKET SNAPPED A FIVE DAY DECLINE IN WHICH THE INDUSTRIALS LOST OVER ONE HUNDRED TWENTY POINTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020h, best cost 155.597 + -654.362 = -498.765 over 852 frames.
+421c020h THE DOLLAR ROSE ZERO POINT NINE PERCENT AGAINST THE YEN WHILE SOME LONG TERM TREASURY BONDS REACHED THE HIGHEST LEVEL IN A WEEK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020i, best cost 154.69 + -575.791 = -421.101 over 775 frames.
+421c020i SOME LOCAL MANUFACTURERS HAVE AVOIDED THE TIGHT LABOR MARKET BY CONTRACTING WORK TO FACTORIES IN CHINA 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020j, best cost 184.741 + -668.047 = -483.306 over 857 frames.
+421c020j MANUFACTURERS ALSO ARE URGING THE GOVERNMENT TO EASE IMMIGRATION RULES SUE THEY CAN IMPORT WORKERS FROM NEIGHBORING COUNTRIES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020k, best cost 61.3812 + -253.58 = -192.199 over 353 frames.
+421c020k AND MANY COMPANIES ARE IMPROVING EQUIPMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020l, best cost 184.549 + -724.002 = -539.452 over 934 frames.
+421c020l THE GOVERNMENT PREDICTS SPENDING FOR PLANT IN MACHINERY WILL GROW TWENTY FIVE PERCENT THIS YEAR UP FROM NINE POINT EIGHT PERCENT LAST YEAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020m, best cost 128.723 + -773.989 = -645.266 over 971 frames.
+421c020m THE FINANCIAL TIMES THIRTY SHARE INDEX CLOSED UP SEVEN POINT SIX POINTS AT ONE THOUSAND THREE HUNDRED NINETY EIGHT POINT SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020n, best cost 154.204 + -852.594 = -698.39 over 1025 frames.
+421c020n VOLUME WAS A VERY MODEST THREE HUNDRED FIFTY TWO POINT TWO MILLION SHARES DOWN FROM THREE HUNDRED SIXTY SIX POINT FOUR MILLION SHARES A DAY EARLIER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020o, best cost 146.924 + -761.163 = -614.239 over 983 frames.
+421c020o THE ONE HUNDRED SHARE INDEX WAS UP TEN POINT OH POINTS IN ONE THOUSAND SEVEN HUNDRED FORTY THREE POINT FOUR AT THE CLOSE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020p, best cost 231.875 + -919.29 = -687.416 over 1125 frames.
+421c020p ALL TOLD AMOCO SAID IT REPLACED ONE HUNDRED THIRTY PERCENT OF THE RESERVES THAT IT PRODUCE LAST YEAR RECOVERING FROM A WEAK RECORD IN NINETEEN EIGHTY SIX 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020q, best cost 158.602 + -726.272 = -567.67 over 925 frames.
+421c020q EXXON CORPORATION SAID EARLIER THIS WEEK THAT HE REPLACED ONE HUNDRED FOURTEEN PERCENT OF ITS OIL AND GAS PRODUCTION IN NINETEEN EIGHTY SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020r, best cost 205.979 + -844.66 = -638.681 over 1073 frames.
+421c020r TEXACO INCORPORATED WHICH HAS HAD ONE OF THE WORST RECORDS OF THE BIG INTEGRATED OIL COMPANIES REPLACED SEVENTY PERCENT OF ITS PRODUCTION LAST YEAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020s, best cost 148.115 + -651.862 = -503.747 over 794 frames.
+421c020s ALTHOUGH THAT IS UP FROM FORTY SIX PERCENT IN NINETEEN EIGHTY SIX TEXACO'S PRODUCTION ALSO FELL LAST YEAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020t, best cost 124.066 + -587.638 = -463.572 over 727 frames.
+421c020t ENERGY FUTURES PRICES ROSE FOLLOWING AN EXPLOSION AT A MAJOR U. S. REFINING PLANT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020u, best cost 89.9502 + -383.366 = -293.416 over 490 frames.
+421c020u STOCKS FELL IN NERVOUS TRADING WHILE BONDS WERE NARROWLY MIXED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020v, best cost 30.4881 + -147.226 = -116.738 over 279 frames.
+421c020v THE DOLLAR STRENGTHENED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020w, best cost 159.805 + -766.487 = -606.683 over 953 frames.
+421c020w AN ISSUE OF TEN MILLION COMMON SHARES OF BETHLEHEM STEEL WAS PRICED AT NINETEEN DOLLARS A SHARE THROUGH SALOMON BROTHERS INCORPORATED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020x, best cost 114.282 + -468.519 = -354.237 over 600 frames.
+421c020x THE OFFERING SIZE WAS INCREASED FROM THE EIGHT MILLION SHARES ARE USUALLY PLANNED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020y, best cost 139.598 + -882.412 = -742.813 over 1052 frames.
+421c020y IN NEW YORK STOCK EXCHANGE COMPOSITE TRADING YESTERDAY THE COMPANY'S STOCK ROSE SIXTY TWO POINT FIVE CENTS TO NINETEEN POINT SIX TWO FIVE DOLLARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c020z, best cost 163.844 + -637.327 = -473.482 over 818 frames.
+421c020z A CITICORP PORTFOLIO MANAGER SAYS THE UNIT'S NEW OWNER COULD LOSE QUITE A FEW CURRENT MANAGERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0210, best cost 216.764 + -686.924 = -470.16 over 846 frames.
+421c0210 BUT THE OFFER THE OPINION THAT ROBERT WAY THE UNIT'S CHIEF AND HALF A DOZEN OTHER SENIOR PEOPLE WILL GO WITH U. S. F. AND G. 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0211, best cost 137.331 + -537.887 = -400.556 over 680 frames.
+421c0211 NEW OWNERS SOMETIMES OFFER ATTRACTIVE LONGER TERM CONTRACTS TO SENIOR PEOPLE HE SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0212, best cost 94.738 + -333.706 = -238.968 over 452 frames.
+421c0212 CRITICS SAY THE FEDERAL APPROACH WAS WRONG FROM THE START 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0213, best cost 64.8351 + -273.904 = -209.069 over 357 frames.
+421c0213 THE HOSPITAL INDUSTRY IS GOVERNMENT FUNDED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 421c0214, best cost 84.2106 + -310.564 = -226.353 over 432 frames.
+421c0214 IT SHOULD BE GOVERNMENT REGULATED SAYS DOCTOR WOLFE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0201, best cost 198.132 + -695.578 = -497.446 over 897 frames.
+422c0201 THE N. A. S. D. RELEASE SHORT INTEREST FIGURES FOR THE FIRST TIME NOVEMBER TWENTY FIFTH FOR ALL STOCKS CARRIED ON ITS NASDAQ AUTOMATED QUOTATION SYSTEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0202, best cost 151.114 + -550.098 = -398.984 over 720 frames.
+422c0202 INVESTORS USE SHORT INTEREST FIGURES TO DETERMINE HOW MUCH SHORT SELLING IS GOING ON IN INDIVIDUAL STOCKS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0203, best cost 128.6 + -430.201 = -301.6 over 522 frames.
+422c0203 A SHORT SALE AS A SALE OF BORROWED STOCK BY INVESTORS EXPECTING ITS PRICE TO DROP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0204, best cost 159.495 + -512.135 = -352.64 over 662 frames.
+422c0204 THE INVESTORS EXPECT A PROFIT ON THE DIFFERENCE BETWEEN THE PRICE REALIZE ITS SALE AT A COST OF REPLACING THE BORROWED SHARES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0205, best cost 183.16 + -689.912 = -506.752 over 883 frames.
+422c0205 THE TWO FINANCIAL SERVICES CONCERNS SAID THEY PREVIOUSLY AGREED TO END THEIR AGREEMENT IF THE TRANSACTION WASN'T COMPLETED BY MARCH TWENTY FOURTH NINETEEN EIGHTY SEVEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0206, best cost 153.635 + -482.411 = -328.775 over 642 frames.
+422c0206 SPOKESMEN FOR BOTH COMPANIES SAID THEY ENDED THE NEGOTIATIONS BECAUSE IT APPEAR THAT THE MERGER WOULD BE COMPLETED BY THAT DATE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0207, best cost 72.7379 + -226.356 = -153.618 over 302 frames.
+422c0207 FRENCH OR SAVINGS IS BASED IN LAS VEGAS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0208, best cost 86.2271 + -244.133 = -157.906 over 340 frames.
+422c0208 JUST BEFORE CHRISTMAS SHE FINALLY APPLIED FOR WELFARE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0209, best cost 71.178 + -208.86 = -137.682 over 326 frames.
+422c0209 BUT SHE INSISTS I DON'T WANT TO GO ON WELFARE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020a, best cost 44.9556 + -109.235 = -64.2794 over 185 frames.
+422c020a I'M A GOOD WORKER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020b, best cost 29.6287 + -86.8961 = -57.2675 over 206 frames.
+422c020b WHEN JOB 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020c, best cost 93.1147 + -276.282 = -183.167 over 376 frames.
+422c020c THE CHIEF TRADER IN NEW YORK FOR TOKYO BASED BANK AGREES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020d, best cost 97.8389 + -308.025 = -210.186 over 475 frames.
+422c020d IN A JAPANESE INVESTORS DON'T SELL DOLLARS IN SALES WILL HE SAYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020e, best cost 107.236 + -328.975 = -221.739 over 487 frames.
+422c020e THE TREND IS INEVITABLE UNLESS THE GOVERNMENT AS A PARTY OR THE WHOLE WORLD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020f, best cost 62.8659 + -186.557 = -123.691 over 285 frames.
+422c020f EVERYTHING IS DONE MR. LEVY SAID YESTERDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020g, best cost 109.886 + -241.515 = -131.63 over 338 frames.
+422c020g WHAT IS IMPORTANT IS WHO SAY THIS COMPANY AND ARE REBUILDING AND 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020h, best cost 163.7 + -512.031 = -348.331 over 737 frames.
+422c020h FOR THE FIRST DREXEL IN DEBT ACCORDING TO WESTERN UNION'S PROXY STATEMENT A TWENTY FIVE POINT FOUR MILLION DOLLAR FEE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020i, best cost 121.273 + -350.37 = -229.096 over 448 frames.
+422c020i TRADERS SAID THE REASON ON THE FIRST OUR FOCUS IS THE ACTION IN THE DOLLAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020j, best cost 145.382 + -547.305 = -401.923 over 713 frames.
+422c020j THE DOLLAR IS STILL A KEY SUBJECT P. BAKER HEAD OF BLOCK TRADING AT SHEARSON LEHMAN BROTHERS INCORPORATED NEW YORK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020k, best cost 159.376 + -567.613 = -408.237 over 720 frames.
+422c020k YESTERDAY THE DOLLAR EASED SLIGHTLY AGAINST MOST MAJOR FOREIGN CURRENCIES CHEERING SOME STOCK MARKET PLAYERS WITH ITS RELATIVE STABILITY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020l, best cost 159.255 + -441.285 = -282.03 over 574 frames.
+422c020l REGIONAL BANKS APPEAR WILLING TO ACCEPT BIG LOSSES AND OTHER MEXICAN DEBT PLAN PUTTING PRESSURE ON BIG BANKS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020m, best cost 77.4 + -284.369 = -206.969 over 370 frames.
+422c020m ALSO TWO BANKS BOOSTED FOREIGN LOAN LOSS RESERVES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020n, best cost 111.573 + -365.119 = -253.546 over 492 frames.
+422c020n MEANWHILE MEXICO HAS DONE BETTER THAN OTHER BIG DEBTORS IN WINNING CONCESSIONS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020o, best cost 117.022 + -411.939 = -294.917 over 586 frames.
+422c020o LATE IN THE WAY STOCK SPLIT IS PAYABLE SEPTEMBER FOURTEENTH TO STOCK OF RECORD ON AUGUST NINETEENTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020p, best cost 188.233 + -609.254 = -421.02 over 781 frames.
+422c020p THE COMPANY SAID ITS QUARTERLY CASH DIVIDEND OF FORTY CENTS A SHARE WILL BE PAID FOR THE SPLIT ON SEPTEMBER TENTH SAYS STOCK OF RECORD ON AUGUST NINETEENTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020q, best cost 175.541 + -558.876 = -383.334 over 757 frames.
+422c020q A COMPANY SPOKESMAN SAID THAT AFTER THE SPLIT THE QUARTERLY DIVIDEND WILL BE REDUCED TEN CENTS A SHARE CONTINUING THE CURRENT CASH PAYOUT RATE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020r, best cost 136.701 + -548.044 = -411.344 over 692 frames.
+422c020r IN COMPOSITE TRADING ON THE NEW YORK STOCK EXCHANGE YESTERDAY DUN CLOSE TO FIFTY ONE DOLLARS AND FIFTY CENTS UP ONE DOLLAR AND FIFTY CENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020s, best cost 120.662 + -573.996 = -453.334 over 710 frames.
+422c020s IN NATIONAL OVER THE COUNTER TRADING INFORMATION RESOURCES CLOSED AT TWENTY ONE DOLLARS UP TWO POINT ONE TWO FIVE DOLLARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020t, best cost 85.4364 + -294.367 = -208.931 over 395 frames.
+422c020t NEWS OF F. T. C. ANNOUNCEMENT WAS MADE AFTER THE CLOSE OF TRADING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020u, best cost 195.347 + -686.147 = -490.8 over 875 frames.
+422c020u DOMESTIC CARS ACCOUNTED FOR SEVENTY THREE POINT FIVE PERCENT IN APRIL AUTO SALES WHILE IMPORT SHARE GREW ONE POINT FIVE PERCENT TO TWENTY SIX POINT FIVE PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020v, best cost 147.158 + -515.271 = -368.113 over 667 frames.
+422c020v G. M.'S SHARE THE TOTAL CAR MARKET FULL THE THIRTY FIVE POINT SIX PERCENT FROM THIRTY NINE POINT TWO PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020w, best cost 180.713 + -528.779 = -348.066 over 673 frames.
+422c020w ITS DECLINE WAS APPARENTLY SPLIT BY FORD CHRYSLER HONDA MOTOR COMPANY'S MARKET SHARES EACH GREW ONE POINT ONE PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020x, best cost 151.081 + -570.167 = -419.086 over 713 frames.
+422c020x FORD'S SHARE ROSE TO TWENTY POINT EIGHT PERCENT PRICES TO ELEVEN POINT FOUR PERCENT IN AUGUST TEN POINT TWO PERCENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020y, best cost 183.563 + -708.25 = -524.686 over 926 frames.
+422c020y DOFASCO HAMILTON ONTARIO SAID AT A THREE POINT THREE MILLION CONVERTIBLE PREFERRED SHARES ABOUT EIGHTY SIX PERCENT OF THE TOTAL OUTSTANDING WERE TENDERED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c020z, best cost 154.297 + -684.874 = -530.576 over 876 frames.
+422c020z ALL SHARES TENDERED HAVE AN INDICATED VALUE OF ABOUT FIVE HUNDRED THIRTY EIGHT POINT FIVE MILLION CANADIAN DOLLARS FOUR HUNDRED THIRTY MILLION U. S. DOLLARS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0210, best cost 78.8978 + -271.355 = -192.457 over 376 frames.
+422c0210 THE OFFERS FOR BOTH CLASSES OF STOCK EXPIRED FRIDAY 
+LOG (lattice-scale:main():lattice-scale.cc:90) Done 410 lattices.
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0211, best cost 141.773 + -373.218 = -231.444 over 490 frames.
+422c0211 AT HIS FULTON WAS AN APPROPRIATE TIME TO PURSUE BUSINESS IDEAS AMOUNT OF MR. SAUNDERS SAID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0212, best cost 162.085 + -463.298 = -301.212 over 629 frames.
+422c0212 I'M NOT GOING TO RETIRE BUT AMONG LIKELY TO GO TO ANY LARGE INVESTMENT BANKING FIRM THE RIVALS MORGAN STANLEY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0213, best cost 62.2352 + -156.177 = -93.9418 over 311 frames.
+422c0213 I PREFER US ANYTHING MORE THAN 
+LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 410 lattices.
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0214, best cost 60.2313 + -170.61 = -110.378 over 275 frames.
+422c0214 WHAT CAN THE FEDERAL RESERVE DO NOW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0215, best cost 181.369 + -496.02 = -314.65 over 664 frames.
+422c0215 MR. GREENSPAN APPEARS TO BELIEVE THAT THE BEST COURSE IS TO PURSUE THE CONTRAS MOVE TOWARD EASE AND HOPE FOR A SOFT LANDING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 422c0216, best cost 128.37 + -423.08 = -294.71 over 550 frames.
+422c0216 SOMETIME NEXT YEAR HE SAID LAST WEEK WILL KNOW WHETHER THE FED'S PLAN HAS BEEN SUCCESSFUL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 423c0201, best cost 165.643 + -472.392 = -306.749 over 552 frames.
+423c0201 THE FOR TAXPAYERS THE CHIEF ADVANTAGE OF PAYING NEITHER CREDIT CARDS WOULD BE EXTRA TIME TO PAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall cost per frame is -0.580071 = 0.199527 [graph] + -0.779598 [acoustic] over 275858 frames.
+LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 410 lattices, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Fri Jun  2 18:14:40 BST 2017, elapsed time 3 seconds

@@ -1,0 +1,25 @@
+Your job-array 258440.1-32:1 ("acc.20.sh") has been submitted
+/var/spool/sge/node173/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node155/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node174/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node174/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node160/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node173/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node118/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node168/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node174/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node052/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node202/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node202/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node202/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node155/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node118/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node173/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node157/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node157/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node157/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node052/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node160/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node149/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node149/job_scripts/258440: line 3: ./path.sh: No such file or directory
+/var/spool/sge/node149/job_scripts/258440: line 3: ./path.sh: No such file or directory

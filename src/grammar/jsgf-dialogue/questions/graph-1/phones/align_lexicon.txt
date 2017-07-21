@@ -1,0 +1,29 @@
+A A ah_S
+A A ax_S
+A A ey_S
+BOOK BOOK b_B uh_I k_E
+<eps> <eps> SIL
+FAST FAST f_B aa_I s_I t_E
+FOOTBALL FOOTBALL f_B uh_I t_I b_I ao_I l_E
+FOR FOR f_B ao_E
+FOR FOR f_B ao_I r_E
+FOR FOR f_B ax_E
+FOR FOR f_B ax_I r_E
+FOR FOR f_B er_E
+JOGGING JOGGING jh_B oh_I g_I ih_I ng_E
+MINUTES MINUTES m_B ih_I n_I ih_I t_I s_E
+!NOISE !NOISE NOISE_S
+PLAYING PLAYING p_B l_I ey_I ih_I ng_E
+READING READING r_B eh_I d_I ih_I ng_E
+READING READING r_B iy_I d_I ih_I ng_E
+!SIL !SIL SIL_S
+SITTING SITTING s_B ih_I t_I ih_I ng_E
+SKIPPING SKIPPING s_B k_I ih_I p_I ih_I ng_E
+STILL STILL s_B t_I ih_I l_E
+SWIMMING SWIMMING s_B w_I ih_I m_I ih_I ng_E
+TELEVISION TELEVISION t_B eh_I l_I ih_I v_I ih_I zh_I ax_I n_E
+TELEVISION TELEVISION t_B eh_I l_I ih_I v_I ih_I zh_I n_E
+TEN TEN t_B eh_I n_E
+TWENTY TWENTY t_B w_I eh_I n_I t_I iy_E
+WALKING WALKING w_B ao_I k_I ih_I ng_E
+WATCHING WATCHING w_B oh_I ch_I ih_I ng_E

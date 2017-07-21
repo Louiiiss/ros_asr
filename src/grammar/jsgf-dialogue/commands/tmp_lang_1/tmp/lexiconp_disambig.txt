@@ -1,0 +1,29 @@
+A	1.0	ah_S
+A	1.0	ax_S
+A	1.0	ey_S
+AN	1.0	ae_B n_E
+AN	1.0	ax_B n_E
+ANGRY	1.0	ae_B ng_I g_I r_I iy_E
+ARM	1.0	aa_B m_E
+BOTH	1.0	b_B ow_I th_E
+DANCE	1.0	d_B aa_I n_I s_E
+DO	1.0	d_B uw_E
+FACE	1.0	f_B ey_I s_E
+HANDS	1.0	hh_B ae_I n_I d_I z_E
+HAPPY	1.0	hh_B ae_I p_I iy_E
+LEFT	1.0	l_B eh_I f_I t_E
+MAKE	1.0	m_B ey_I k_E
+MONKEY	1.0	m_B ah_I ng_I k_I iy_E
+OUT	1.0	aw_B t_E
+PUT	1.0	p_B ah_I t_E
+PUT	1.0	p_B uh_I t_E
+RIGHT	1.0	r_B ay_I t_E
+SAD	1.0	s_B ae_I d_E
+SURPRISED	1.0	s_B ax_I p_I r_I ay_I z_I d_E
+THE	1.0	dh_B ax_E
+THE	1.0	dh_B iy_E
+UP	1.0	ah_B p_E
+YOUR	1.0	y_B ao_E
+YOUR	1.0	y_B ao_I r_E
+!SIL	1.0	SIL_S
+!NOISE	1.0	NOISE_S

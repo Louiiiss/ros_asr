@@ -1,0 +1,30 @@
+A A ah_S
+A A ax_S
+A A ey_S
+AN AN ae_B n_E
+AN AN ax_B n_E
+ANGRY ANGRY ae_B ng_I g_I r_I iy_E
+ARM ARM aa_B m_E
+BOTH BOTH b_B ow_I th_E
+DANCE DANCE d_B aa_I n_I s_E
+DO DO d_B uw_E
+<eps> <eps> SIL
+FACE FACE f_B ey_I s_E
+HANDS HANDS hh_B ae_I n_I d_I z_E
+HAPPY HAPPY hh_B ae_I p_I iy_E
+LEFT LEFT l_B eh_I f_I t_E
+MAKE MAKE m_B ey_I k_E
+MONKEY MONKEY m_B ah_I ng_I k_I iy_E
+!NOISE !NOISE NOISE_S
+OUT OUT aw_B t_E
+PUT PUT p_B ah_I t_E
+PUT PUT p_B uh_I t_E
+RIGHT RIGHT r_B ay_I t_E
+SAD SAD s_B ae_I d_E
+!SIL !SIL SIL_S
+SURPRISED SURPRISED s_B ax_I p_I r_I ay_I z_I d_E
+THE THE dh_B ax_E
+THE THE dh_B iy_E
+UP UP ah_B p_E
+YOUR YOUR y_B ao_E
+YOUR YOUR y_B ao_I r_E

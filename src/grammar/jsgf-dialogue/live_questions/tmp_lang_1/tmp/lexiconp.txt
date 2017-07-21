@@ -1,0 +1,16 @@
+FOR 1.0 f_B ao_E
+FOR 1.0 f_B ao_I r_E
+FOR 1.0 f_B ax_E
+FOR 1.0 f_B ax_I r_E
+FOR 1.0 f_B er_E
+MOVED 1.0 m_B uw_I v_I d_E
+QUICKLY 1.0 k_B w_I ih_I k_I l_I iy_E
+SECONDS 1.0 s_B eh_I k_I ax_I n_I d_I z_E
+SECONDS 1.0 s_B ih_I k_I oh_I n_I d_I z_E
+SLOWLY 1.0 s_B l_I ow_I l_I iy_E
+STILL 1.0 s_B t_I ih_I l_E
+STOOD 1.0 s_B t_I uh_I d_E
+TEN 1.0 t_B eh_I n_E
+TWENTY 1.0 t_B w_I eh_I n_I t_I iy_E
+!SIL 1.0 SIL_S
+!NOISE 1.0 NOISE_S

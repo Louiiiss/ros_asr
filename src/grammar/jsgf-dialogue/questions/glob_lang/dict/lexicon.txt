@@ -1,0 +1,28 @@
+A	ah
+A	ax
+A	ey
+BOOK	b uh k
+FAST	f aa s t
+FOOTBALL	f uh t b ao l
+FOR	f ao
+FOR	f ao r
+FOR	f ax
+FOR	f ax r
+FOR	f er
+JOGGING	jh oh g ih ng
+MINUTES	m ih n ih t s
+PLAYING	p l ey ih ng
+READING	r eh d ih ng
+READING	r iy d ih ng
+SITTING	s ih t ih ng
+SKIPPING	s k ih p ih ng
+STILL	s t ih l
+SWIMMING	s w ih m ih ng
+TELEVISION	t eh l ih v ih zh ax n
+TELEVISION	t eh l ih v ih zh n
+TEN	t eh n
+TWENTY	t w eh n t iy
+WALKING	w ao k ih ng
+WATCHING	w oh ch ih ng
+!SIL	SIL
+!NOISE	NOISE

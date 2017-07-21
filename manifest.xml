@@ -1,0 +1,16 @@
+<package>
+  <description brief="ros_asr">
+
+     ros_asr
+
+  </description>
+  <author>Louis</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ros_asr</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

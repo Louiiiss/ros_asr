@@ -1,0 +1,2 @@
+Your job 257801 ("update.14.sh") has been submitted
+/var/spool/sge/node192/job_scripts/257801: line 3: ./path.sh: No such file or directory

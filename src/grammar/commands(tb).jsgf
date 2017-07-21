@@ -1,0 +1,40 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <angle_change> 
+| <speed_change>
+| <greeting>
+| <parting>
+| <start>
+| <stop>
+| <dcon>
+| <dcoff>
+| <yes>
+| <no>
+| <movecmd>;
+
+<greeting> = HELLO BAXTER CAN YOU HEAR ME;
+<parting> = FAIRWELL BAXTER SEE YOU LATER;
+<start> = BAXTER START LISTENING;
+<stop> = BAXTER STOP LISTENING;
+<dcon> = DOUBLE CHECK MY COMMANDS;
+<dcoff> = STOP DOUBLE CHECKING COMMANDS;
+<yes> = YES;
+<no> = NO;
+<movecmd> = <cmd>;
+<angle_change> = CHANGE ANGLE TO <num>;
+<speed_change> = CHANGE SPEED TO <num>;
+
+<cmd> = <lin_move> <lin_dir> | <ang_move> <ang_dir2> | STOP | REVERSE;
+<lin_move> = GO | MOVE | REVERSE;
+<ang_move> = BEAR | TURN | ROTATE;
+<lin_dir> = FORWARD | BACKWARD | BACK | BACKWARDS | STRAIGHT | STRAIGHT ON| !SIL;
+<ang_dir> = <dir>;
+<ang_dir2> = <dir> <ang>;
+<dir> = LEFT | RIGHT | CLOCKWISE | ANTICLOCKWISE | COUNTERCLOCKWISE;
+<ang> = !SIL | <num> <optional>;
+<optional> = !SIL | DEGREES;
+<num> = ZERO | <units> | <teens> | <tens> [<units>];
+<units> = ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE;
+<teens> = TEN | ELEVEN | TWELVE | THIRTEEN | FOURTEEN | FIFTEEN | SIXTEEN | SEVENTEEN | EIGHTEEN | NINETEEN;
+<tens> = TWENTY | THIRTY | FORTY | FIFTY | SIXTY | SEVENTY | EIGHTY | NINETY;

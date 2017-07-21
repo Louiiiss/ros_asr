@@ -1,0 +1,18 @@
+#JSGF V1.0;
+grammar phrase;
+public <phrase> = !SIL 
+| <angle_change> 
+| <speed_change>
+| <start>
+| <stop>;
+
+<start> = JETSON START LISTENING;
+<stop> = JETSON STOP LISTENING;
+<angle_change> = CHANGE ANGLE TO <num>;
+<speed_change> = CHANGE SPEED TO <num>;
+
+<num> = ZERO | <units> | <teens> | <tens> [<units>];
+
+<units> = ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE;
+<teens> = TEN | ELEVEN | TWELVE | THIRTEEN | FOURTEEN | FIFTEEN | SIXTEEN | SEVENTEEN | EIGHTEEN | NINETEEN;
+<tens> = TWENTY | THIRTY | FORTY | FIFTY | SIXTY | SEVENTY | EIGHTY | NINETY;

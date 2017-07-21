@@ -1,0 +1,16 @@
+FOR	f ao
+FOR	f ao r
+FOR	f ax
+FOR	f ax r
+FOR	f er
+MOVED	m uw v d
+QUICKLY	k w ih k l iy
+SECONDS	s eh k ax n d z
+SECONDS	s ih k oh n d z
+SLOWLY	s l ow l iy
+STILL	s t ih l
+STOOD	s t uh d
+TEN	t eh n
+TWENTY	t w eh n t iy
+!SIL	SIL
+!NOISE	NOISE

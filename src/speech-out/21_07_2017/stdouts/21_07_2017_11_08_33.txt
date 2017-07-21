@@ -1,0 +1,29 @@
+21-07-2017-11:08:33:842 read pipe 0
+21-07-2017-11:08:33:842 Starting SF controller main
+config read_pipe 0
+21-07-2017-11:08:33:842 NNET config 
+Nnet feature config mfcc
+basic_src/new-sf-controller --do-endpointing=true --config=online-models/nnet_noisy_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=models/questions-worksheet-tri4a-nnet/words.txt online-models/nnet_noisy_online/final.mdl models/questions-worksheet-tri4a-nnet/HCLG.fst scp:wav.scp 'ark:|gzip -c > online-models/nnet_noisy_online/lat.1.gz' 
+1 online-models/nnet_noisy_online/final.mdl
+2 models/questions-worksheet-tri4a-nnet/HCLG.fst
+3 scp:wav.scp
+4 ark:|gzip -c > online-models/nnet_noisy_online/lat.1.gz
+LOG (new-sf-controller:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
+LOG (new-sf-controller:ComputeDerivedVars():ivector-extractor.cc:204) Done.
+ERROR (new-sf-controller:Input():kaldi-io.cc:733) Error opening input stream models/questions-worksheet-tri4a-nnet/HCLG.fst
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  ERROR (new-sf-controller:Input():kaldi-io.cc:733) Error opening input stream models/questions-worksheet-tri4a-nnet/HCLG.fst
+
+[stack trace: ]
+kaldi::KaldiGetStackTrace[abi:cxx11]()
+kaldi::KaldiErrorMessage::~KaldiErrorMessage()
+kaldi::Input::Input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool*)
+fst::ReadFstKaldi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+kaldi::SFNnetThreadedConfig::SFNnetThreadedConfig(int, char**)
+kaldi::SFController::readConfig()
+basic_src/new-sf-controller(main+0x111) [0x7016e9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f4adb90f830]
+basic_src/new-sf-controller(_start+0x29) [0x6ff9a9]
+
+
+./nnet-decode-basic.sh: line 130: 30814 Aborted                 (core dumped) basic_src/new-sf-controller $silence_weighting_opts --do-endpointing=$do_endpointing --config=$srcdir/conf/online_nnet2_decoding.conf --max-active=$max_active --beam=$beam --lattice-beam=$lattice_beam --acoustic-scale=$acwt --word-symbol-table=$graphdir/words.txt $srcdir/${iter}.mdl $graphdir/HCLG.fst "$wav_rspecifier" "$lat_wspecifier" ${args[@]}

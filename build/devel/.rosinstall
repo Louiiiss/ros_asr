@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/louis/catkin_ws/src/ros_asr/build/devel/setup.sh
