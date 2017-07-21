@@ -1,7 +1,19 @@
+-----------------------------------------------------------------------------------
+ros_asr package		Author: Louis Thorpe-Monaghan	University of Sheffield
+-----------------------------------------------------------------------------------
+
 The following instructions will guide you through installing all the necessary components to control the Baxter Robot Arm with your voice - a functionality provided by Kaldi (an open source ASR toolkit) and ROS (robot operating system).
 
 Part One will cover installation and execution for, primarily, an end user perspective.
 Part Two will provide more detail for developers to extend this work.
+
+*Its worth holding off downloading this repo until instructed to, although you can do if you wish to do so:
+	In this case, make sure you download it in to the /src of a catkin/ros directory such as:
+		/home/catkin_ws/src
+
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 
 --- PART ONE ---
@@ -17,6 +29,7 @@ A catkin project directory:
 *To source the workspace, add this line to the (hidden) file .bashrc in your home directory:
 	source /home/USER/WORKSPACE/devel/setup.bash
 
+
 :BAXTER INSTALLATION:	
 Follow the instructions in the link below. Make sure you install the *correct* prerequisits for your ROS distro:
 	http://sdk.rethinkrobotics.com/wiki/Simulator_Installation
@@ -24,12 +37,14 @@ Follow the instructions in the link below. Make sure you install the *correct* p
 	- run "chmod u+x baxter.sh"
 *in baxter.sh, edit ROS Distro, IP and baxter serial number in shell script in order to run on a physical Baxter*
 
+
+-----------------------------------------------------------------------------------
 :BASE DEMO:
 To run the base demo, in seperate terminals, do:
 	roscore
 	roslaunch baxter_gazebo baxter_world.launch
 		(if this doesn't work you probably need to *source your workspace*)
-
+-----------------------------------------------------------------------------------
 
 
 :KALDI INSTALLATION:
@@ -50,8 +65,9 @@ Enter ros_asr/src:
 	cd basic_src
 	make
 
+
 :ROS_ASR INSTALLATION:
-Enter your ROS workspace, and then the "src" folder, run the following:
+Enter your ROS workspace, and then the "src" folder, download *this repository*:
 	git clone https://github.com/Louiiiss/ros_asr.git
 Enter ros_asr, and then the "src" folder:
 	edit "path.sh", change KALDI_ROOT to the correct path to your kaldi installation folder
@@ -89,6 +105,7 @@ FINALLY, return to the workstation root (ie, catkin_ws, or ros_ws etc.)
 If all goes well it should build the package without errors, meaning you're all good to go!
 
 
+-----------------------------------------------------------------------------------
 :VOICE CONTROL DEMO:
 SIMULATION:
 	roscore
@@ -100,6 +117,8 @@ PHYSICAL:
 	roslaunch ros_asr end_effector_voice_control.launch
 
 You can now tell the robot to move its arms with your voice
+-----------------------------------------------------------------------------------
+
 
 NOTES ON RUNNING:
 ROS makes use of a LOT of terminals. When you run the end_effector.. demo above, 2 additional terminals will launch.
@@ -117,7 +136,9 @@ Additionally, speaking "DOUBLE CHECK MY COMMANDS" will cause the program to quer
 	"STOP DOUBLE CHECKING COMMANDS" will undo this
 "START LISTENING" and "STOP LISTENING" will perform as expected.
 
-
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 
 --- PART 2 --- 
