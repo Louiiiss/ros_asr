@@ -161,6 +161,21 @@ Recognising Commands:
 
 
 
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+
+:ACKNOWLEDGEMENTS:
+This package makes use of open source code obtained from several different sources, this is to acknowledge their use in.
+
+Sam Fernando, University of Sheffield:
+	For his work with KALDI and SPODIRO
+
+BIRL ROBOTICS:
+	For providing the BIRL Baxter Demos, on which the baxter end effector control is used 
+
+PStream:
+	http://pstreams.sourceforge.net/
 
 
 
