@@ -1,22 +1,44 @@
-Install ROS (indigo or kinetic)
-Create a catkin_directory 
-catkin_make
+The following instructions will guide you through installing all the necessary components to control the Baxter Robot Arm with your voice - a functionality provided by Kaldi (an open source ASR toolkit) and ROS (robot operating system).
 
-Baxter installation:	
-http://sdk.rethinkrobotics.com/wiki/Simulator_Installation
+Part One will cover installation and execution for, primarily, an end user perspective.
+Part Two will provide more detail for developers to extend this work.
+
+
+--- PART ONE ---
+
+:REQUIREMENTS:
+Ubuntu (preferably 16.04)
+ROS (indigo or kinetic):
+	http://wiki.ros.org/kinetic/Installation/Ubuntu
+A catkin project directory:
+	http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+
+*If you've sourced and run "catkin_make" in the workspace, then you're good to go. (see tutorials above)
+*To source the workspace, add this line to the (hidden) file .bashrc in your home directory:
+	source /home/USER/WORKSPACE/devel/setup.bash
+
+:BAXTER INSTALLATION:	
+Follow the instructions in the link below. Make sure you install the *correct* prerequisits for your ROS distro:
+	http://sdk.rethinkrobotics.com/wiki/Simulator_Installation
 *you may have to enable execution of baxter.sh to run simulation*
 	- run "chmod u+x baxter.sh"
-*edit ROS Distro, IP and baxter serial number in shell script in order to run physical*
+*in baxter.sh, edit ROS Distro, IP and baxter serial number in shell script in order to run on a physical Baxter*
 
-make sure you've sourced the workspace
-To run the base demo, run
-roscore
-roslaunch baxter_gazebo baxter_world.launch
+:BASE DEMO:
+To run the base demo, in seperate terminals, do:
+	roscore
+	roslaunch baxter_gazebo baxter_world.launch
+		(if this doesn't work you probably need to *source your workspace*)
 
-REF: https://github.com/lyh458/birl_baxter/tree/master/demos/baxter_end_effector_control
 
-download KALDI from:
-http://staffwww.dcs.shef.ac.uk/people/S.Fernando/spodiro/basic_spodiro.html
+
+:KALDI INSTALLATION:
+REF: http://staffwww.dcs.shef.ac.uk/people/S.Fernando/spodiro/basic_spodiro.html
+
+Download Kaldi using git (...you should have git)
+Enter your Home directory and run the following:
+	git clone https://github.com/kaldi-asr/kaldi.git kaldi --origin upstream
+Enter newly created folder 'kaldi' and follow the INSTALL instructions *CAREFULLY*
 
 Enter KALDI and run install instructions 
 
@@ -28,15 +50,29 @@ Enter ros_asr/src:
 	cd basic_src
 	make
 
+:ROS_ASR INSTALLATION:
+Enter your ROS workspace, and then the "src" folder, run the following:
+	git clone https://github.com/Louiiiss/ros_asr.git
+Enter ros_asr, and then the "src" folder:
+	edit "path.sh", change KALDI_ROOT to the correct path to your kaldi installation folder
+	run the following:
+		./configure.sh
+		sudo ./install_packages.sh
+	enter "basic_src"
+	run the following:
+		make
+	
 Test with ./asr.sh 0 
 (you may have to run "chmod u+x asr.sh")
 Try saying "move up", the console should print out MOVE UP if it's working correctly
 
 
-Install these two:
-sudo apt-get install ros-kinetic-trac-ik
+:OTHER DEPENDENCIES:
+REF: https://github.com/lyh458/birl_baxter/tree/master/demos/baxter_end_effector_control
 
-http://sdk.rethinkrobotics.com/wiki/Baxter_PyKDL
+Follow the instructions in the link below. Make sure you install the *correct* prerequisits for your ROS
+If you're using kinetic, simply change the terminal commands to reflect this:
+	http://sdk.rethinkrobotics.com/wiki/Baxter_PyKDL
 
 
 THEN, two kinda tricky bits:
@@ -47,12 +83,82 @@ Second, in kaldi_relay.cpp, change the path on line 32, to this same folder
 
 
 FINALLY, return to the workstation root (ie, catkin_ws, or ros_ws etc.)
-Run catkin_make
+	Run the following:
+		catkin_make
 
-To run the demo, 
+If all goes well it should build the package without errors, meaning you're all good to go!
+
+
+:VOICE CONTROL DEMO:
 SIMULATION:
 	roscore
 	roslaunch baxter_gazebo baxter_world.launch
 	roslaunch ros_asr end_effector_voice_control.launch
+PHYSICAL:
+	connect to baxter via ethernet cable
+	./baxter.sh 	(provided correct IP and Distro have been set - see above)
+	roslaunch ros_asr end_effector_voice_control.launch
+
+You can now tell the robot to move its arms with your voice
+
+NOTES ON RUNNING:
+ROS makes use of a LOT of terminals. When you run the end_effector.. demo above, 2 additional terminals will launch.
+	One will read "Running Kaldi Relay"
+	The other "Running Voice Controller"
+This second one is the one you want to pay attention to. You can even minimise the other 2.
+	To safely close the program, you need to CTRL+C the source terminal (where you ran the end_effector..)
+	2 additional terminals can be closed however you want.
+
+The end effector can be controlled by telling it to "MOVE ___" in some direction:
+	UP DOWN LEFT RIGHT IN OUT
+You can add "RIGHT ARM" or "LEFT ARM" after "MOVE" to direct each arm.
+STOP will stop all movement
+Additionally, speaking "DOUBLE CHECK MY COMMANDS" will cause the program to query your command, which you will have to respond with YES or NO respectively.
+	"STOP DOUBLE CHECKING COMMANDS" will undo this
+"START LISTENING" and "STOP LISTENING" will perform as expected.
+
+
+
+
+--- PART 2 --- 
+
+This is for the purposes of developers wishing to extend this work, and will simply detail the structure of things, so to speak.
+
+The launch file is located in the "launch" folder at root
+Python scripts are found in the "scripts" folder - these pertain to actually moving the Baxter arm.
+	When running, the 4 scripts found in this folder are run.
+	The one that will be of most use is ee_voice_control.py, as the others deal with Inverse Kinematics etc.
+		This file recieves messages from "kaldi_relay.cpp" and parses them in to commands for baxter
+
+SRC:
+In this folder, much of the ASR (kaldi) specific folders are found. You shouldn't need to touch those.
+	kaldi_relay.cpp runs an instance of kaldi and relays its console output to the python script above.
+
+Building Grammar:
+	To build the currect grammar recognised by the program (ie, what can be said), enter /src/grammar
+	The file commands.jsgf contains a Finite State Machine denoting what can be said
+		To build this, return to /src and run ./compile_grammar.sh
+		Pay attention to any errors, as the FSM has a specific form you have to abide by
+
+Recognising Commands:
+	In "ee_voice_control.py", specifically the parseCommand function, string commands from kaldi_relay are interpreted
+	By following the ones demonstrated, you should be able to add additional commands (such as rotation etc.)
+	Examples of how to command this to the arm are in the file, commented out under the "checkCommand" function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
